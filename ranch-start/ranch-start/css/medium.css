@@ -5,4 +5,15 @@
     nav ul li{
         flex-basis:25%;
     }
+    main figure{
+        float: right;
+        width: 48%;
+        margin-left: 2%;
+        padding-bottom: 0.5rem;
+    }
+    div.news{
+        clear: both;
+        column-count: 2;
+        column-rule:1px solid #ddd;
+    }
 }
