@@ -40,8 +40,8 @@ nav li{
     list-style-type: none;
 }
 
-navl li.active{
-    background-color: rgb(65, 62, 62);
+nav li.active{
+    background-color: rgb(105, 105, 105);
 }
 
 nav a{
