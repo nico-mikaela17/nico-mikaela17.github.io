@@ -140,6 +140,7 @@ nav ul li a {
   display: block;
   padding: 0.95rem 2vw;
   border-top: solid 1px rgba(0, 0, 0, 0.2);
+  text-align: center;
 }
 nav ul li a:hover {
   background-color: #eee;
@@ -185,6 +186,13 @@ footer a {
 
 @media only screen and (min-width: 35rem) {
   /* NAVIGATION STUFF GOES HERE  */
+  nav ul {
+    display: flex;
+    justify-content: space-around;
+  }
+  nav ul li a {
+    border: none;
+  }
 }
 @media only screen and (min-width: 64rem) {
   header, nav, main {
@@ -192,4 +200,11 @@ footer a {
     margin: auto;
   }
   /* NAVIGATION STUFF GOES HERE  */
+  nav ul li a {
+    padding: 0.7rem 2rem;
+    font-size: 0.8rem;
+  }
+  nav ul {
+    justify-content: right;
+  }
 }

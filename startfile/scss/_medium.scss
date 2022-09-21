@@ -1,1 +1,11 @@
 /* NAVIGATION STUFF GOES HERE  */
+nav{
+    ul{
+        display: flex;
+        justify-content: space-around;
+    }
+    ul li a{
+        border: none;
+
+    }
+}

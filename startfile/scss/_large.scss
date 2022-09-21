@@ -4,3 +4,10 @@ header, nav, main {
 }
 
 /* NAVIGATION STUFF GOES HERE  */
+nav ul li a{
+    padding: 0.7rem 2rem;
+    font-size: 0.8rem;
+}
+nav ul{
+    justify-content: right;
+}
