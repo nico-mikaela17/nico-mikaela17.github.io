@@ -136,6 +136,10 @@ header h1 {
 }
 
 /* NAVIGATION STUFF GOES HERE  */
+div#navWrapper {
+  background-color: #e8f0c8;
+}
+
 nav ul li a {
   color: #333;
   text-decoration: none;

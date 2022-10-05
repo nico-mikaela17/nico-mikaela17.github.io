@@ -29,6 +29,9 @@ header {
     }
 }
 /* NAVIGATION STUFF GOES HERE  */
+div#navWrapper{
+    background-color: lighten(rgb(56, 65, 18),70%);
+}
 nav{
     ul li a{
         color: #333;
