@@ -235,8 +235,7 @@ footer {
     max-width: 75%;
   }
   main img {
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
+    max-width: 100%;
+    height: auto;
   }
 }
