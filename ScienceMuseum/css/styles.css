@@ -234,4 +234,7 @@ footer {
   main {
     max-width: 75%;
   }
+  main img {
+    max-height: 75%;
+  }
 }
