@@ -4,10 +4,16 @@ header, nav, main {
 }
 
 /* NAVIGATION STUFF GOES HERE  */
-nav ul li a{
+nav{
+ ul li a{
     padding: 0.7rem 2rem;
     font-size: 0.8rem;
 }
 nav ul{
-    justify-content: right;
+    justify-content: center;
+}
+}
+
+main{
+    max-width: 75%;
 }

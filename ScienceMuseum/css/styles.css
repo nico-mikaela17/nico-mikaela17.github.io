@@ -136,6 +136,7 @@ header h1 {
 }
 header h4 {
   display: none;
+  color: rgb(35, 104, 65);
 }
 
 /* NAVIGATION STUFF GOES HERE  */
@@ -165,7 +166,7 @@ main p {
   line-height: 125%;
 }
 main h1 {
-  padding: 1rem 2vw 3rem 2vw;
+  padding: 3rem 2vw 1rem 2vw;
   font-size: 1.5rem;
   color: #265b7d;
   font-weight: 500;
@@ -227,7 +228,10 @@ footer {
     padding: 0.7rem 2rem;
     font-size: 0.8rem;
   }
-  nav ul {
-    justify-content: right;
+  nav nav ul {
+    justify-content: center;
+  }
+  main {
+    max-width: 75%;
   }
 }
