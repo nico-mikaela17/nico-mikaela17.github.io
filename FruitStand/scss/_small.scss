@@ -19,13 +19,15 @@ header {
     grid-template-columns: 51px auto;
     align-items: center;
 	padding: .5rem 2vw;
+    display: grid;
+    grid-template-columns: 130px auto;
 	h1 {
         font-size: 1.6rem;
         font-weight: 400;
-        padding-left: 3rem;
         padding-bottom: 0.4rem;
         color:seagreen;
         align-self:flex-end;
+        margin-top: 0.5rem;
     }
     h4{
        display: none; 
