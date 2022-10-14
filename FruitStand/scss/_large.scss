@@ -15,5 +15,8 @@ nav ul{
 }
 
 main{
-    max-width: 75%;
+    max-width: auto;
+    div.FruitGallery figure{
+        flex-basis: 15%;
+        }
 }
