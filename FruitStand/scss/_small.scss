@@ -75,12 +75,11 @@ main {
         flex-wrap: wrap;
     }
     div.FruitGallery figure{
-        flex-basis: 100%;
-        display: block;
+        flex-basis: 46%;
     }
 
     div.FruitGallery figure img{
-        max-width: 50%;
+        width: 100%;
         margin: 1rem 2%;
         padding: 2%;
     }
