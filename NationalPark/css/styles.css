@@ -332,16 +332,22 @@ div.headerWrapper {
 }
 
 header {
-  padding: 5rem 2%;
+  padding: 0;
+  margin: 0;
 }
 
 header h1 {
   margin: 0;
+  padding-top: 5rem;
+  color: rgb(255, 233, 212);
+  font-size: x-large;
 }
 
 header h2 {
   margin: 0;
   font-weight: normal;
+  font-size: large;
+  color: rgb(255, 224, 195);
 }
 
 /*----------- NAVIGATION --------------*/
@@ -408,6 +414,10 @@ footer {
 @media only screen and (min-width: 35rem) {
   /*----------- BODY --------------*/
   /*----------- HEADER --------------*/
+  div.headerWrapper {
+    background-image: url(../images/header-medium.jpg);
+    height: 240px;
+  }
   /*----------- NAVIGATION --------------*/
   nav ul {
     margin-left: 2%;
@@ -427,13 +437,17 @@ footer {
   /*----------- MAIN --------------*/
   /*----------- FOOTER --------------*/
 } /* end of media query */
-@media only screen and (min-width: 64rem) {
+@media only screen and (min-width: 60rem) {
   header, nav, main, footer {
     max-width: 64rem;
     margin: auto;
   }
   /*----------- BODY --------------*/
   /*----------- HEADER --------------*/
+  div.headerWrapper {
+    background-image: url(../images/header-large.jpg);
+    height: 400px;
+  }
   /*----------- NAVIGATION --------------*/
   /*----------- MAIN --------------*/
   /*----------- FOOTER --------------*/

@@ -18,10 +18,21 @@ div.headerWrapper{
     height: 140px;
 }
 header {
-    padding: 5rem 2%;
+    padding:0;
+    margin: 0;
 }
-header h1 {margin: 0;}
-header h2 {margin: 0; font-weight: normal;}
+header h1 {
+    margin: 0;
+    padding-top: 5rem;
+    color: rgb(255, 233, 212);
+    font-size: x-large;
+}
+header h2 {
+    margin: 0; 
+    font-weight: normal;
+    font-size: large;
+    color: rgb(255, 224, 195);
+}
 
 /*----------- NAVIGATION --------------*/
 nav {
