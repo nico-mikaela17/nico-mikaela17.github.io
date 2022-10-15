@@ -341,7 +341,7 @@ header {
 header h1 {
   margin: 0;
   padding-left: 1rem;
-  color: rgb(255, 233, 212);
+  color: #EAE2B7;
   font-size: x-large;
   background-color: rgba(0, 0, 0, 0.4);
 }
@@ -350,13 +350,13 @@ header h2 {
   padding-left: 1rem;
   font-weight: normal;
   font-size: large;
-  color: rgb(255, 224, 195);
+  color: #EAE2B7;
   background-color: rgba(0, 0, 0, 0.4);
 }
 
 /*----------- NAVIGATION --------------*/
 nav {
-  background-color: #666;
+  background-color: #4B8F8C;
 }
 
 nav ul {
@@ -366,15 +366,15 @@ nav ul {
 }
 
 nav ul li {
-  float: left;
+  float: right;
   width: 25%;
 }
 
 nav ul li a {
   display: block;
-  background-color: #444;
-  color: #eee;
-  border-left: 1px solid #777;
+  background-color: #1B2F33;
+  color: #EAE2B7;
+  border-left: 1px solid #4B8F8C;
   padding: 0.5rem 0;
   text-decoration: none;
   font-size: 0.9rem;
@@ -386,13 +386,13 @@ nav ul li:first-child a {
 }
 
 nav ul li a:hover {
-  background-color: #eee;
-  color: #333;
+  background-color: #EAE2B7;
+  color: #1B2F33;
 }
 
 nav ul li.active a {
-  background-color: #000;
-  color: #fff;
+  background-color: #D8C99B;
+  color: #1B2F33;
 }
 
 /*----------- MAIN --------------*/
@@ -403,7 +403,8 @@ main {
 
 /*----------- FOOTER --------------*/
 footer {
-  background-color: #ddd;
+  background-color: #4B8F8C;
+  color: #EAE2B7;
   padding: 0.5rem 2%;
   text-align: center;
 }
