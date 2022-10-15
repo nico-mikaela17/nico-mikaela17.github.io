@@ -13,6 +13,9 @@ body {
 
 
 /*----------- HEADER --------------*/
+div#headerWrapper{
+    background-image: url(../images/header-small.jpg);
+}
 header {
     padding: 5rem 2%;
     background-color: rgb(255, 255, 255);
