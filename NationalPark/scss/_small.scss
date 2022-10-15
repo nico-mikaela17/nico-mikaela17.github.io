@@ -100,6 +100,7 @@ main {
         } //section
         img{
             padding: 1rem;
+            position: relative;
         }//img
         p{
             padding: 1rem 2vw;
@@ -113,10 +114,19 @@ main {
             border-radius: $cbr;
         }//a
         a:hover{
-            background-color: lighten(#1B2F33,30%);
+            background-color: lighten(#1B2F33,20%);
         }
     }//card
+    .card:hover img{animation: bounce 2s 1;}
+        @keyframes bounce{
+            0%{bottom:0px; animation-timing-function: ease-out;}
+            25%{bottom:30px;animation-timing-function: ease-in;}
+            50%{bottom:0px; animation-timing-function: ease-out;}
+            75%{bottom:10px;animation-timing-function: ease-in;}
+            100%{bottom:0px}
+         } //card:hover
 }
+
 
 
 /*----------- FOOTER --------------*/

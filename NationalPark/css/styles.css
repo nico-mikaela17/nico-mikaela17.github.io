@@ -424,6 +424,7 @@ main .card section {
 }
 main .card img {
   padding: 1rem;
+  position: relative;
 }
 main .card p {
   padding: 1rem 2vw;
@@ -437,7 +438,61 @@ main .card a {
   border-radius: 5px;
 }
 main .card a:hover {
-  background-color: #508b97;
+  background-color: #3e6c76;
+}
+main .card:hover img {
+  -webkit-animation: bounce 2s 1;
+          animation: bounce 2s 1;
+}
+@-webkit-keyframes bounce {
+  0% {
+    bottom: 0px;
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  25% {
+    bottom: 30px;
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  50% {
+    bottom: 0px;
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  75% {
+    bottom: 10px;
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  100% {
+    bottom: 0px;
+  }
+}
+@keyframes bounce {
+  0% {
+    bottom: 0px;
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  25% {
+    bottom: 30px;
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  50% {
+    bottom: 0px;
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  75% {
+    bottom: 10px;
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  100% {
+    bottom: 0px;
+  }
 }
 
 /*----------- FOOTER --------------*/
