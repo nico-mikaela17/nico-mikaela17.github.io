@@ -16,24 +16,29 @@ body {
 div.headerWrapper{
     background-image: url(../images/header-small.jpg);
     height: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 }
 header {
     padding:0;
     margin: 0;
-}
-header h1 {
+    h1 {
     margin: 0;
-    padding-top: 5rem;
+    padding-left: 1rem;
     color: rgb(255, 233, 212);
     font-size: x-large;
-}
-header h2 {
+    background-color: rgba(0, 0, 0,0.4);
+    }
+    h2 {
     margin: 0; 
+    padding-left: 1rem;
     font-weight: normal;
     font-size: large;
     color: rgb(255, 224, 195);
+    background-color: rgba(0, 0, 0,0.4)
+    }
 }
-
 /*----------- NAVIGATION --------------*/
 nav {
     background-color: #666;
