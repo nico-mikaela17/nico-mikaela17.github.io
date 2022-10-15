@@ -400,6 +400,45 @@ main {
   padding: 0 2%;
   min-height: 10rem;
 }
+main h1 {
+  color: #1B2F33;
+  font-size: larger;
+}
+main .card-deck {
+  display: flex;
+  flex-wrap: wrap;
+}
+main .card {
+  flex-basis: 100%;
+  border: 1px solid #999;
+  border-radius: 5px;
+  margin: 1rem 1%;
+  text-align: center;
+}
+main .card section {
+  background-color: #2d4e54;
+  color: white;
+  padding: 1rem 0;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+main .card img {
+  padding: 1rem;
+}
+main .card p {
+  padding: 1rem 2vw;
+}
+main .card a {
+  display: block;
+  background-color: #2d4e54;
+  color: white;
+  padding: 1rem 0;
+  text-decoration: none;
+  border-radius: 5px;
+}
+main .card a:hover {
+  background-color: #508b97;
+}
 
 /*----------- FOOTER --------------*/
 footer {
@@ -440,6 +479,9 @@ footer {
     padding: 0.5rem 1rem;
   }
   /*----------- MAIN --------------*/
+  main .card {
+    flex-basis: 48%;
+  }
   /*----------- FOOTER --------------*/
 } /* end of media query */
 @media only screen and (min-width: 60rem) {
@@ -457,5 +499,8 @@ footer {
   }
   /*----------- NAVIGATION --------------*/
   /*----------- MAIN --------------*/
+  main .card {
+    flex-basis: 31.333%;
+  }
   /*----------- FOOTER --------------*/
 } /* end of media query */

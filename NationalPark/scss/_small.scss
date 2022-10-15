@@ -76,6 +76,46 @@ nav ul li.active a {
 main {
     padding: 0 2%;
     min-height: 10rem;
+    h1{
+        color: #1B2F33;
+        font-size: larger;
+    }
+    $cbr: 5px;
+    .card-deck{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .card{
+        flex-basis: 100%;
+        border: 1px solid #999;
+        border-radius: $cbr;
+        margin: 1rem 1%;
+        text-align: center;
+        section{
+            background-color:lighten(#1B2F33,10%);
+            color:lighten(#EAE2B7,20%);
+            padding: 1rem 0;
+            border-top-left-radius: $cbr - 1;
+            border-top-right-radius: $cbr - 1;
+        } //section
+        img{
+            padding: 1rem;
+        }//img
+        p{
+            padding: 1rem 2vw;
+        } //p
+        a{
+            display: block;
+            background-color: lighten(#1B2F33,10%);
+            color:lighten(#EAE2B7,20%);
+            padding: 1rem 0;
+            text-decoration: none;
+            border-radius: $cbr;
+        }//a
+        a:hover{
+            background-color: lighten(#1B2F33,30%);
+        }
+    }//card
 }
 
 
