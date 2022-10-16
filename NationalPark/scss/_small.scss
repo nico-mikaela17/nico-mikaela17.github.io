@@ -42,17 +42,17 @@ header {
 /*----------- NAVIGATION --------------*/
 nav {
     background-color: #4B8F8C;
-}
-nav ul {
+
+ ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
+    border-top: solid 1px wheat;
 }
-nav ul li {
-    float: right;
-    width: 25%;
+ ul li {
+    border-bottom: solid 1px wheat;
 }
-nav ul li a {
+ ul li a {
     display: block;
     background-color: #1B2F33;
     color: #EAE2B7;
@@ -62,15 +62,23 @@ nav ul li a {
     font-size: .9rem;
     text-align: center;
 }
-nav ul li:first-child a {border-left: none;}
+ ul li:first-child a {border-left: none;}
 
-nav ul li a:hover {
+ ul li a:hover {
     background-color: #EAE2B7;
     color: #1B2F33;
 }
-nav ul li.active a {
+ ul li.active a {
     background-color: #D8C99B;
     color: #1B2F33;
+}
+ button{
+    background: transparent;
+    border: none;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    color: #EAE2B7;
+}
 }
 /*----------- MAIN --------------*/
 main {
@@ -140,7 +148,7 @@ footer {
 
 
 /*----- Clearfix: Force an Element not to collapse -----*/
-.clearfix:after {
+.navWrapper:after {
   content: "";
   display: table;
   clear: both;
