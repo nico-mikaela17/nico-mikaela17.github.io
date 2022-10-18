@@ -21,14 +21,15 @@ nav{
     button{
         display: none;
     }
-    ul{
-        margin-right: 2.5vw;
+    ul, ul.open{
         border: none;
         display: flex;
         justify-content: flex-end;
+        margin-right: 2.5vw;
     }
     ul li{
         border: none;
+        margin: 0;
     }
 }
 
