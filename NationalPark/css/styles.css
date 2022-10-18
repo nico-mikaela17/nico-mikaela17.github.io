@@ -404,6 +404,7 @@ main {
 main h1 {
   color: #1B2F33;
   font-size: larger;
+  margin-left: 0.5vw;
 }
 main .card-deck {
   display: flex;
@@ -554,6 +555,18 @@ footer {
     background-position: center bottom;
   }
   /*----------- NAVIGATION --------------*/
+  nav button {
+    display: none;
+  }
+  nav ul {
+    margin-right: 2.5vw;
+    border: none;
+    display: flex;
+    justify-content: flex-end;
+  }
+  nav ul li {
+    border: none;
+  }
   /*----------- MAIN --------------*/
   main .card {
     flex-basis: 31.333%;

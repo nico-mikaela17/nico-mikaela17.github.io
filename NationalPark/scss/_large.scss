@@ -17,7 +17,20 @@ div.headerWrapper{
 
 
 /*----------- NAVIGATION --------------*/
-
+nav{
+    button{
+        display: none;
+    }
+    ul{
+        margin-right: 2.5vw;
+        border: none;
+        display: flex;
+        justify-content: flex-end;
+    }
+    ul li{
+        border: none;
+    }
+}
 
 
 /*----------- MAIN --------------*/
