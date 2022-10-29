@@ -432,7 +432,8 @@ main .card section {
 main .card img {
   padding: 1rem;
   position: relative;
-  height: 40vh;
+  height: 30vh;
+  width: 30vw;
 }
 main .card p {
   padding: 1rem 2vw;
