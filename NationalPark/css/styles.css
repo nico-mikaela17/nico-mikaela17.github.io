@@ -576,7 +576,11 @@ footer {
   }
   /*----------- MAIN --------------*/
   main .card {
-    flex-basis: 31.333%;
+    flex-basis: 25%;
+  }
+  main img {
+    max-width: 25vw;
+    padding: 0;
   }
   /*----------- FOOTER --------------*/
 } /* end of media query */

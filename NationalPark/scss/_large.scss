@@ -36,8 +36,14 @@ nav{
 
 /*----------- MAIN --------------*/
 main{
-        .card{flex-basis: 31.333%;}
+    .card{
+        flex-basis: 25%;
     }
+    img{
+        max-width: 25vw;
+        padding: 0;
+    }
+}
     
 
 
