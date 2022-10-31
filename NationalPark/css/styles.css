@@ -575,11 +575,14 @@ footer {
     margin: 0;
   }
   /*----------- MAIN --------------*/
+  main .card-deck {
+    padding-left: 3rem;
+  }
   main .card {
     flex-basis: 25%;
   }
   main img {
-    max-width: 25vw;
+    max-width: 22vw;
     padding: 0;
   }
   /*----------- FOOTER --------------*/

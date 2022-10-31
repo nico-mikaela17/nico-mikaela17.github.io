@@ -36,11 +36,14 @@ nav{
 
 /*----------- MAIN --------------*/
 main{
+    .card-deck{
+        padding-left: 3rem;
+    }
     .card{
         flex-basis: 25%;
     }
     img{
-        max-width: 25vw;
+        max-width: 22vw;
         padding: 0;
     }
 }
