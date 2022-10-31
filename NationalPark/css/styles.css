@@ -432,7 +432,6 @@ main .card section {
 main .card img {
   padding: 1rem;
   position: relative;
-  height: 50vh;
 }
 main .card p {
   padding: 1rem 2vw;
@@ -579,7 +578,7 @@ footer {
     padding-left: 3rem;
   }
   main .card {
-    flex-basis: 22%;
+    flex-basis: 30%;
   }
   main img {
     max-width: 22vw;
