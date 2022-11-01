@@ -1,0 +1,124 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+
+/*----------- BODY --------------*/
+body {
+    font-size: 16px;
+    font-family: Verdana, sans-serif;
+}
+
+
+/*----------- HEADER --------------*/
+div.headerWrapper{
+    background-image: url(../images/header-small.jpg);
+    height: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+header {
+    padding:0;
+    margin: 0;
+    figure.logo{
+        float: left;
+        margin: 0 2vw ;
+    }
+    h1 {
+    margin: 0;
+    padding-left: 1rem;
+    color: #EAE2B7;
+    font-size: x-large;
+    background-color: rgba(0, 0, 0,0.4);
+    }
+    h2 {
+    margin: 0; 
+    padding-left: 1rem;
+    font-weight: normal;
+    font-size: large;
+    color: #EAE2B7;
+    background-color: rgba(0, 0, 0,0.4)
+    }
+}
+/*----------- NAVIGATION --------------*/
+nav {
+    background-color: #4B8F8C;
+ ul {
+    display: none;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    border-top: solid 1px wheat;
+}
+ul.open{
+    display: block;
+}
+ ul li {
+    border-bottom: solid 1px wheat;
+    margin-right: vw ;
+}
+ ul li a {
+    display: block;
+    background-color: #1B2F33;
+    color: #EAE2B7;
+    border-left: 1px solid #4B8F8C;
+    padding: .5rem 0;
+    text-decoration: none;
+    font-size: .9rem;
+    text-align: center;
+}
+ ul li:first-child a {border-left: none;}
+
+ ul li a:hover {
+    background-color: #EAE2B7;
+    color: #1B2F33;
+}
+ ul li.active a {
+    background-color: #D8C99B;
+    color: #1B2F33;
+}
+ button{
+    background: transparent;
+    border: none;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    color: #EAE2B7;
+}
+}
+/*----------- MAIN --------------*/
+main {
+    padding: 0 2%;
+    min-height: 10rem;
+    h1{
+        color: #1B2F33;
+        font-size: larger;
+        margin-left: 0.5vw;
+    }
+    }
+
+
+
+/*----------- FOOTER --------------*/
+footer {
+    background-color: #4B8F8C;
+    color: #EAE2B7;
+    padding: .5rem 2%;
+    text-align: center;
+}
+
+
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.navWrapper:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }

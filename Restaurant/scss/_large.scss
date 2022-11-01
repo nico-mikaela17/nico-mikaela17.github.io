@@ -1,0 +1,54 @@
+header, nav, main, footer {
+        max-width: 64rem;
+        margin:auto;
+}
+
+/*----------- BODY --------------*/
+
+
+
+/*----------- HEADER --------------*/
+div.headerWrapper{
+        background-image: url(../images/header-large.jpg);
+        height: 400px;
+        background-size: cover;
+        background-position: center bottom;
+    }
+
+
+/*----------- NAVIGATION --------------*/
+nav{
+    button{
+        display: none;
+    }
+    ul, ul.open{
+        border: none;
+        display: flex;
+        justify-content: flex-start;
+        margin-right: 2.5vw;
+    }
+    ul li{
+        border: none;
+        margin: 0;
+    }
+}
+
+
+/*----------- MAIN --------------*/
+main{
+    .card-deck{
+        padding-left: 3rem;
+    }
+    .card{
+        flex-basis: 30%;
+    }
+    img{
+        max-width: 22vw;
+        padding: 0;
+    }
+}
+    
+
+
+/*----------- FOOTER --------------*/
+    
