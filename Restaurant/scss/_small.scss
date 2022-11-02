@@ -97,6 +97,18 @@ main {
         font-size: larger;
         margin-left: 0.5vw;
     }
+    figure.myphoto{
+        float: right;
+    }
+    figure.hero {
+        display: block;
+        margin: 0;
+        padding: 0;
+    }
+    img{
+        margin: 0;
+        width: 100%;
+    }
     }
 
 

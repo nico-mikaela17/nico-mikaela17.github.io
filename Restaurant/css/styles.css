@@ -415,6 +415,18 @@ main h1 {
   font-size: larger;
   margin-left: 0.5vw;
 }
+main figure.myphoto {
+  float: right;
+}
+main figure.hero {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+main img {
+  margin: 0;
+  width: 100%;
+}
 
 /*----------- FOOTER --------------*/
 footer {
