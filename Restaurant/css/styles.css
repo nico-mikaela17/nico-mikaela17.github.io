@@ -407,8 +407,10 @@ nav button.open span:nth-child(2) {
 }
 
 /*----------- MAIN --------------*/
-main figure.myphoto {
+main picture.myphoto {
+  display: block;
   float: right;
+  max-width: 1200px;
 }
 main figure.hero {
   margin: 0;
@@ -485,4 +487,7 @@ footer {
   /*----------- NAVIGATION --------------*/
   /*----------- MAIN --------------*/
   /*----------- FOOTER --------------*/
+  footer {
+    margin-top: 11rem;
+  }
 } /* end of media query */

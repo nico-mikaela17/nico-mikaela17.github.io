@@ -93,8 +93,10 @@ button.open span:nth-child(2){
 }
 /*----------- MAIN --------------*/
 main {
-    figure.myphoto{
+    picture.myphoto{
+        display: block;
         float: right;
+        max-width: 1200px;
     }
     figure.hero {
         margin: 0;
@@ -134,3 +136,4 @@ footer {
     display: table;
     clear: both;
   }
+
