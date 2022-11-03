@@ -13,13 +13,6 @@ body {
 
 
 /*----------- HEADER --------------*/
-div.headerWrapper{
-    background-image: url(../images/header-small.jpg);
-    height: 140px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-}
 header {
     padding:0;
     margin: 0;
@@ -29,42 +22,38 @@ header {
     }
     h1 {
     margin: 0;
-    padding-left: 1rem;
-    color: #EAE2B7;
+    color: #100007;
     font-size: x-large;
-    background-color: rgba(0, 0, 0,0.4);
     }
     h2 {
     margin: 0; 
-    padding-left: 1rem;
     font-weight: normal;
     font-size: large;
-    color: #EAE2B7;
-    background-color: rgba(0, 0, 0,0.4)
+    color: #100007;
     }
 }
 /*----------- NAVIGATION --------------*/
 nav {
-    background-color: #4B8F8C;
+    background-color: #9b1d20;
  ul {
     display: none;
     list-style-type: none;
     padding: 0;
     margin: 0;
-    border-top: solid 1px wheat;
+    border-top: solid 1px #100007;
 }
 ul.open{
     display: block;
 }
  ul li {
-    border-bottom: solid 1px wheat;
+    border-bottom: solid 1px #100007;
     margin-right: vw ;
 }
  ul li a {
     display: block;
-    background-color: #1B2F33;
-    color: #EAE2B7;
-    border-left: 1px solid #4B8F8C;
+    background-color: #fcaa67;
+    color: #100007;
+    border-left: 1px solid #9b1d20;
     padding: .5rem 0;
     text-decoration: none;
     font-size: .9rem;
@@ -73,12 +62,12 @@ ul.open{
  ul li:first-child a {border-left: none;}
 
  ul li a:hover {
-    background-color: #EAE2B7;
+    background-color: #F9DBBD;
     color: #1B2F33;
 }
  ul li.active a {
-    background-color: #D8C99B;
-    color: #1B2F33;
+    background-color: #972D07;
+    color: #F9DBBD;
 }
  button{
     background: transparent;
@@ -90,19 +79,13 @@ ul.open{
 }
 /*----------- MAIN --------------*/
 main {
-    padding: 0 2%;
-    min-height: 10rem;
-    h1{
-        color: #1B2F33;
-        font-size: larger;
-        margin-left: 0.5vw;
-    }
     figure.myphoto{
         float: right;
     }
     figure.hero {
-        width: 100%;
+        width: 100vw;
         height: 100%;
+        margin: 0;
     }
     img {
         margin: 0;
@@ -110,13 +93,18 @@ main {
         width: 100%;
         height: auto;
         }
+    h1{
+        color: #1B2F33;
+        font-size: larger;
+        margin-left: 0.5vw;
+    }
     }
 
 
 
 /*----------- FOOTER --------------*/
 footer {
-    background-color: #4B8F8C;
+    background-color: #9b1d20;
     color: #EAE2B7;
     padding: .5rem 2%;
     text-align: center;
