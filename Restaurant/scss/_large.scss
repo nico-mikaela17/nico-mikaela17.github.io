@@ -17,37 +17,15 @@ div.headerWrapper{
 
 
 /*----------- NAVIGATION --------------*/
-nav{
-    button{
-        display: none;
-    }
-    ul, ul.open{
-        border: none;
-        display: flex;
-        justify-content: flex-start;
-        margin-right: 2.5vw;
-    }
-    ul li{
-        border: none;
-        margin: 0;
-    }
-}
+
 
 
 /*----------- MAIN --------------*/
 main{
-    .card-deck{
-        padding-left: 3rem;
-    }
-    .card{
-        flex-basis: 30%;
-    }
-    img{
-        max-width: 22vw;
-        padding: 0;
+    .hero img{
+       max-width: 64rem;
     }
 }
-    
 
 
 /*----------- FOOTER --------------*/
