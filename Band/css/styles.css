@@ -403,20 +403,51 @@ nav button.open span:nth-child(2) {
 }
 
 /*----------- MAIN --------------*/
-main picture.myphoto {
-  display: block;
-  float: right;
-  max-width: 1200px;
+main h4, main p {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  color: #1B2F33;
+  margin-left: 0.5vw;
+}
+main h2 {
+  color: #1B2F33;
+  font-size: x-large;
+  margin-left: 0.5vw;
 }
 main img {
-  margin: 0;
-  padding: 0;
+  max-height: 200px;
+}
+main figure {
   width: 100%;
 }
-main h1 {
-  color: #1B2F33;
-  font-size: larger;
-  margin-left: 0.5vw;
+main figure.harry img {
+  float: right;
+  -webkit-clip-path: circle(50% at 50% 50%);
+          clip-path: circle(50% at 50% 50%);
+  shape-outside: circle(50% at 50% 50%);
+  margin: 0.5rem;
+}
+main figure.niall img {
+  float: right;
+  -webkit-clip-path: polygon(50% 0, 100% 100%, 50% 100%, 0 100%);
+          clip-path: polygon(50% 0, 100% 100%, 50% 100%, 0 100%);
+  shape-outside: polygon(50% 0, 100% 100%, 50% 100%, 0 100%);
+  margin: 0.5rem;
+}
+main figure.louis img {
+  float: right;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%);
+          clip-path: polygon(0 0, 100% 0, 100% 100%);
+  shape-outside: polygon(0 0, 100% 0, 100% 100%);
+  margin: 0.5rem;
+}
+main figure.liam img {
+  float: right;
+  -webkit-clip-path: circle(100% at 100% 0);
+          clip-path: circle(100% at 100% 0);
+  shape-outside: circle(100% at 100% 0);
+  margin: 0.5rem;
 }
 
 /*----------- FOOTER --------------*/
@@ -465,19 +496,6 @@ footer {
     padding: 0.5rem 1rem;
   }
   /*----------- MAIN --------------*/
-  main .card {
-    flex-basis: 48%;
-  }
-  main h2 {
-    margin-left: 2.5vw;
-  }
-  main P {
-    text-indent: 2.5vw;
-    margin-left: 1vw;
-  }
-  main picture.myphoto {
-    margin: 1rem;
-  }
   /*----------- FOOTER --------------*/
 } /* end of media query */
 @media only screen and (min-width: 60rem) {
