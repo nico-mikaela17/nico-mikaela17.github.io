@@ -25,12 +25,18 @@ header {
     margin: 0;
     color: #100007;
     font-size: x-large;
-    }
+    position: absolute;
+    bottom:64rem;
+    padding-left: 8rem;
+}
     h2 {
     margin: 0; 
     font-weight: normal;
     font-size: large;
     color: #100007;
+    position: absolute;
+    bottom:62.5rem;
+    padding-left: 8rem;
     }
 }
 /*----------- NAVIGATION --------------*/
@@ -97,9 +103,6 @@ main {
         display: block;
         float: right;
         max-width: 1200px;
-    }
-    figure.hero {
-        margin: 0;
     }
     img {
         margin: 0;

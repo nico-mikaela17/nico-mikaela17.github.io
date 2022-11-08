@@ -47,10 +47,15 @@
     
 <!-- CONTENT HERE -->
     <main>
-        <figure class="hero">
-            <img src="images/heroimg.jpg" alt="restaurant" sizes="50vw" srcset="images/heroimg_450.jpg 450w, images/heroimg_600.jpg 600w, images/heroimg_750.jpg 750w, images/heroimg_900.jpg 900w, images/heroimg_1050.jpg 1050w, images/heroimg_1200.jpg 1200w"
-            >
-        </figure>
+        <picture class="hero"> 
+            <source media="(max-width: 450px)" srcset="images/heroimg_450.jpg">
+            <source media="(max-width: 600px)" srcset="images/heroimg_600.jpg">
+            <source media="(max-width: 750px)" srcset="images/heroimg_750.jpg">
+            <source media="(max-width: 900px)" srcset="images/heroimg_900.jpg">
+            <source media="(max-width: 1050px)" srcset="images/heroimg_1050.jpg">
+            <source media="(max-width: 2400px)" srcset="images/heroimg_1200.jpg">
+            <img src="images/heroimg.jpg" alt="restaurant">
+        </picture>
         <h2>Our Founder</h2>
         <picture class="myphoto" >
             <source media="(max-width: 600px)" srcset="images/founder_300.jpg">

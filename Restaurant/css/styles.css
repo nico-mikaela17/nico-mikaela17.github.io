@@ -339,12 +339,18 @@ header h1 {
   margin: 0;
   color: #100007;
   font-size: x-large;
+  position: absolute;
+  bottom: 64rem;
+  padding-left: 8rem;
 }
 header h2 {
   margin: 0;
   font-weight: normal;
   font-size: large;
   color: #100007;
+  position: absolute;
+  bottom: 62.5rem;
+  padding-left: 8rem;
 }
 
 /*----------- NAVIGATION --------------*/
@@ -412,9 +418,6 @@ main picture.myphoto {
   float: right;
   max-width: 1200px;
 }
-main figure.hero {
-  margin: 0;
-}
 main img {
   margin: 0;
   padding: 0;
@@ -474,6 +477,16 @@ footer {
   /*----------- MAIN --------------*/
   main .card {
     flex-basis: 48%;
+  }
+  main h2 {
+    margin-left: 2.5vw;
+  }
+  main P {
+    text-indent: 2.5vw;
+    margin-left: 1vw;
+  }
+  main picture.myphoto {
+    margin: 1rem;
   }
   /*----------- FOOTER --------------*/
 } /* end of media query */
