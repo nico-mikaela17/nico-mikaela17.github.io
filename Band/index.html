@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="Fill Me In">
+<meta name="author" content="Nicole Linnarz">
+
+<!-- This start file was build by Paul Cheney  -->
+<title>One Direction</title>
+
+<!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<!-- STYLE SHEETS -->
+<link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+<!-- HEADER HERE -->
+	<header class="clearfix">
+            <figure class="logo">
+                <img src="images/restaurantlogo.png" alt="logo" srcset="images/logo1.png 1x, images/logo2.png 2x, images/logo3.png 3x">
+            </figure>
+            <h1>One Direction</h1>
+    </header>
+    
+    
+<!-- NAVIGATION HERE -->
+    <nav class="navWrapper">
+        <button id="hamburgerB"><span>&#9776</span><span>X</span></button>
+        <ul id="navList">
+            <li class="active"><a href="#">Members</a></li>
+            <li><a href="#">Concerts</a></li>
+            <li><a href="#">Book Us</a></li>
+            <li><a href="#">Backstory</a></li>   
+
+        </ul>
+    </nav>
+    
+    
+<!-- CONTENT HERE -->
+    <main>
+        <picture class="hero"> 
+            <source media="(max-width: 450px)" srcset="images/heroimg_450.jpg">
+            <source media="(max-width: 600px)" srcset="images/heroimg_600.jpg">
+            <source media="(max-width: 750px)" srcset="images/heroimg_750.jpg">
+            <source media="(max-width: 900px)" srcset="images/heroimg_900.jpg">
+            <source media="(max-width: 1050px)" srcset="images/heroimg_1050.jpg">
+            <source media="(max-width: 2400px)" srcset="images/heroimg_1200.jpg">
+            <img src="images/heroimg.jpg" alt="restaurant">
+        </picture>
+        <h2>Our Founder</h2>
+        <picture class="myphoto" >
+            <source media="(max-width: 600px)" srcset="images/founder_300.jpg">
+            <source media="(max-width: 900px)" srcset="images/founder_450.jpg">
+            <source media="(max-width: 2400px)" srcset="images/founder_600.jpg">
+            <img src="images/founder.jpg" alt="founder">
+        </picture>
+        <p>hello
+            </p>
+    </main>
+    
+<!-- FOOTER HERE -->   
+    <footer>
+        &copy; 2022 &bull; Nicole Linnarz &bull; 123-555-6789
+    </footer>
+    <script src="js/scripts.js"> </script>
+</body>
+</html>
