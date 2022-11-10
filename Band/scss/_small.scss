@@ -16,15 +16,15 @@ body {
 header {
     padding:0;
     margin: 0;
-    background-color: #fff3e8;
-    figure.logo{
+    background-color: #c01526;
+        figure.logo{
         float: left;
         margin: 0 2vw ;
     }
     h1 {
     margin: 0;
-    color: #100007;
-    font-size: x-large;
+    color: #ffffff;
+    font-size: xxx-large;
     position: absolute;
     padding-left: 7rem;
     padding-top: 1.8rem;
@@ -91,22 +91,31 @@ button.open span:nth-child(2){
 }
 /*----------- MAIN --------------*/
 main {
-    h4, p{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    color: #1B2F33;
-    margin-left: 0.5vw;
+    div.bio {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0;
+        padding: 0;
+        margin-left: 2%;
     }
+      
+    div.member {
+        flex-basis: 23.4%;
+        margin: 0.5rem;
+        text-align: left;
+    }
+
     h2{
         color: #1B2F33;
         font-size: x-large;
         margin-left: 0.5vw;
     }
-    img{
-        max-height: 200px;
+    p{
+        font-size: 12px;
     }
-    figure{ width: 100%;}
+    img{
+        max-width: 50%;
+    }
     figure.harry img{
         float: right;
         clip-path: circle(50% at 50% 50%);

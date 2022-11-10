@@ -329,7 +329,7 @@ body {
 header {
   padding: 0;
   margin: 0;
-  background-color: #fff3e8;
+  background-color: #c01526;
 }
 header figure.logo {
   float: left;
@@ -337,8 +337,8 @@ header figure.logo {
 }
 header h1 {
   margin: 0;
-  color: #100007;
-  font-size: x-large;
+  color: #ffffff;
+  font-size: xxx-large;
   position: absolute;
   padding-left: 7rem;
   padding-top: 1.8rem;
@@ -403,23 +403,28 @@ nav button.open span:nth-child(2) {
 }
 
 /*----------- MAIN --------------*/
-main h4, main p {
+main div.bio {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: column;
-  color: #1B2F33;
-  margin-left: 0.5vw;
+  margin: 0;
+  padding: 0;
+  margin-left: 2%;
+}
+main div.member {
+  flex-basis: 23.4%;
+  margin: 0.5rem;
+  text-align: left;
 }
 main h2 {
   color: #1B2F33;
   font-size: x-large;
   margin-left: 0.5vw;
 }
-main img {
-  max-height: 200px;
+main p {
+  font-size: 12px;
 }
-main figure {
-  width: 100%;
+main img {
+  max-width: 50%;
 }
 main figure.harry img {
   float: right;
