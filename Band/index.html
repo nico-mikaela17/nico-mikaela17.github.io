@@ -38,22 +38,7 @@
     
 <!-- CONTENT HERE -->
     <main>
-       <!-- <picture class="hero"> 
-            <source media="(max-width: 450px)" srcset="images/heroimg_450.jpg">
-            <source media="(max-width: 600px)" srcset="images/heroimg_600.jpg">
-            <source media="(max-width: 750px)" srcset="images/heroimg_750.jpg">
-            <source media="(max-width: 900px)" srcset="images/heroimg_900.jpg">
-            <source media="(max-width: 1050px)" srcset="images/heroimg_1050.jpg">
-            <source media="(max-width: 2400px)" srcset="images/heroimg_1200.jpg">
-            <img src="images/heroimg.jpg" alt="restaurant">
-        </picture>-->
         <h2>Members</h2>
-        <!--<picture class="myphoto" >
-            <source media="(max-width: 600px)" srcset="images/founder_300.jpg">
-            <source media="(max-width: 900px)" srcset="images/founder_450.jpg">
-            <source media="(max-width: 2400px)" srcset="images/founder_600.jpg">
-            <img src="images/founder.jpg" alt="founder">
-        </picture>-->
         <div class="bio">
             <div class="member">
         <h4>Harry Styles</h4>
@@ -76,6 +61,11 @@
         <p>Payne returned to the show in 2010 for the seventh series, auditioning in front of Cowell, Cole, Walsh and guest judge Natalie Imbruglia. He sang the Michael Bublé version of "Cry Me a River", which earned him four yeses and a standing ovation from Cowell. Payne was considered the second favourite to win the competition following his solo audition. He failed to progress to the "Boys" category at judges' houses, but after a suggestion by guest judge Nicole Scherzinger, Payne, along with Harry Styles, Niall Horan, Louis Tomlinson, and Zayn Malik, were put together to form a five-piece boy band at Wembley Arena, during the bootcamp stage of the competition, thus qualifying for the "Groups" category.<a href="https://en.wikipedia.org/wiki/Liam_Payne#2008%E2%80%932015:_The_X-Factor_and_One_Direction"> Learn More </a></p> 
     </div>
     </div>
+    <section class="gallery">
+        <figure>
+        <img alt="A lazy image" class="lazy" data-src="images/concert1.jpg">
+        </figure>
+    </section>
     </main>
     
 <!-- FOOTER HERE -->   
@@ -83,5 +73,12 @@
         &copy; 2022 &bull; Nicole Linnarz &bull; 123-555-6789
     </footer>
     <script src="js/scripts.js"> </script>
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.8.3/dist/lazyload.min.js"></script>
+    <script>
+        var aLazyLoad = new LazyLoad({
+            elements_selector: ".lazy"
+  /* options here */
+});
+    </script>
 </body>
 </html>
