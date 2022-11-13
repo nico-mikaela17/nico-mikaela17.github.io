@@ -423,8 +423,8 @@ main h2 {
 main p {
   font-size: 12px;
 }
-main img {
-  max-width: 50%;
+main .member img {
+  max-width: 75%;
 }
 main figure.harry img {
   float: right;
@@ -453,6 +453,14 @@ main figure.liam img {
           clip-path: circle(100% at 100% 0);
   shape-outside: circle(100% at 100% 0);
   margin: 0.5rem;
+}
+main .gallery figure {
+  margin: 0;
+  padding: 0;
+}
+main .gallery img {
+  margin: 0;
+  max-width: 1020px;
 }
 
 /*----------- FOOTER --------------*/
