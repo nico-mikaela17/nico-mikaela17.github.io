@@ -11,7 +11,22 @@ header, nav, main, footer {
 
 
 /*----------- NAVIGATION --------------*/
-
+nav{
+    button{
+        display: none;
+    }
+    ul, ul.open{
+        border: none;
+        display: flex;
+        justify-content: flex-end;
+        margin-left: 2.5vw;
+    }
+    ul li{
+        border: none;
+        margin: 0;
+    }
+    ul li a{padding: .5rem 1rem;}
+}
 
 
 /*----------- MAIN --------------*/
