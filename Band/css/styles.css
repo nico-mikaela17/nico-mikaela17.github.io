@@ -338,7 +338,7 @@ header figure.logo {
 header h1 {
   margin: 0;
   color: #ffffff;
-  font-size: xxx-large;
+  font-size: x-large;
   position: absolute;
   padding-left: 7rem;
   padding-top: 1.8rem;
@@ -411,7 +411,7 @@ main div.bio {
   margin-left: 2%;
 }
 main div.member {
-  flex-basis: 23.4%;
+  flex-basis: 96%;
   margin: 0.5rem;
   text-align: left;
 }
@@ -424,7 +424,7 @@ main p {
   font-size: 12px;
 }
 main .member img {
-  max-width: 75%;
+  max-width: 400px;
 }
 main figure.harry img {
   float: right;
@@ -493,6 +493,11 @@ footer {
   }
   /*----------- NAVIGATION --------------*/
   /*----------- MAIN --------------*/
+  main div.member {
+    flex-basis: 46%;
+    margin: 0.5rem;
+    text-align: left;
+  }
   /*----------- FOOTER --------------*/
 } /* end of media query */
 @media only screen and (min-width: 60rem) {
@@ -502,6 +507,9 @@ footer {
   }
   /*----------- BODY --------------*/
   /*----------- HEADER --------------*/
+  h1 {
+    font-size: xxx-large;
+  }
   /*----------- NAVIGATION --------------*/
   nav button {
     display: none;

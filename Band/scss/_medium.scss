@@ -17,7 +17,13 @@ div.headerWrapper{
 
 
 /*----------- MAIN --------------*/
-
+main{
+    div.member {
+        flex-basis: 46%;
+        margin: 0.5rem;
+        text-align: left;
+    }
+}
 
 /*----------- FOOTER --------------*/
     
