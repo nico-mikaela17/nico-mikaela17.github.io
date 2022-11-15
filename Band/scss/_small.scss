@@ -35,11 +35,14 @@ header {
 nav {
     background-color: #9b1d20;
  ul {
-    display: none;
     list-style-type: none;
     padding: 0;
     margin: 0;
+    position: absolute;
+    right: 0;
     border-top: solid 1px #100007;
+    width: 100%;
+    display: none;
 }
 ul.open{
     display: block;
@@ -49,30 +52,33 @@ ul.open{
 }
  ul li a {
     display: block;
-    background-color: #fcaa67;
-    color: #100007;
+    background-color: #9b1d20;
+    color: #ffffff;
     border-left: 1px solid #9b1d20;
-    padding: .5rem 0;
+    padding: .9rem 2vw;
     text-decoration: none;
     font-size: .9rem;
-    text-align: center;
+    text-align: right;
 }
- ul li:first-child a {border-left: none;}
+ ul li:first-child a {border-left: none;margin-top: 2.5rem; }
 
  ul li a:hover {
-    background-color: #F9DBBD;
-    color: #1B2F33;
+    background-color: #ffffff;
+    color: #c01526;
 }
  ul li.active a {
-    background-color: #972D07;
-    color: #F9DBBD;
+    background-color: #ffffff;
+    color: #000000;
 }
  button{
+    position: absolute;
+    top: 0;
+    right: 0;
     background: transparent;
     border: none;
     font-size: 1.5rem;
-    padding: 0.5rem;
-    color: #F9DBBD;
+    padding: 0.5rem 2vw .5rem 1rem;
+    color: #ffffff;
 }
 button span:nth-child(1){
     display: block;
