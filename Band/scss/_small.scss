@@ -14,6 +14,9 @@ body {
 
 /*----------- HEADER --------------*/
 header {
+    display: grid;
+    grid-template-columns: 51px auto;
+    align-items: center;
     padding:0;
     margin: 0;
     background-color: #c01526;
@@ -33,14 +36,12 @@ header {
 }
 /*----------- NAVIGATION --------------*/
 nav {
-    background-color: #9b1d20;
- ul {
+    ul {
     list-style-type: none;
+    position: absolute;
     padding: 0;
     margin: 0;
-    position: absolute;
     right: 0;
-    border-top: solid 1px #100007;
     width: 100%;
     display: none;
 }
@@ -60,7 +61,7 @@ ul.open{
     font-size: .9rem;
     text-align: right;
 }
- ul li:first-child a {border-left: none;margin-top: 2.5rem; }
+ ul li:first-child a {border-left: none;}
 
  ul li a:hover {
     background-color: #ffffff;
@@ -169,14 +170,5 @@ footer {
 
 
 /*----- Clearfix: Force an Element not to collapse -----*/
-.navWrapper:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-.clearfix:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
+
 
