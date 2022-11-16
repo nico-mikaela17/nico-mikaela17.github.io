@@ -10,15 +10,18 @@ header, main, footer {
 /*----------- HEADER --------------*/
 header{
     display: grid;
-    grid-template-columns: 51px auto auto;
+    grid-template-columns: 51px auto ;
+    justify-content: space-between;
     h1{
         font-size: xxx-large;
         }
     nav{
-        justify-self: end;
+        margin-right: 1rem;
+
             button{
                 display: none;
             }
+
             ul, ul.open{
                 position: relative;
                 display: flex;
@@ -27,27 +30,30 @@ header{
             }
             ul li{
                 border: none;
-                margin: 0;
+                margin-left: 0.3rem;
             }
             ul li a{
                 color: rgb(255, 255, 255);
                 border-radius: 20px;
                 padding: .5rem 1rem;
-                margin-left: 0.2rem;
             }
-        }
-}
 
+        }
+    }
 /*----------- NAVIGATION --------------*/
 
 
 
 /*----------- MAIN --------------*/
 main{
+    div.bio{
+        margin: 0;
+    }
     div.member {
         flex-basis: 25%;
         margin: 0.5rem;
         text-align: left;
+        max-width: 20vw;
     }
 }
 
