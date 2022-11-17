@@ -1,0 +1,171 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+
+/*----------- BODY --------------*/
+body {
+    font-size: 14px;
+    font-family: Verdana, sans-serif;
+    p{
+        margin: 0;
+    }
+
+}
+
+
+/*----------- HEADER --------------*/
+header {
+    display: grid;
+    grid-template-columns: 150px auto;
+    align-items: center;
+
+    background-color: #B4E1FF;
+        figure.logo{
+        float: left;
+        margin: 0 2vw ;
+    }
+    h1 {
+    margin: 0;
+    color: #001C55;
+    font-size: x-large;
+    position: absolute;
+    padding-left: 10rem;
+    padding-top: 1.8rem;
+}
+h2{
+    display: none;
+    margin-top: 3rem;
+    color: #001C55;
+}
+}
+/*----------- NAVIGATION --------------*/
+nav {
+    ul {
+    list-style-type: none;
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    right: 0;
+    width: 100%;
+    display: none;
+}
+ul.open{
+    display: block;
+}
+ ul li {
+    border-bottom: solid 1px #100007;
+}
+ ul li a {
+    display: block;
+    background-color: #001C55;
+    color: #ffffff;
+    border-left: 1px solid #fff;
+    padding: .9rem 2vw;
+    text-decoration: none;
+    font-size: .9rem;
+    text-align: right;
+}
+ ul li:first-child a {border-left: none;}
+
+ ul li a:hover {
+    background-color: #DCC48E;
+    color: #001C55;
+}
+ ul li.active a {
+    background-color: #ffffff;
+    color: #000000;
+}
+ button{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: transparent;
+    border: none;
+    font-size: 1.5rem;
+    padding: 0.5rem 2vw .5rem 1rem;
+    color: #ffffff;
+}
+button span:nth-child(1){
+    display: block;
+}
+button span:nth-child(2){
+    display: none;
+}
+
+button.open span:nth-child(1){
+    display: none;
+}
+button.open span:nth-child(2){
+    display: block;
+}
+
+}
+/*----------- MAIN --------------*/
+main {
+    div.bio {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0;
+        padding: 0;
+    }
+      
+    div.member {
+        flex-basis: 100%;
+        padding: 0.5rem;
+        text-align: left;
+        
+    }
+
+    h2{
+        color: #1B2F33;
+        font-size: x-large;
+        margin-left: 0.5vw;
+    }
+    figure.harry img{
+        float: right;
+        clip-path: circle(50% at 50% 50%);
+        shape-outside: circle(50% at 50% 50%);
+    }
+    figure.niall img{
+        float: right;
+        clip-path: polygon(50% 0,100% 100%,50% 100%, 0 100%);
+        shape-outside: polygon(50% 0,100% 100%,50% 100%, 0 100%);
+    }
+    figure.louis img{
+        float: right;
+        clip-path: polygon(0 0, 100% 0, 100% 100%);
+        shape-outside: polygon(0 0, 100% 0, 100% 100%);
+    }
+    figure.liam img{
+        float: right;
+        clip-path: circle(100% at 100% 0);
+        shape-outside: circle(100% at 100% 0);
+    }
+    .gallery figure{
+        margin: 0;
+        padding: 0;
+    }
+    .gallery img{
+        margin: 0;
+        width: 100%;
+    }
+    }
+
+
+
+/*----------- FOOTER --------------*/
+footer {
+    background-color: #001C55;
+    color: #DCC48E;
+    padding: .5rem 2%;
+    text-align: center;
+}
+
+
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+
+
