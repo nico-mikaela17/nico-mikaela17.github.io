@@ -1,9 +1,7 @@
 header, main, footer {
         max-width: 64rem;
         margin:auto;
-        p{
-            margin: 0;
-        }
+        
 }
 
 /*----------- BODY --------------*/
@@ -55,14 +53,15 @@ main{
     div.member {
         flex-basis: 25%;
         text-align: left;
-        max-width: 17vw;
     }
     p{
-        max-width: 200px;
-        margin-right: 0;
+        margin: 0;
     }
     div.member img{
         max-width: 150px;
+    }
+    h4{
+        margin: 0;
     }
 }
 

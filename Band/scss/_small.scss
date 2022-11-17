@@ -107,13 +107,13 @@ main {
         flex-wrap: wrap;
         margin: 0;
         padding: 0;
-        max-width: 1200px;
     }
       
     div.member {
-        flex-basis: 96%;
-        margin-left: 0.5rem;
+        flex-basis: 100%;
+        padding: 0.5rem;
         text-align: left;
+        
     }
 
     h2{
@@ -125,25 +125,21 @@ main {
         float: right;
         clip-path: circle(50% at 50% 50%);
         shape-outside: circle(50% at 50% 50%);
-        margin-left: 0.5rem;
     }
     figure.niall img{
         float: right;
         clip-path: polygon(50% 0,100% 100%,50% 100%, 0 100%);
         shape-outside: polygon(50% 0,100% 100%,50% 100%, 0 100%);
-        margin: 0.5rem;
     }
     figure.louis img{
         float: right;
         clip-path: polygon(0 0, 100% 0, 100% 100%);
         shape-outside: polygon(0 0, 100% 0, 100% 100%);
-        margin: 0.5rem;
     }
     figure.liam img{
         float: right;
         clip-path: circle(100% at 100% 0);
         shape-outside: circle(100% at 100% 0);
-        margin: 0.5rem;
     }
     .gallery figure{
         margin: 0;
@@ -151,7 +147,7 @@ main {
     }
     .gallery img{
         margin: 0;
-        max-width: 1020px;
+        width: 100%;
     }
     }
 

@@ -416,11 +416,10 @@ main div.bio {
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
-  max-width: 1200px;
 }
 main div.member {
-  flex-basis: 96%;
-  margin-left: 0.5rem;
+  flex-basis: 100%;
+  padding: 0.5rem;
   text-align: left;
 }
 main h2 {
@@ -433,28 +432,24 @@ main figure.harry img {
   -webkit-clip-path: circle(50% at 50% 50%);
           clip-path: circle(50% at 50% 50%);
   shape-outside: circle(50% at 50% 50%);
-  margin-left: 0.5rem;
 }
 main figure.niall img {
   float: right;
   -webkit-clip-path: polygon(50% 0, 100% 100%, 50% 100%, 0 100%);
           clip-path: polygon(50% 0, 100% 100%, 50% 100%, 0 100%);
   shape-outside: polygon(50% 0, 100% 100%, 50% 100%, 0 100%);
-  margin: 0.5rem;
 }
 main figure.louis img {
   float: right;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%);
           clip-path: polygon(0 0, 100% 0, 100% 100%);
   shape-outside: polygon(0 0, 100% 0, 100% 100%);
-  margin: 0.5rem;
 }
 main figure.liam img {
   float: right;
   -webkit-clip-path: circle(100% at 100% 0);
           clip-path: circle(100% at 100% 0);
   shape-outside: circle(100% at 100% 0);
-  margin: 0.5rem;
 }
 main .gallery figure {
   margin: 0;
@@ -462,7 +457,7 @@ main .gallery figure {
 }
 main .gallery img {
   margin: 0;
-  max-width: 1020px;
+  width: 100%;
 }
 
 /*----------- FOOTER --------------*/
@@ -490,8 +485,7 @@ footer {
   }
   /*----------- MAIN --------------*/
   main div.member {
-    flex-basis: 46%;
-    margin-left: 0.5rem;
+    flex-basis: 50%;
     text-align: left;
   }
   /*----------- FOOTER --------------*/
@@ -500,9 +494,6 @@ footer {
   header, main, footer {
     max-width: 64rem;
     margin: auto;
-  }
-  header p, main p, footer p {
-    margin: 0;
   }
   /*----------- BODY --------------*/
   /*----------- HEADER --------------*/
@@ -543,14 +534,15 @@ footer {
   main div.member {
     flex-basis: 25%;
     text-align: left;
-    max-width: 17vw;
   }
   main p {
-    max-width: 200px;
-    margin-right: 0;
+    margin: 0;
   }
   main div.member img {
     max-width: 150px;
+  }
+  main h4 {
+    margin: 0;
   }
   /*----------- FOOTER --------------*/
   footer {
