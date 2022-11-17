@@ -321,8 +321,11 @@ html {
 
 /*----------- BODY --------------*/
 body {
-  font-size: 16px;
+  font-size: 14px;
   font-family: Verdana, sans-serif;
+}
+body p {
+  margin: 0;
 }
 
 /*----------- HEADER --------------*/
@@ -413,11 +416,11 @@ main div.bio {
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
-  margin-left: 2%;
+  max-width: 1200px;
 }
 main div.member {
   flex-basis: 96%;
-  margin: 0.5rem;
+  margin-left: 0.5rem;
   text-align: left;
 }
 main h2 {
@@ -425,18 +428,12 @@ main h2 {
   font-size: x-large;
   margin-left: 0.5vw;
 }
-main p {
-  font-size: 12px;
-}
-main .member img {
-  max-width: 400px;
-}
 main figure.harry img {
   float: right;
   -webkit-clip-path: circle(50% at 50% 50%);
           clip-path: circle(50% at 50% 50%);
   shape-outside: circle(50% at 50% 50%);
-  margin: 0.5rem;
+  margin-left: 0.5rem;
 }
 main figure.niall img {
   float: right;
@@ -478,6 +475,9 @@ footer {
 
 /*----- Clearfix: Force an Element not to collapse -----*/
 @media only screen and (min-width: 35rem) {
+  p {
+    margin: 0;
+  }
   /*----------- BODY --------------*/
   /*----------- HEADER --------------*/
   div.headerWrapper {
@@ -491,7 +491,7 @@ footer {
   /*----------- MAIN --------------*/
   main div.member {
     flex-basis: 46%;
-    margin: 0.5rem;
+    margin-left: 0.5rem;
     text-align: left;
   }
   /*----------- FOOTER --------------*/
@@ -500,6 +500,9 @@ footer {
   header, main, footer {
     max-width: 64rem;
     margin: auto;
+  }
+  header p, main p, footer p {
+    margin: 0;
   }
   /*----------- BODY --------------*/
   /*----------- HEADER --------------*/
@@ -539,9 +542,15 @@ footer {
   }
   main div.member {
     flex-basis: 25%;
-    margin: 0.5rem;
     text-align: left;
     max-width: 17vw;
+  }
+  main p {
+    max-width: 200px;
+    margin-right: 0;
+  }
+  main div.member img {
+    max-width: 150px;
   }
   /*----------- FOOTER --------------*/
   footer {

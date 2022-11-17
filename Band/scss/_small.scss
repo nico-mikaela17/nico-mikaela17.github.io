@@ -7,8 +7,12 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 
 /*----------- BODY --------------*/
 body {
-    font-size: 16px;
+    font-size: 14px;
     font-family: Verdana, sans-serif;
+    p{
+        margin: 0;
+    }
+
 }
 
 
@@ -103,12 +107,12 @@ main {
         flex-wrap: wrap;
         margin: 0;
         padding: 0;
-        margin-left: 2%;
+        max-width: 1200px;
     }
       
     div.member {
         flex-basis: 96%;
-        margin: 0.5rem;
+        margin-left: 0.5rem;
         text-align: left;
     }
 
@@ -117,17 +121,11 @@ main {
         font-size: x-large;
         margin-left: 0.5vw;
     }
-    p{
-        font-size: 12px;
-    }
-    .member img{
-        max-width: 400px;
-    }
     figure.harry img{
         float: right;
         clip-path: circle(50% at 50% 50%);
         shape-outside: circle(50% at 50% 50%);
-        margin: 0.5rem;
+        margin-left: 0.5rem;
     }
     figure.niall img{
         float: right;
