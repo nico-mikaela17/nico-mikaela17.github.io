@@ -124,33 +124,9 @@ main {
         font-size: x-large;
         margin-left: 0.5vw;
     }
-    figure.harry img{
-        float: right;
-        clip-path: circle(50% at 50% 50%);
-        shape-outside: circle(50% at 50% 50%);
-    }
-    figure.niall img{
-        float: right;
-        clip-path: polygon(50% 0,100% 100%,50% 100%, 0 100%);
-        shape-outside: polygon(50% 0,100% 100%,50% 100%, 0 100%);
-    }
-    figure.louis img{
-        float: right;
-        clip-path: polygon(0 0, 100% 0, 100% 100%);
-        shape-outside: polygon(0 0, 100% 0, 100% 100%);
-    }
-    figure.liam img{
-        float: right;
-        clip-path: circle(100% at 100% 0);
-        shape-outside: circle(100% at 100% 0);
-    }
-    .gallery figure{
-        margin: 0;
-        padding: 0;
-    }
-    .gallery img{
-        margin: 0;
-        width: 100%;
+
+    div.social{
+        background-color: black;
     }
     }
 
