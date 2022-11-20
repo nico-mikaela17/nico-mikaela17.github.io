@@ -7,166 +7,62 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 
 /*----------- BODY --------------*/
 body {
-    font-size: 14px;
+    font-size: 16px;
     font-family: Verdana, sans-serif;
 }
 
 
 /*----------- HEADER --------------*/
 header {
-    display: grid;
-    grid-template-columns: 150px auto ;
-    align-items: center;
+    padding: .5rem 2%;
+    background-color: #ddd;
+}
+header h1 {margin: 0;}
+header h2 {margin: 0; font-weight: normal;}
 
-    background-color: #B4E1FF;
-        figure.logo{
-        float: left;
-        margin: 0 2vw ;
-    }
-    h1 {
-    margin: 0;
-    color: #001C55;
-    font-size: x-large;
-    position: absolute;
-    padding-left: 10rem;
-    margin-top: 3rem;
-}
-h2{
-    display: none;
-    margin-top: 3rem;
-    color: #001C55;
-}
-}
 /*----------- NAVIGATION --------------*/
 nav {
-    ul {
+    background-color: #666;
+}
+nav ul {
     list-style-type: none;
-    position: absolute;
     padding: 0;
     margin: 0;
-    right: 0;
-    width: 100%;
-    display: none;
 }
-ul.open{
+nav ul li {
+    float: left;
+    width: 25%;
+}
+nav ul li a {
     display: block;
-}
- ul li {
-    border-bottom: solid 1px #100007;
-}
- ul li a {
-    display: block;
-    background-color: #001C55;
-    color: #ffffff;
-    border-left: 1px solid #fff;
-    padding: .9rem 2vw;
+    background-color: #444;
+    color: #eee;
+    border-left: 1px solid #777;
+    padding: .5rem 0;
     text-decoration: none;
     font-size: .9rem;
-    text-align: right;
+    text-align: center;
 }
- ul li:first-child a {border-left: none;}
+nav ul li:first-child a {border-left: none;}
 
- ul li a:hover {
-    background-color: #DCC48E;
-    color: #001C55;
+nav ul li a:hover {
+    background-color: #eee;
+    color: #333;
 }
- ul li.active a {
-    background-color: #ffffff;
-    color: #000000;
-}
- button{
-    position: absolute;
-    top: 0;
-    right: 0;
-    background: transparent;
-    border: none;
-    font-size: 1.5rem;
-    padding: 0.5rem 2vw .5rem 1rem;
-    color: #ffffff;
-}
-button span:nth-child(1){
-    display: block;
-}
-button span:nth-child(2){
-    display: none;
-}
-
-button.open span:nth-child(1){
-    display: none;
-}
-button.open span:nth-child(2){
-    display: block;
-}
-
+nav ul li.active a {
+    background-color: #000;
+    color: #fff;
 }
 /*----------- MAIN --------------*/
 main {
-    main {
-        padding: 0 2%;
-        min-height: 10rem;
-        h1{
-            color: #1B2F33;
-            font-size: larger;
-            margin-left: 0.5vw;
-        }
-        $cbr: 5px;
-        .card-deck{
-            display: flex;
-            flex-wrap: wrap;
-        }
-        .card{
-           padding: 0 $gutter;
-           @for $i from 1 through 12{
-            $w:($i / 12) * 100%;
-            .small-#{$i} {flex-basis: $w;}
-           }
-            section{
-                background-color:lighten(#1B2F33,10%);
-                color:lighten(#EAE2B7,20%);
-                padding: 1rem 0;
-                border-top-left-radius: $cbr - 1;
-                border-top-right-radius: $cbr - 1;
-            } //section
-            img{
-                padding: 1rem;
-                position: relative;
-            }//img
-            p{
-                padding: 1rem 2vw;
-            } //p
-            a{
-                display: block;
-                background-color: lighten(#1B2F33,10%);
-                color:lighten(#EAE2B7,20%);
-                padding: 1rem 0;
-                text-decoration: none;
-                border-radius: $cbr;
-            }//a
-            a:hover{
-                background-color: lighten(#1B2F33,20%);
-            }
-        }//card
-        .card:hover img{animation: bounce 2s 1;}
-            @keyframes bounce{
-                0%{bottom:0px; animation-timing-function: ease-out;}
-                25%{bottom:30px;animation-timing-function: ease-in;}
-                50%{bottom:0px; animation-timing-function: ease-out;}
-                75%{bottom:10px;animation-timing-function: ease-in;}
-                100%{bottom:0px}
-             } //card:hover
-    }
-
-    div.social{
-        background-color: black;
-    }
-    }
-
+    padding: 0 2%;
+    min-height: 10rem;
+}
 
 
 /*----------- FOOTER --------------*/
 footer {
-    background-color: #001C55;
-    color: #DCC48E;
+    background-color: #ddd;
     padding: .5rem 2%;
     text-align: center;
 }
@@ -175,8 +71,7 @@ footer {
 
 /*----- Clearfix: Force an Element not to collapse -----*/
 .clearfix:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-
+  content: "";
+  display: table;
+  clear: both;
+}
