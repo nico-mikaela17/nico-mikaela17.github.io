@@ -105,24 +105,59 @@ button.open span:nth-child(2){
 }
 /*----------- MAIN --------------*/
 main {
-    div.bio {
-        display: flex;
-        flex-wrap: wrap;
-        margin: 0;
-        padding: 0;
-    }
-      
-    div.member {
-        flex-basis: 100%;
-        padding: 0.5rem;
-        text-align: left;
-        
-    }
-
-    h2{
-        color: #1B2F33;
-        font-size: x-large;
-        margin-left: 0.5vw;
+    main {
+        padding: 0 2%;
+        min-height: 10rem;
+        h1{
+            color: #1B2F33;
+            font-size: larger;
+            margin-left: 0.5vw;
+        }
+        $cbr: 5px;
+        .card-deck{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .card{
+            flex-basis: 100%;
+            border: 1px solid #999;
+            border-radius: $cbr;
+            margin: 1rem 1%;
+            text-align: center;
+            section{
+                background-color:lighten(#1B2F33,10%);
+                color:lighten(#EAE2B7,20%);
+                padding: 1rem 0;
+                border-top-left-radius: $cbr - 1;
+                border-top-right-radius: $cbr - 1;
+            } //section
+            img{
+                padding: 1rem;
+                position: relative;
+            }//img
+            p{
+                padding: 1rem 2vw;
+            } //p
+            a{
+                display: block;
+                background-color: lighten(#1B2F33,10%);
+                color:lighten(#EAE2B7,20%);
+                padding: 1rem 0;
+                text-decoration: none;
+                border-radius: $cbr;
+            }//a
+            a:hover{
+                background-color: lighten(#1B2F33,20%);
+            }
+        }//card
+        .card:hover img{animation: bounce 2s 1;}
+            @keyframes bounce{
+                0%{bottom:0px; animation-timing-function: ease-out;}
+                25%{bottom:30px;animation-timing-function: ease-in;}
+                50%{bottom:0px; animation-timing-function: ease-out;}
+                75%{bottom:10px;animation-timing-function: ease-in;}
+                100%{bottom:0px}
+             } //card:hover
     }
 
     div.social{

@@ -414,21 +414,104 @@ nav button.open span:nth-child(2) {
 }
 
 /*----------- MAIN --------------*/
-main div.bio {
+main main {
+  padding: 0 2%;
+  min-height: 10rem;
+}
+main main h1 {
+  color: #1B2F33;
+  font-size: larger;
+  margin-left: 0.5vw;
+}
+main main .card-deck {
   display: flex;
   flex-wrap: wrap;
-  margin: 0;
-  padding: 0;
 }
-main div.member {
+main main .card {
   flex-basis: 100%;
-  padding: 0.5rem;
-  text-align: left;
+  border: 1px solid #999;
+  border-radius: 5px;
+  margin: 1rem 1%;
+  text-align: center;
 }
-main h2 {
-  color: #1B2F33;
-  font-size: x-large;
-  margin-left: 0.5vw;
+main main .card section {
+  background-color: #2d4e54;
+  color: white;
+  padding: 1rem 0;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+main main .card img {
+  padding: 1rem;
+  position: relative;
+}
+main main .card p {
+  padding: 1rem 2vw;
+}
+main main .card a {
+  display: block;
+  background-color: #2d4e54;
+  color: white;
+  padding: 1rem 0;
+  text-decoration: none;
+  border-radius: 5px;
+}
+main main .card a:hover {
+  background-color: #3e6c76;
+}
+main main .card:hover img {
+  -webkit-animation: bounce 2s 1;
+          animation: bounce 2s 1;
+}
+@-webkit-keyframes bounce {
+  0% {
+    bottom: 0px;
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  25% {
+    bottom: 30px;
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  50% {
+    bottom: 0px;
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  75% {
+    bottom: 10px;
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  100% {
+    bottom: 0px;
+  }
+}
+@keyframes bounce {
+  0% {
+    bottom: 0px;
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  25% {
+    bottom: 30px;
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  50% {
+    bottom: 0px;
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  75% {
+    bottom: 10px;
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  100% {
+    bottom: 0px;
+  }
 }
 main div.social {
   background-color: black;
