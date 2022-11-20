@@ -328,7 +328,7 @@ body {
 /*----------- HEADER --------------*/
 header {
   padding: 0.5rem 2%;
-  background-color: #ddd;
+  background-color: blue;
 }
 
 header h1 {
@@ -342,7 +342,7 @@ header h2 {
 
 /*----------- NAVIGATION --------------*/
 nav {
-  background-color: #666;
+  background-color: darkblue;
 }
 
 nav ul {
