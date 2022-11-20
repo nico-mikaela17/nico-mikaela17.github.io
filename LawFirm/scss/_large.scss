@@ -45,21 +45,13 @@ header{
 
 /*----------- MAIN --------------*/
 main{
-    div.bio{
-        margin: 0;
-    }
-    div.member {
-        flex-basis: 25%;
-        text-align: left;
-    }
-    p{
-        margin: 0;
-    }
-    div.member img{
-        max-width: 150px;
-    }
-    h4{
-        margin: 0;
+    main{
+        .card{
+        @for $i from 1 through 12{
+            $w:($i / 12) * 100%;
+            .large-#{$i} {flex-basis: $w;}
+           }
+        }
     }
 }
 

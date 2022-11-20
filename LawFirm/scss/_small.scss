@@ -9,17 +9,13 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 body {
     font-size: 14px;
     font-family: Verdana, sans-serif;
-    p{
-        margin: 0;
-    }
-
 }
 
 
 /*----------- HEADER --------------*/
 header {
     display: grid;
-    grid-template-columns: 150px auto;
+    grid-template-columns: 150px auto ;
     align-items: center;
 
     background-color: #B4E1FF;
@@ -33,7 +29,7 @@ header {
     font-size: x-large;
     position: absolute;
     padding-left: 10rem;
-    padding-top: 1.8rem;
+    margin-top: 3rem;
 }
 h2{
     display: none;
@@ -119,11 +115,11 @@ main {
             flex-wrap: wrap;
         }
         .card{
-            flex-basis: 50%;
-            border: 1px solid #999;
-            border-radius: $cbr;
-            margin: 1rem 1%;
-            text-align: center;
+           padding: 0 $gutter;
+           @for $i from 1 through 12{
+            $w:($i / 12) * 100%;
+            .small-#{$i} {flex-basis: $w;}
+           }
             section{
                 background-color:lighten(#1B2F33,10%);
                 color:lighten(#EAE2B7,20%);
@@ -178,5 +174,9 @@ footer {
 
 
 /*----- Clearfix: Force an Element not to collapse -----*/
-
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
 
