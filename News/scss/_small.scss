@@ -28,15 +28,7 @@ header {
         float: left;
         margin: 0 2vw ;
     }
-    h1 {
-    margin: 0;
-    color: #ffffff;
-    font-size: x-large;
-    position: absolute;
-    padding-left: 7rem;
-    padding-top: 1.8rem;
-
-}
+    
 }
 /*----------- NAVIGATION --------------*/
 nav {
@@ -102,26 +94,25 @@ button.open span:nth-child(2){
 }
 /*----------- MAIN --------------*/
 main {
-    div.bio {
+    div.gallery{
         display: flex;
         flex-wrap: wrap;
-        margin: 0;
-        padding: 0;
     }
-      
-    div.member {
-        flex-basis: 100%;
-        padding: 0.5rem;
-        text-align: left;
-        
+    div.gallery figure{
+        flex-basis: 46%;
     }
 
-    h2{
-        color: #1B2F33;
-        font-size: x-large;
-        margin-left: 0.5vw;
+    div.gallery figure img{
+        width: 100%;
+        margin: 1rem 2%;
+        padding: 2%;
     }
+    div.gallery figcaption{
+        margin: 0.1rem 1rem 0.3rem 1rem;
+        text-align: center;
     }
+} 
+    
 
 
 

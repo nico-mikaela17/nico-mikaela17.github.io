@@ -335,19 +335,11 @@ header {
   align-items: center;
   padding: 0;
   margin: 0;
-  background-color: #c01526;
+  background-color: #2f6cb7;
 }
 header figure.logo {
   float: left;
   margin: 0 2vw;
-}
-header h1 {
-  margin: 0;
-  color: #ffffff;
-  font-size: x-large;
-  position: absolute;
-  padding-left: 7rem;
-  padding-top: 1.8rem;
 }
 
 /*----------- NAVIGATION --------------*/
@@ -368,7 +360,7 @@ nav ul li {
 }
 nav ul li a {
   display: block;
-  background-color: #9b1d20;
+  background-color: #6290C8;
   color: #ffffff;
   border-left: 1px solid #9b1d20;
   padding: 0.9rem 2vw;
@@ -411,53 +403,21 @@ nav button.open span:nth-child(2) {
 }
 
 /*----------- MAIN --------------*/
-main div.bio {
+main div.gallery {
   display: flex;
   flex-wrap: wrap;
-  margin: 0;
-  padding: 0;
 }
-main div.member {
-  flex-basis: 100%;
-  padding: 0.5rem;
-  text-align: left;
+main div.gallery figure {
+  flex-basis: 46%;
 }
-main h2 {
-  color: #1B2F33;
-  font-size: x-large;
-  margin-left: 0.5vw;
-}
-main figure.harry img {
-  float: right;
-  -webkit-clip-path: circle(50% at 50% 50%);
-          clip-path: circle(50% at 50% 50%);
-  shape-outside: circle(50% at 50% 50%);
-}
-main figure.niall img {
-  float: right;
-  -webkit-clip-path: polygon(50% 0, 100% 100%, 50% 100%, 0 100%);
-          clip-path: polygon(50% 0, 100% 100%, 50% 100%, 0 100%);
-  shape-outside: polygon(50% 0, 100% 100%, 50% 100%, 0 100%);
-}
-main figure.louis img {
-  float: right;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%);
-          clip-path: polygon(0 0, 100% 0, 100% 100%);
-  shape-outside: polygon(0 0, 100% 0, 100% 100%);
-}
-main figure.liam img {
-  float: right;
-  -webkit-clip-path: circle(100% at 100% 0);
-          clip-path: circle(100% at 100% 0);
-  shape-outside: circle(100% at 100% 0);
-}
-main .gallery figure {
-  margin: 0;
-  padding: 0;
-}
-main .gallery img {
-  margin: 0;
+main div.gallery figure img {
   width: 100%;
+  margin: 1rem 2%;
+  padding: 2%;
+}
+main div.gallery figcaption {
+  margin: 0.1rem 1rem 0.3rem 1rem;
+  text-align: center;
 }
 
 /*----------- FOOTER --------------*/
@@ -480,8 +440,25 @@ footer {
     height: 240px;
   }
   /*----------- NAVIGATION --------------*/
-  nav ul {
-    width: 200px;
+  nav {
+    margin-right: 1rem;
+  }
+  nav button {
+    display: none;
+  }
+  nav ul, nav ul.open {
+    position: relative;
+    display: flex;
+    background-color: transparent;
+    width: auto;
+  }
+  nav ul li {
+    border: none;
+    margin-left: 0.3rem;
+  }
+  nav ul li a {
+    color: rgb(255, 255, 255);
+    padding: 0.5rem 1rem;
   }
   /*----------- MAIN --------------*/
   main div.member {
@@ -501,30 +478,6 @@ footer {
     display: grid;
     grid-template-columns: 51px auto;
     justify-content: space-between;
-  }
-  header h1 {
-    font-size: xxx-large;
-  }
-  header nav {
-    margin-right: 1rem;
-  }
-  header nav button {
-    display: none;
-  }
-  header nav ul, header nav ul.open {
-    position: relative;
-    display: flex;
-    background-color: transparent;
-    width: auto;
-  }
-  header nav ul li {
-    border: none;
-    margin-left: 0.3rem;
-  }
-  header nav ul li a {
-    color: rgb(255, 255, 255);
-    border-radius: 20px;
-    padding: 0.5rem 1rem;
   }
   /*----------- NAVIGATION --------------*/
   /*----------- MAIN --------------*/
