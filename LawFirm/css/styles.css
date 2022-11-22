@@ -392,6 +392,9 @@ nav ul li a:hover {
 nav ul li.active a {
   background-color: #8ab5f7;
 }
+nav #navList {
+  list-style-type: none;
+}
 
 /*----------- MAIN --------------*/
 div#mainWrapper {
@@ -500,7 +503,40 @@ footer {
     grid-row-start: 4;
   }
   /*----------- HEADER --------------*/
+  #headerWrapper {
+    border-bottom: 1px solid #84BCDA;
+  }
+  header {
+    grid-template-columns: 151px auto;
+  }
+  header div#phone {
+    display: block;
+    justify-self: end;
+  }
+  header div#phone a {
+    color: #05204A;
+    text-decoration: none;
+    font-weight: 100;
+    font-size: 1.5rem;
+  }
+  header div#phone a:hover {
+    color: #067BC2;
+  }
   /*----------- NAVIGATION --------------*/
+  div#hamburger, div#closex {
+    display: none;
+  }
+  nav {
+    height: auto;
+  }
+  nav ul {
+    display: flex;
+    justify-content: end;
+    border: none;
+  }
+  nav ul li {
+    border: none;
+  }
   /*----------- MAIN --------------*/
   main .medium-1 {
     flex-basis: 8.3333333333%;
@@ -540,6 +576,7 @@ footer {
   }
   main .jumbotron {
     margin: 0.5rem 1rem;
+    width: 100%;
   }
   /*----------- FOOTER --------------*/
 } /* end of media query */
@@ -550,15 +587,12 @@ footer {
   }
   /*----------- BODY --------------*/
   /*----------- HEADER --------------*/
-  header {
-    display: grid;
-    grid-template-columns: 51px auto;
-    justify-content: space-between;
-  }
-  header h1 {
-    font-size: xxx-large;
-  }
   /*----------- NAVIGATION --------------*/
+  nav ul li a {
+    padding: 0.2rem 1rem;
+    border-radius: 10px;
+    margin: 0.5rem 0;
+  }
   /*----------- MAIN --------------*/
   main .large-1 {
     flex-basis: 8.3333333333%;

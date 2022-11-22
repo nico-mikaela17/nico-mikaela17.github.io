@@ -68,6 +68,8 @@ nav {
     ul li.active a{
         background-color: lighten($darkBlue, 60%);
     }
+    #navList{list-style-type: none;
+    }
 }
 /*----------- MAIN --------------*/
 div#mainWrapper{grid-row-start: 2;}
