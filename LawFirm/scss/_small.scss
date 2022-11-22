@@ -7,23 +7,31 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 
 /*----------- BODY --------------*/
 body {
+    display: grid;
     font-size: 14px;
     font-family: Verdana, sans-serif;
-    p{
-        margin: 0;
-    }
-
 }
 
 
 /*----------- HEADER --------------*/
+div#headerWrapper{grid-row-start: 1;}
+div#hamburger a, div#closex a{
+    display: block;
+    padding: 0.8rem 2vw;
+    font-size: 1.5rem;
+    color: $darkBlue;
+    text-decoration: none;
+    text-align: right;
+}
+div#closex a {margin-right: 13vw;}
 header {
     display: grid;
-    grid-template-columns: 51px auto;
+    grid-template-columns: 151px auto 44px;
     align-items: center;
-    padding:0;
-    margin: 0;
     background-color: $lightBlue;
+    div#phone{
+        display: none;
+    }
     figure.logo{
         float: left;
         margin: 0 2vw;
@@ -33,78 +41,42 @@ header {
     color: $darkBlue;
     font-size: x-large;
     position: absolute;
-    padding-left: 7rem;
-    padding-top: 1.8rem;
-
+    padding-left: 10rem;
 }
 }
 /*----------- NAVIGATION --------------*/
+div#navWrapper{grid-row-start: 4;}
+
 nav {
-    ul {
-    list-style-type: none;
-    position: absolute;
-    padding: 0;
-    margin: 0;
-    right: 0;
-    width: 100%;
-    display: none;
-}
-ul.open{
-    display: block;
-}
- ul li {
-    border-bottom: solid 1px #ffffff;
-}
- ul li a {
-    display: block;
-    color: $darkBlue;
-    border: 1px solid rgb(255, 255, 255);
-    padding: .9rem 2vw;
-    text-decoration: none;
-    font-size: .9rem;
-    text-align: right;
-}
- ul li:first-child a {border-left: none;}
-
- ul li a:hover {
-    background-color: #ffffff;
-    color: $darkBlue;
-}
- ul li.active a {
-    background-color: $darkBlue;
-    color: $lightBlue;
-
-}
- button{
-    position: absolute;
-    top: 0;
-    right: 0;
-    background: transparent;
-    border: none;
-    font-size: 1.5rem;
-    padding: 0.5rem 2vw .5rem 1rem;
-    color: $darkBlue;
-}
-button span:nth-child(1){
-    display: block;
-}
-button span:nth-child(2){
-    display: none;
-}
-button.open span:nth-child(1){
-    display: none;
-}
-button.open span:nth-child(2){
-    display: block;
-}
-
+    height: 100vh;
+    ul{
+        border-bottom: 1px solid $lightBlue;
+    }
+    ul li{
+        border-top: 1px solid $lightBlue;
+    }
+    ul li a{
+        display: block;
+        color: $darkBlue;
+        padding: 0.9rem 2vw;
+        text-decoration: none;
+        text-align: right;
+    }
+    ul li a:hover{
+        color: $mediumBlue;
+    }
+    ul li.active a{
+        background-color: lighten($darkBlue, 60%);
+    }
 }
 /*----------- MAIN --------------*/
+div#mainWrapper{grid-row-start: 2;}
+
 main {
     .flexed{
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
+        justify-content: space-evenly;
     }
     .column{
         padding: 0 $gutter;
@@ -119,9 +91,9 @@ main {
     .jumbotron{
         background-color: $darkBlue;
         color: #D9DBF1;
+        margin: 0.5rem 0;
        p{
-        padding: 2rem 0;
-        width: 100%;
+        padding: 1rem 0;
         align-items: center;
         text-align: center;
     }
@@ -146,6 +118,8 @@ main {
 
 
 /*----------- FOOTER --------------*/
+div#footerWrapper{grid-row-start: 3;}
+
 footer {
     background-color: $lightBlue;
     color: $darkBlue;

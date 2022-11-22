@@ -321,21 +321,37 @@ html {
 
 /*----------- BODY --------------*/
 body {
+  display: grid;
   font-size: 14px;
   font-family: Verdana, sans-serif;
 }
-body p {
-  margin: 0;
-}
 
 /*----------- HEADER --------------*/
+div#headerWrapper {
+  grid-row-start: 1;
+}
+
+div#hamburger a, div#closex a {
+  display: block;
+  padding: 0.8rem 2vw;
+  font-size: 1.5rem;
+  color: #05204A;
+  text-decoration: none;
+  text-align: right;
+}
+
+div#closex a {
+  margin-right: 13vw;
+}
+
 header {
   display: grid;
-  grid-template-columns: 51px auto;
+  grid-template-columns: 151px auto 44px;
   align-items: center;
-  padding: 0;
-  margin: 0;
   background-color: #84BCDA;
+}
+header div#phone {
+  display: none;
 }
 header figure.logo {
   float: left;
@@ -346,74 +362,46 @@ header h1 {
   color: #05204A;
   font-size: x-large;
   position: absolute;
-  padding-left: 7rem;
-  padding-top: 1.8rem;
+  padding-left: 10rem;
 }
 
 /*----------- NAVIGATION --------------*/
-nav ul {
-  list-style-type: none;
-  position: absolute;
-  padding: 0;
-  margin: 0;
-  right: 0;
-  width: 100%;
-  display: none;
+div#navWrapper {
+  grid-row-start: 4;
 }
-nav ul.open {
-  display: block;
+
+nav {
+  height: 100vh;
+}
+nav ul {
+  border-bottom: 1px solid #84BCDA;
 }
 nav ul li {
-  border-bottom: solid 1px #ffffff;
+  border-top: 1px solid #84BCDA;
 }
 nav ul li a {
   display: block;
   color: #05204A;
-  border: 1px solid rgb(255, 255, 255);
   padding: 0.9rem 2vw;
   text-decoration: none;
-  font-size: 0.9rem;
   text-align: right;
 }
-nav ul li:first-child a {
-  border-left: none;
-}
 nav ul li a:hover {
-  background-color: #ffffff;
-  color: #05204A;
+  color: #067BC2;
 }
 nav ul li.active a {
-  background-color: #05204A;
-  color: #84BCDA;
-}
-nav button {
-  position: absolute;
-  top: 0;
-  right: 0;
-  background: transparent;
-  border: none;
-  font-size: 1.5rem;
-  padding: 0.5rem 2vw 0.5rem 1rem;
-  color: #05204A;
-}
-nav button span:nth-child(1) {
-  display: block;
-}
-nav button span:nth-child(2) {
-  display: none;
-}
-nav button.open span:nth-child(1) {
-  display: none;
-}
-nav button.open span:nth-child(2) {
-  display: block;
+  background-color: #8ab5f7;
 }
 
 /*----------- MAIN --------------*/
+div#mainWrapper {
+  grid-row-start: 2;
+}
+
 main .flexed {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 main .column {
   padding: 0 2vw;
@@ -460,10 +448,10 @@ main img {
 main .jumbotron {
   background-color: #05204A;
   color: #D9DBF1;
+  margin: 0.5rem 0;
 }
 main .jumbotron p {
-  padding: 2rem 0;
-  width: 100%;
+  padding: 1rem 0;
   align-items: center;
   text-align: center;
 }
@@ -485,6 +473,10 @@ main .social a:hover {
 }
 
 /*----------- FOOTER --------------*/
+div#footerWrapper {
+  grid-row-start: 3;
+}
+
 footer {
   background-color: #84BCDA;
   color: #05204A;
@@ -494,38 +486,21 @@ footer {
 
 /*----- Clearfix: Force an Element not to collapse -----*/
 @media only screen and (min-width: 35rem) {
-  p {
-    margin: 0;
-  }
   /*----------- BODY --------------*/
+  div#headerWrapper {
+    grid-row-start: 1;
+  }
+  div#navWrapper {
+    grid-row-start: 2;
+  }
+  div#mainWrapper {
+    grid-row-start: 3;
+  }
+  div#footerWrapper {
+    grid-row-start: 4;
+  }
   /*----------- HEADER --------------*/
-  div.headerWrapper {
-    background-image: url(../images/header-medium.jpg);
-    height: 240px;
-  }
   /*----------- NAVIGATION --------------*/
-  nav {
-    margin-right: 1rem;
-    background-color: #067BC2;
-  }
-  nav button {
-    display: none;
-  }
-  nav ul, nav ul.open {
-    position: relative;
-    display: flex;
-    justify-content: flex-end;
-    background-color: transparent;
-    width: auto;
-  }
-  nav ul li {
-    border: none;
-    margin-left: 0.3rem;
-  }
-  nav ul li a {
-    color: rgb(255, 255, 255);
-    padding: 0.5rem 1rem;
-  }
   /*----------- MAIN --------------*/
   main .medium-1 {
     flex-basis: 8.3333333333%;
@@ -562,6 +537,9 @@ footer {
   }
   main .medium-12 {
     flex-basis: 100%;
+  }
+  main .jumbotron {
+    margin: 0.5rem 1rem;
   }
   /*----------- FOOTER --------------*/
 } /* end of media query */
