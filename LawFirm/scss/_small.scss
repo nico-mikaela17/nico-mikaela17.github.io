@@ -23,7 +23,7 @@ header {
     align-items: center;
     padding:0;
     margin: 0;
-    background-color: #84BCDA;
+    background-color: $lightBlue;
     figure.logo{
         float: left;
         margin: 0 2vw ;
@@ -57,9 +57,9 @@ ul.open{
 }
  ul li a {
     display: block;
-    background-color: #6290C8;
+    background-color: #05204A;
     color: #ffffff;
-    border-left: 1px solid #9b1d20;
+    border-left: 1px solid $darkBlue;
     padding: .9rem 2vw;
     text-decoration: none;
     font-size: .9rem;
@@ -68,12 +68,12 @@ ul.open{
  ul li:first-child a {border-left: none;}
 
  ul li a:hover {
-    background-color: #ffffff;
-    color: #c01526;
+    background-color: red;
+    color: #ffffff;
 }
  ul li.active a {
-    background-color: #ffffff;
-    color: #000000;
+    background-color: $darkBlue;
+    color: $lightBlue;
 }
  button{
     position: absolute;
@@ -102,26 +102,18 @@ button.open span:nth-child(2){
 }
 /*----------- MAIN --------------*/
 main {
-    div.bio {
+    .flexed{
         display: flex;
         flex-wrap: wrap;
-        margin: 0;
-        padding: 0;
     }
-      
-    div.member {
-        flex-basis: 100%;
-        padding: 0.5rem;
-        text-align: left;
-        
+    .column{
+        padding: 0 $gutter;
     }
-
-    h2{
-        color: #1B2F33;
-        font-size: x-large;
-        margin-left: 0.5vw;
+    @for $i from 1 through 12 {
+        $w: ($i / 12) * 100%;
+        .small-#{$i} {flex-basis: $w;}
     }
-    }
+}
 
 
 

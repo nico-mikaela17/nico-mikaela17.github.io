@@ -411,21 +411,12 @@ nav button.open span:nth-child(2) {
 }
 
 /*----------- MAIN --------------*/
-main div.bio {
+main .flexed {
   display: flex;
   flex-wrap: wrap;
-  margin: 0;
+}
+main .column {
   padding: 0;
-}
-main div.member {
-  flex-basis: 100%;
-  padding: 0.5rem;
-  text-align: left;
-}
-main h2 {
-  color: #1B2F33;
-  font-size: x-large;
-  margin-left: 0.5vw;
 }
 
 /*----------- FOOTER --------------*/
