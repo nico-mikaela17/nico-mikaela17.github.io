@@ -368,9 +368,8 @@ nav ul li {
 }
 nav ul li a {
   display: block;
-  background-color: #D9DBF1;
   color: #05204A;
-  border-left: 1px solid rgb(255, 255, 255);
+  border: 1px solid rgb(255, 255, 255);
   padding: 0.9rem 2vw;
   text-decoration: none;
   font-size: 0.9rem;
@@ -414,6 +413,7 @@ nav button.open span:nth-child(2) {
 main .flexed {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 main .column {
   padding: 0 2vw;
@@ -457,6 +457,32 @@ main .small-12 {
 main img {
   width: 100%;
 }
+main .jumbotron {
+  background-color: #05204A;
+  color: #D9DBF1;
+}
+main .jumbotron p {
+  padding: 2rem 0;
+  width: 100%;
+  align-items: center;
+  text-align: center;
+}
+main .social {
+  display: flex;
+  font-size: 2rem;
+  padding: 1rem;
+}
+main .social .social-link {
+  padding: 1rem;
+}
+main .social a {
+  color: #067BC2;
+  display: block;
+  padding: 1rem 0;
+}
+main .social a:hover {
+  color: #84BCDA;
+}
 
 /*----------- FOOTER --------------*/
 footer {
@@ -478,8 +504,27 @@ footer {
     height: 240px;
   }
   /*----------- NAVIGATION --------------*/
-  nav ul {
-    width: 200px;
+  nav {
+    margin-right: 1rem;
+    background-color: #067BC2;
+  }
+  nav button {
+    display: none;
+  }
+  nav ul, nav ul.open {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    background-color: transparent;
+    width: auto;
+  }
+  nav ul li {
+    border: none;
+    margin-left: 0.3rem;
+  }
+  nav ul li a {
+    color: rgb(255, 255, 255);
+    padding: 0.5rem 1rem;
   }
   /*----------- MAIN --------------*/
   main .medium-1 {
@@ -535,27 +580,6 @@ footer {
   header h1 {
     font-size: xxx-large;
   }
-  header nav {
-    margin-right: 1rem;
-  }
-  header nav button {
-    display: none;
-  }
-  header nav ul, header nav ul.open {
-    position: relative;
-    display: flex;
-    background-color: transparent;
-    width: auto;
-  }
-  header nav ul li {
-    border: none;
-    margin-left: 0.3rem;
-  }
-  header nav ul li a {
-    color: rgb(255, 255, 255);
-    border-radius: 20px;
-    padding: 0.5rem 1rem;
-  }
   /*----------- NAVIGATION --------------*/
   /*----------- MAIN --------------*/
   main .large-1 {
@@ -595,7 +619,4 @@ footer {
     flex-basis: 100%;
   }
   /*----------- FOOTER --------------*/
-  footer {
-    margin-top: 7rem;
-  }
 } /* end of media query */

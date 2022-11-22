@@ -16,9 +16,31 @@ div.headerWrapper{
 
 
 /*----------- NAVIGATION --------------*/
-nav ul{
-    width: 200px;
-}
+nav{
+    margin-right: 1rem;
+    background-color: $mediumBlue;
+
+        button{
+            display: none;
+        }
+
+        ul, ul.open{
+            position: relative;
+            display: flex;
+            justify-content: flex-end;
+            background-color: transparent;
+            width: auto;
+        }
+        ul li{
+            border: none;
+            margin-left: 0.3rem;
+        }
+        ul li a{
+            color: rgb(255, 255, 255);
+            padding: .5rem 1rem;
+        }
+
+    }
 
 /*----------- MAIN --------------*/
 main{

@@ -57,9 +57,8 @@ ul.open{
 }
  ul li a {
     display: block;
-    background-color: #D9DBF1;
     color: $darkBlue;
-    border-left: 1px solid rgb(255, 255, 255);
+    border: 1px solid rgb(255, 255, 255);
     padding: .9rem 2vw;
     text-decoration: none;
     font-size: .9rem;
@@ -92,7 +91,6 @@ button span:nth-child(1){
 button span:nth-child(2){
     display: none;
 }
-
 button.open span:nth-child(1){
     display: none;
 }
@@ -106,6 +104,7 @@ main {
     .flexed{
         display: flex;
         flex-wrap: wrap;
+        justify-content: center;
     }
     .column{
         padding: 0 $gutter;
@@ -117,8 +116,33 @@ main {
     img{
         width: 100%;
     }
+    .jumbotron{
+        background-color: $darkBlue;
+        color: #D9DBF1;
+       p{
+        padding: 2rem 0;
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
 }
-
+    .social{
+        display: flex;
+        font-size: 2rem;
+        padding: 1rem;
+        .social-link{
+            padding: 1rem;
+        }
+        a{
+            color: $mediumBlue;
+            display: block;
+            padding: 1rem 0;
+        }
+        a:hover{
+            color: $lightBlue;
+        }
+    }
+}
 
 
 /*----------- FOOTER --------------*/

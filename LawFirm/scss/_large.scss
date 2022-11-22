@@ -16,30 +16,7 @@ header{
     h1{
         font-size: xxx-large;
         }
-    nav{
-        margin-right: 1rem;
-
-            button{
-                display: none;
-            }
-
-            ul, ul.open{
-                position: relative;
-                display: flex;
-                background-color: transparent;
-                width: auto;
-            }
-            ul li{
-                border: none;
-                margin-left: 0.3rem;
-            }
-            ul li a{
-                color: rgb(255, 255, 255);
-                border-radius: 20px;
-                padding: .5rem 1rem;
-            }
-
-        }
+    
     }
 /*----------- NAVIGATION --------------*/
 
@@ -54,6 +31,3 @@ main{
 }
 
 /*----------- FOOTER --------------*/
-footer{
-    margin-top: 7rem ;
-}
