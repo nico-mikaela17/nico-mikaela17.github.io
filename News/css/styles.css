@@ -335,7 +335,7 @@ div#hamburger a, div#closex a {
   display: block;
   padding: 0.8rem 2vw;
   font-size: 1.5rem;
-  color: #05204A;
+  color: #244B6A;
   text-decoration: none;
   text-align: right;
 }
@@ -348,7 +348,7 @@ header {
   display: grid;
   grid-template-columns: 151px auto 44px;
   align-items: center;
-  background-color: #84BCDA;
+  background-color: #D2D7DA;
 }
 header div#phone {
   display: none;
@@ -356,13 +356,6 @@ header div#phone {
 header figure.logo {
   float: left;
   margin: 0 2vw;
-}
-header h1 {
-  margin: 0;
-  color: #05204A;
-  font-size: x-large;
-  position: absolute;
-  padding-left: 10rem;
 }
 
 /*----------- NAVIGATION --------------*/
@@ -374,23 +367,23 @@ nav {
   height: 100vh;
 }
 nav ul {
-  border-bottom: 1px solid #84BCDA;
+  border-bottom: 1px solid #D2D7DA;
 }
 nav ul li {
-  border-top: 1px solid #84BCDA;
+  border-top: 1px solid #D2D7DA;
 }
 nav ul li a {
   display: block;
-  color: #05204A;
+  color: #244B6A;
   padding: 0.9rem 2vw;
   text-decoration: none;
   text-align: right;
 }
 nav ul li a:hover {
-  color: #067BC2;
+  color: #30638E;
 }
 nav ul li.active a {
-  background-color: #8ab5f7;
+  background-color: #d1e2ef;
 }
 nav #navList {
   list-style-type: none;
@@ -415,7 +408,7 @@ main .lawyer {
 main .lawyer section {
   text-align: center;
   height: 25px;
-  background-color: #011d2e;
+  background-color: #09131c;
   color: #fff;
   padding-top: 0.5rem;
   padding-bottom: 1rem;
@@ -428,12 +421,12 @@ main .lawyer a {
   text-decoration: none;
   text-align: center;
   background-color: #D4C473;
-  color: #05204A;
+  color: #244B6A;
 }
 main .accidents {
   padding: 0;
   margin: 2rem 0;
-  background-color: #e6f1f7;
+  background-color: white;
 }
 main .accidents h2, main .accidents p {
   padding: 0 0.5rem;
@@ -444,7 +437,7 @@ main .accidents a {
   text-decoration: none;
   text-align: center;
   background-color: #D4C473;
-  color: #05204A;
+  color: #244B6A;
 }
 main .faq a {
   display: block;
@@ -454,7 +447,7 @@ main .faq a {
   text-decoration: none;
   text-align: center;
   background-color: #D4C473;
-  color: #05204A;
+  color: #244B6A;
 }
 main .small-1 {
   flex-basis: 8.3333333333%;
@@ -496,7 +489,7 @@ main img {
   width: 100%;
 }
 main .jumbotron {
-  background-color: #05204A;
+  background-color: #244B6A;
   color: #D9DBF1;
   margin: 0.5rem 0;
 }
@@ -515,12 +508,12 @@ main .social .social-link {
   padding: 1rem;
 }
 main .social a {
-  color: #067BC2;
+  color: #30638E;
   display: block;
   padding: 1rem 0;
 }
 main .social a:hover {
-  color: #84BCDA;
+  color: #D2D7DA;
 }
 
 /*----------- FOOTER --------------*/
@@ -529,8 +522,8 @@ div#footerWrapper {
 }
 
 footer {
-  background-color: #84BCDA;
-  color: #05204A;
+  background-color: #D2D7DA;
+  color: #244B6A;
   padding: 0.5rem 2%;
   text-align: center;
 }
@@ -552,7 +545,7 @@ footer {
   }
   /*----------- HEADER --------------*/
   #headerWrapper {
-    border-bottom: 1px solid #84BCDA;
+    border-bottom: 1px solid #D2D7DA;
   }
   header {
     grid-template-columns: 151px auto;
@@ -562,13 +555,13 @@ footer {
     justify-self: end;
   }
   header div#phone a {
-    color: #05204A;
+    color: #244B6A;
     text-decoration: none;
     font-weight: 100;
     font-size: 1.5rem;
   }
   header div#phone a:hover {
-    color: #067BC2;
+    color: #30638E;
   }
   /*----------- NAVIGATION --------------*/
   div#hamburger, div#closex {
