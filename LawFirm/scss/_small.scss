@@ -23,10 +23,10 @@ header {
     align-items: center;
     padding:0;
     margin: 0;
-    background-color: $lightBlue;
+    background-color: $darkBlue;
     figure.logo{
         float: left;
-        margin: 0 2vw ;
+        margin: 0 2vw;
     }
     h1 {
     margin: 0;
@@ -57,9 +57,9 @@ ul.open{
 }
  ul li a {
     display: block;
-    background-color: #05204A;
+    background-color: red;
     color: #ffffff;
-    border-left: 1px solid $darkBlue;
+    border-left: 1px solid red;
     padding: .9rem 2vw;
     text-decoration: none;
     font-size: .9rem;
@@ -68,12 +68,14 @@ ul.open{
  ul li:first-child a {border-left: none;}
 
  ul li a:hover {
-    background-color: red;
+    background-color: $mediumBlue;
+
     color: #ffffff;
 }
  ul li.active a {
     background-color: $darkBlue;
     color: $lightBlue;
+
 }
  button{
     position: absolute;
