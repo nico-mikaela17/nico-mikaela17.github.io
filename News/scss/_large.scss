@@ -1,0 +1,71 @@
+header, main, footer {
+        max-width: 64rem;
+        margin:auto;
+        
+}
+
+/*----------- BODY --------------*/
+
+
+
+/*----------- HEADER --------------*/
+header{
+    display: grid;
+    grid-template-columns: 51px auto ;
+    justify-content: space-between;
+    h1{
+        font-size: xxx-large;
+        }
+    nav{
+        margin-right: 1rem;
+
+            button{
+                display: none;
+            }
+
+            ul, ul.open{
+                position: relative;
+                display: flex;
+                background-color: transparent;
+                width: auto;
+            }
+            ul li{
+                border: none;
+                margin-left: 0.3rem;
+            }
+            ul li a{
+                color: rgb(255, 255, 255);
+                border-radius: 20px;
+                padding: .5rem 1rem;
+            }
+
+        }
+    }
+/*----------- NAVIGATION --------------*/
+
+
+
+/*----------- MAIN --------------*/
+main{
+    div.bio{
+        margin: 0;
+    }
+    div.member {
+        flex-basis: 25%;
+        text-align: left;
+    }
+    p{
+        margin: 0;
+    }
+    div.member img{
+        max-width: 150px;
+    }
+    h4{
+        margin: 0;
+    }
+}
+
+/*----------- FOOTER --------------*/
+footer{
+    margin-top: 7rem ;
+}
