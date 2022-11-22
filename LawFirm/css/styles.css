@@ -341,7 +341,7 @@ div#hamburger a, div#closex a {
 }
 
 div#closex a {
-  margin-right: 13vw;
+  margin-right: 10vw;
 }
 
 header {
@@ -409,6 +409,53 @@ main .flexed {
 main .column {
   padding: 0 2vw;
 }
+main .lawyer {
+  padding-top: 2rem;
+}
+main .lawyer section {
+  text-align: center;
+  height: 25px;
+  background-color: #011d2e;
+  color: #fff;
+  padding-top: 0.5rem;
+  padding-bottom: 1rem;
+}
+main .lawyer a {
+  display: block;
+  padding: 0.5rem 0;
+  margin: 1rem;
+  border-radius: 6px;
+  text-decoration: none;
+  text-align: center;
+  background-color: #D4C473;
+  color: #05204A;
+}
+main .accidents {
+  padding: 0;
+  margin: 2rem 0;
+  background-color: #e6f1f7;
+}
+main .accidents h2, main .accidents p {
+  padding: 0 0.5rem;
+}
+main .accidents a {
+  display: block;
+  padding: 0.5rem 0;
+  text-decoration: none;
+  text-align: center;
+  background-color: #D4C473;
+  color: #05204A;
+}
+main .faq a {
+  display: block;
+  padding: 0.5rem 0;
+  margin: 1rem;
+  border-radius: 6px;
+  text-decoration: none;
+  text-align: center;
+  background-color: #D4C473;
+  color: #05204A;
+}
 main .small-1 {
   flex-basis: 8.3333333333%;
 }
@@ -457,6 +504,7 @@ main .jumbotron p {
   padding: 1rem 0;
   align-items: center;
   text-align: center;
+  font-size: large;
 }
 main .social {
   display: flex;
@@ -575,8 +623,17 @@ footer {
     flex-basis: 100%;
   }
   main .jumbotron {
-    margin: 0.5rem 1rem;
-    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 2vw;
+  }
+  main .lawyer section {
+    display: block;
+    padding-bottom: 1rem;
+  }
+  main .accidentS {
+    padding: 0.5rem;
   }
   /*----------- FOOTER --------------*/
 } /* end of media query */
@@ -629,6 +686,9 @@ footer {
   }
   main .large-12 {
     flex-basis: 100%;
+  }
+  main .jumbotron {
+    margin: 0 0.5rem;
   }
   /*----------- FOOTER --------------*/
 } /* end of media query */

@@ -23,7 +23,7 @@ div#hamburger a, div#closex a{
     text-decoration: none;
     text-align: right;
 }
-div#closex a {margin-right: 13vw;}
+div#closex a {margin-right: 10vw;}
 header {
     display: grid;
     grid-template-columns: 151px auto 44px;
@@ -83,6 +83,55 @@ main {
     .column{
         padding: 0 $gutter;
     }
+    .lawyer{
+        padding-top: 2rem;
+        section{
+            text-align: center;
+            height: 25px;
+            background-color: darken($mediumBlue, 30%);
+            color: #fff;
+            padding-top: 0.5rem;
+            padding-bottom: 1rem;
+        }
+        a{
+            display: block;
+            padding: .5rem 0;
+            margin:1rem;
+            border-radius: 6px;
+            text-decoration: none;
+            text-align: center;
+            background-color: #D4C473;
+            color: $darkBlue;
+        }
+    }
+    .accidents{
+        padding: 0;
+        margin: 2rem 0;
+        background-color: lighten($lightBlue, 25%);
+        h2,p{
+        padding:0 0.5rem;
+        }
+        a{
+            display: block;
+            padding: .5rem 0;
+            text-decoration: none;
+            text-align: center;
+            background-color: #D4C473;
+            color: $darkBlue;
+        }
+    }
+    .faq{
+        a{
+            display: block;
+            padding: .5rem 0;
+            margin:1rem;
+            border-radius: 6px;
+            text-decoration: none;
+            text-align: center;
+            background-color: #D4C473;
+            color: $darkBlue;
+        }
+    }
     @for $i from 1 through 12 {
         $w: ($i / 12) * 100%;
         .small-#{$i} {flex-basis: $w;}
@@ -98,6 +147,7 @@ main {
         padding: 1rem 0;
         align-items: center;
         text-align: center;
+        font-size: large;
     }
 }
     .social{

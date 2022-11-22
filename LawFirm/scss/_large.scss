@@ -24,6 +24,9 @@ main{
         $w: ($i / 12) * 100%;
         .large-#{$i} {flex-basis: $w;}
     }
+    .jumbotron{
+        margin: 0 0.5rem;
+    }
 }
 
 /*----------- FOOTER --------------*/
