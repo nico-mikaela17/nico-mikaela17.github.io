@@ -335,7 +335,7 @@ header {
   align-items: center;
   padding: 0;
   margin: 0;
-  background-color: #c01526;
+  background-color: #84BCDA;
 }
 header figure.logo {
   float: left;
@@ -368,7 +368,7 @@ nav ul li {
 }
 nav ul li a {
   display: block;
-  background-color: #9b1d20;
+  background-color: #6290C8;
   color: #ffffff;
   border-left: 1px solid #9b1d20;
   padding: 0.9rem 2vw;
@@ -426,38 +426,6 @@ main h2 {
   color: #1B2F33;
   font-size: x-large;
   margin-left: 0.5vw;
-}
-main figure.harry img {
-  float: right;
-  -webkit-clip-path: circle(50% at 50% 50%);
-          clip-path: circle(50% at 50% 50%);
-  shape-outside: circle(50% at 50% 50%);
-}
-main figure.niall img {
-  float: right;
-  -webkit-clip-path: polygon(50% 0, 100% 100%, 50% 100%, 0 100%);
-          clip-path: polygon(50% 0, 100% 100%, 50% 100%, 0 100%);
-  shape-outside: polygon(50% 0, 100% 100%, 50% 100%, 0 100%);
-}
-main figure.louis img {
-  float: right;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%);
-          clip-path: polygon(0 0, 100% 0, 100% 100%);
-  shape-outside: polygon(0 0, 100% 0, 100% 100%);
-}
-main figure.liam img {
-  float: right;
-  -webkit-clip-path: circle(100% at 100% 0);
-          clip-path: circle(100% at 100% 0);
-  shape-outside: circle(100% at 100% 0);
-}
-main .gallery figure {
-  margin: 0;
-  padding: 0;
-}
-main .gallery img {
-  margin: 0;
-  width: 100%;
 }
 
 /*----------- FOOTER --------------*/
