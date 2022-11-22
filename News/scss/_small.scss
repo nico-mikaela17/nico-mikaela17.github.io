@@ -7,119 +7,174 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 
 /*----------- BODY --------------*/
 body {
+    display: grid;
     font-size: 14px;
     font-family: Verdana, sans-serif;
-    p{
-        margin: 0;
-    }
-
 }
 
 
 /*----------- HEADER --------------*/
-header {
-    display: grid;
-    grid-template-columns: 51px auto;
-    align-items: center;
-    padding:0;
-    margin: 0;
-    background-color: #2f6cb7;
-    figure.logo{
-        float: left;
-        margin: 0 2vw ;
-    }
-    
-}
-/*----------- NAVIGATION --------------*/
-nav {
-    ul {
-    list-style-type: none;
-    position: absolute;
-    padding: 0;
-    margin: 0;
-    right: 0;
-    width: 100%;
-    display: none;
-}
-ul.open{
+div#headerWrapper{grid-row-start: 1;}
+div#hamburger a, div#closex a{
     display: block;
-}
- ul li {
-    border-bottom: solid 1px #100007;
-}
- ul li a {
-    display: block;
-    background-color: #6290C8;
-    color: #ffffff;
-    border-left: 1px solid #9b1d20;
-    padding: .9rem 2vw;
+    padding: 0.8rem 2vw;
+    font-size: 1.5rem;
+    color: $darkBlue;
     text-decoration: none;
-    font-size: .9rem;
     text-align: right;
 }
- ul li:first-child a {border-left: none;}
-
- ul li a:hover {
-    background-color: #ffffff;
-    color: #c01526;
-}
- ul li.active a {
-    background-color: #ffffff;
-    color: #000000;
-}
- button{
+div#closex a {margin-right: 10vw;}
+header {
+    display: grid;
+    grid-template-columns: 151px auto 44px;
+    align-items: center;
+    background-color: $lightBlue;
+    div#phone{
+        display: none;
+    }
+    figure.logo{
+        float: left;
+        margin: 0 2vw;
+    }
+    h1 {
+    margin: 0;
+    color: $darkBlue;
+    font-size: x-large;
     position: absolute;
-    top: 0;
-    right: 0;
-    background: transparent;
-    border: none;
-    font-size: 1.5rem;
-    padding: 0.5rem 2vw .5rem 1rem;
-    color: #ffffff;
+    padding-left: 10rem;
 }
-button span:nth-child(1){
-    display: block;
 }
-button span:nth-child(2){
-    display: none;
-}
+/*----------- NAVIGATION --------------*/
+div#navWrapper{grid-row-start: 4;}
 
-button.open span:nth-child(1){
-    display: none;
-}
-button.open span:nth-child(2){
-    display: block;
-}
-
+nav {
+    height: 100vh;
+    ul{
+        border-bottom: 1px solid $lightBlue;
+    }
+    ul li{
+        border-top: 1px solid $lightBlue;
+    }
+    ul li a{
+        display: block;
+        color: $darkBlue;
+        padding: 0.9rem 2vw;
+        text-decoration: none;
+        text-align: right;
+    }
+    ul li a:hover{
+        color: $mediumBlue;
+    }
+    ul li.active a{
+        background-color: lighten($darkBlue, 60%);
+    }
+    #navList{list-style-type: none;
+    }
 }
 /*----------- MAIN --------------*/
+div#mainWrapper{grid-row-start: 2;}
+
 main {
-    div.gallery{
+    .flexed{
         display: flex;
         flex-wrap: wrap;
+        justify-content: space-evenly;
     }
-    div.gallery figure{
-        flex-basis: 46%;
+    .column{
+        padding: 0 $gutter;
     }
-
-    div.gallery figure img{
+    .lawyer{
+        padding-top: 2rem;
+        section{
+            text-align: center;
+            height: 25px;
+            background-color: darken($mediumBlue, 30%);
+            color: #fff;
+            padding-top: 0.5rem;
+            padding-bottom: 1rem;
+        }
+        a{
+            display: block;
+            padding: .5rem 0;
+            margin:1rem;
+            border-radius: 6px;
+            text-decoration: none;
+            text-align: center;
+            background-color: #D4C473;
+            color: $darkBlue;
+        }
+    }
+    .accidents{
+        padding: 0;
+        margin: 2rem 0;
+        background-color: lighten($lightBlue, 25%);
+        h2,p{
+        padding:0 0.5rem;
+        }
+        a{
+            display: block;
+            padding: .5rem 0;
+            text-decoration: none;
+            text-align: center;
+            background-color: #D4C473;
+            color: $darkBlue;
+        }
+    }
+    .faq{
+        a{
+            display: block;
+            padding: .5rem 0;
+            margin:1rem;
+            border-radius: 6px;
+            text-decoration: none;
+            text-align: center;
+            background-color: #D4C473;
+            color: $darkBlue;
+        }
+    }
+    @for $i from 1 through 12 {
+        $w: ($i / 12) * 100%;
+        .small-#{$i} {flex-basis: $w;}
+    }
+    img{
         width: 100%;
-        margin: 1rem 2%;
-        padding: 2%;
     }
-    div.gallery figcaption{
-        margin: 0.1rem 1rem 0.3rem 1rem;
+    .jumbotron{
+        background-color: $darkBlue;
+        color: #D9DBF1;
+        margin: 0.5rem 0;
+       p{
+        padding: 1rem 0;
+        align-items: center;
         text-align: center;
+        font-size: large;
     }
-} 
-    
-
+}
+    .social{
+        display: flex;
+        font-size: 2rem;
+        padding: 1rem;
+        .social-link{
+            padding: 1rem;
+        }
+        a{
+            color: $mediumBlue;
+            display: block;
+            padding: 1rem 0;
+        }
+        a:hover{
+            color: $lightBlue;
+        }
+    }
+}
 
 
 /*----------- FOOTER --------------*/
+div#footerWrapper{grid-row-start: 3;}
+
 footer {
-    background-color: #9b1d20;
-    color: #EAE2B7;
+    background-color: $lightBlue;
+    color: $darkBlue;
     padding: .5rem 2%;
     text-align: center;
 }
