@@ -23,14 +23,14 @@ header {
     align-items: center;
     padding:0;
     margin: 0;
-    background-color: $darkBlue;
+    background-color: $lightBlue;
     figure.logo{
         float: left;
         margin: 0 2vw;
     }
     h1 {
     margin: 0;
-    color: #ffffff;
+    color: $darkBlue;
     font-size: x-large;
     position: absolute;
     padding-left: 7rem;
@@ -53,13 +53,13 @@ ul.open{
     display: block;
 }
  ul li {
-    border-bottom: solid 1px #100007;
+    border-bottom: solid 1px #ffffff;
 }
  ul li a {
     display: block;
-    background-color: red;
-    color: #ffffff;
-    border-left: 1px solid red;
+    background-color: #D9DBF1;
+    color: $darkBlue;
+    border-left: 1px solid rgb(255, 255, 255);
     padding: .9rem 2vw;
     text-decoration: none;
     font-size: .9rem;
@@ -68,9 +68,8 @@ ul.open{
  ul li:first-child a {border-left: none;}
 
  ul li a:hover {
-    background-color: $mediumBlue;
-
-    color: #ffffff;
+    background-color: #ffffff;
+    color: $darkBlue;
 }
  ul li.active a {
     background-color: $darkBlue;
@@ -85,7 +84,7 @@ ul.open{
     border: none;
     font-size: 1.5rem;
     padding: 0.5rem 2vw .5rem 1rem;
-    color: #ffffff;
+    color: $darkBlue;
 }
 button span:nth-child(1){
     display: block;
@@ -115,14 +114,17 @@ main {
         $w: ($i / 12) * 100%;
         .small-#{$i} {flex-basis: $w;}
     }
+    img{
+        width: 100%;
+    }
 }
 
 
 
 /*----------- FOOTER --------------*/
 footer {
-    background-color: #9b1d20;
-    color: #EAE2B7;
+    background-color: $lightBlue;
+    color: $darkBlue;
     padding: .5rem 2%;
     text-align: center;
 }

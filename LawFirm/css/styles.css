@@ -335,7 +335,7 @@ header {
   align-items: center;
   padding: 0;
   margin: 0;
-  background-color: #05204A;
+  background-color: #84BCDA;
 }
 header figure.logo {
   float: left;
@@ -343,7 +343,7 @@ header figure.logo {
 }
 header h1 {
   margin: 0;
-  color: #ffffff;
+  color: #05204A;
   font-size: x-large;
   position: absolute;
   padding-left: 7rem;
@@ -364,13 +364,13 @@ nav ul.open {
   display: block;
 }
 nav ul li {
-  border-bottom: solid 1px #100007;
+  border-bottom: solid 1px #ffffff;
 }
 nav ul li a {
   display: block;
-  background-color: red;
-  color: #ffffff;
-  border-left: 1px solid red;
+  background-color: #D9DBF1;
+  color: #05204A;
+  border-left: 1px solid rgb(255, 255, 255);
   padding: 0.9rem 2vw;
   text-decoration: none;
   font-size: 0.9rem;
@@ -380,8 +380,8 @@ nav ul li:first-child a {
   border-left: none;
 }
 nav ul li a:hover {
-  background-color: #067BC2;
-  color: #ffffff;
+  background-color: #ffffff;
+  color: #05204A;
 }
 nav ul li.active a {
   background-color: #05204A;
@@ -395,7 +395,7 @@ nav button {
   border: none;
   font-size: 1.5rem;
   padding: 0.5rem 2vw 0.5rem 1rem;
-  color: #ffffff;
+  color: #05204A;
 }
 nav button span:nth-child(1) {
   display: block;
@@ -454,11 +454,14 @@ main .small-11 {
 main .small-12 {
   flex-basis: 100%;
 }
+main img {
+  width: 100%;
+}
 
 /*----------- FOOTER --------------*/
 footer {
-  background-color: #9b1d20;
-  color: #EAE2B7;
+  background-color: #84BCDA;
+  color: #05204A;
   padding: 0.5rem 2%;
   text-align: center;
 }
