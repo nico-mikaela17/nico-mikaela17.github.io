@@ -100,7 +100,19 @@ main {
     .lead{
         grid-column: 1/span 2;
     }
-}
+    }
+    div.footer{
+        background-color: $lightBlue;
+        padding: 2rem;
+        .section{
+            margin-bottom: 1rem;}
+           h4{margin: 0.5rem 0;}
+           span{
+            display: flex;
+            flex-direction: column;
+            padding: 0.1rem;
+        }
+    }
 }
 
 

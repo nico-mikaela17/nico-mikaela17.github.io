@@ -422,6 +422,21 @@ main div.storyGrid .teaser img, main div.storyGrid .lead img {
 main div.storyGrid .lead {
   grid-column: 1/span 2;
 }
+main div.footer {
+  background-color: #D2D7DA;
+  padding: 2rem;
+}
+main div.footer .section {
+  margin-bottom: 1rem;
+}
+main div.footer h4 {
+  margin: 0.5rem 0;
+}
+main div.footer span {
+  display: flex;
+  flex-direction: column;
+  padding: 0.1rem;
+}
 
 /*----------- FOOTER --------------*/
 footer {
@@ -472,6 +487,16 @@ footer {
   main div.storyGrid .lead {
     grid-column: 1/span 3;
   }
+  main div.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+  }
+  main div.footer span {
+    display: block;
+    text-align: left;
+    font-size: 0.75rem;
+  }
   /*----------- FOOTER --------------*/
 } /* end of media query */
 @media only screen and (min-width: 60rem) {
@@ -489,6 +514,9 @@ footer {
   main div.storyGrid .lead {
     grid-column: 1/span 3;
     grid-row: 1/span 2;
+  }
+  main div.footer {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
   /*----------- FOOTER --------------*/
 } /* end of media query */

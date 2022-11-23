@@ -40,6 +40,16 @@ main {
         grid-column: 1/span 3;
     }
 }
+div.footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+span{
+    display: block;
+    text-align: left;
+    font-size: 0.75rem;
+}
+}
 }
 /*----------- FOOTER --------------*/
     
