@@ -1,9 +1,8 @@
-function toggleMenu(){
-    document.getElementById("navList").classList.toggle("open");
-    document.getElementById("hamburgerB").classList.toggle("open");
+const hb = document.querySelector('#hamburgerB');
+const pn = document.querySelector('#navList');
 
+hb.addEventListener('click',() => {
+    hb.classList.toggle('open');
+    pn.classList.toggle('open'); 
 }
-
-const x = document.getElementById("hamburgerB");
-
-x.onclick = toggleMenu;
+);

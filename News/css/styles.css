@@ -470,7 +470,7 @@ footer {
   }
   nav ul {
     display: flex;
-    justify-content: end;
+    justify-content: start;
     border: none;
   }
   nav ul li {

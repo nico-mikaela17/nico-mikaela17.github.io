@@ -6,9 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>News</title>
     <link href="css/styles.css" rel="stylesheet">
-    <link href="/fontawesome-free-6.2.1-web/css/fontawesome.css" rel="stylesheet">
-    <link href="/fontawesome-free-6.2.1-web/css/brands.css" rel="stylesheet">
-    <link href="/fontawesome-free-6.2.1-web/css/solid.css" rel="stylesheet">
 
 </head>
 <body>
@@ -16,8 +13,6 @@
 <div id="headerWrapper">
 	<header>
             <img src="images/logo.png" alt="logo"> 
-            <div id="hamburger"><a href="#closex">&#9776;</a></div>
-            <div id="phone"><a href="tel:1800555123">1-800-555-123</a></div>
     </header>
 </div>
     
@@ -25,6 +20,11 @@
 <!-- NAVIGATION HERE -->
 <div id="navWrapper">
 <nav>
+    <button id="hamburgerB">
+        <span class="line top"></span>
+        <span class="line middle"></span>
+        <span class="line bottom"></span>
+    </button>
     <div id="closex"><a href="#hamburger">x</a></div>
     <ul id="navList">
         <li><a href="#">Home</a></li>
@@ -79,22 +79,6 @@
             <i class="fa-brands fa-facebook-f"></i>
         </a>
         </div>
-        <div class="social-link">
-            <a class="contact-details" href="https://www.facebook.com/nicole.fruhinsfeldsosa" target="_blank">
-                <i class="fa-brands fa-twitter"></i>
-            </a>
-        </div>
-        <div class="social-link">
-            <a class="contact-details" href="https://www.facebook.com/nicole.fruhinsfeldsosa" target="_blank">
-                <i class="fa-brands fa-youtube"></i>
-            </a>
-        </div>
-        <div class="social-link">
-            <a class="contact-details" href="https://www.facebook.com/nicole.fruhinsfeldsosa" target="_blank">
-                <i class="fa-solid fa-phone"></i>
-            </a>
-        </div>
-    </div>  
     </main>
 </div>
     
@@ -104,7 +88,7 @@
         &copy; 2022 &bull; Nicole Linnarz &bull; 123-555-6789
     </footer>
 </div> 
-    <!--<script src="js/scripts.js"> </script>-->
+    <script src="js/scripts.js"> </script>
     <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.8.3/dist/lazyload.min.js"></script>
     <script>
         var aLazyLoad = new LazyLoad({
