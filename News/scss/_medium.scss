@@ -47,27 +47,16 @@ nav{
 
 
 /*----------- MAIN --------------*/
-main{
-    @for $i from 1 through 12 {
-        $w: ($i / 12) * 100%;
-        .medium-#{$i} {flex-basis: $w;}
+main {
+    div.storyGrid{
+        grid-template-columns: 1fr 1fr 1fr;
+    span{
+        font-size: 1rem;
     }
-    .jumbotron{
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        padding:0 2vw;
-    }
-    .lawyer{
-        section{
-            display: block;
-            padding-bottom: 1rem;
-        }
-    }
-    .accidentS{
-        padding: 0.5rem;
+    .lead{
+        grid-column: 1/span 3;
     }
 }
-
+}
 /*----------- FOOTER --------------*/
     

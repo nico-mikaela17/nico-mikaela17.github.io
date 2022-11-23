@@ -394,118 +394,24 @@ div#mainWrapper {
   grid-row-start: 2;
 }
 
-main .flexed {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
+main div.storyGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
 }
-main .column {
-  padding: 0 2vw;
-}
-main .lawyer {
-  padding-top: 2rem;
-}
-main .lawyer section {
-  text-align: center;
-  height: 25px;
-  background-color: #09131c;
-  color: #fff;
-  padding-top: 0.5rem;
-  padding-bottom: 1rem;
-}
-main .lawyer a {
+main div.storyGrid span {
   display: block;
-  padding: 0.5rem 0;
-  margin: 1rem;
-  border-radius: 6px;
-  text-decoration: none;
   text-align: center;
-  background-color: #D4C473;
-  color: #244B6A;
+  font-size: 0.75rem;
 }
-main .accidents {
-  padding: 0;
-  margin: 2rem 0;
-  background-color: white;
+main div.storyGrid .teaser, main div.storyGrid .lead {
+  padding: 0.5rem 2vw;
 }
-main .accidents p {
-  padding: 0 0.5rem;
-}
-main .faq a {
-  display: block;
-  padding: 0.5rem 0;
-  margin: 1rem;
-  border-radius: 6px;
-  text-decoration: none;
-  text-align: center;
-  background-color: #D4C473;
-  color: #244B6A;
-}
-main .small-1 {
-  flex-basis: 8.3333333333%;
-}
-main .small-2 {
-  flex-basis: 16.6666666667%;
-}
-main .small-3 {
-  flex-basis: 25%;
-}
-main .small-4 {
-  flex-basis: 33.3333333333%;
-}
-main .small-5 {
-  flex-basis: 41.6666666667%;
-}
-main .small-6 {
-  flex-basis: 50%;
-}
-main .small-7 {
-  flex-basis: 58.3333333333%;
-}
-main .small-8 {
-  flex-basis: 66.6666666667%;
-}
-main .small-9 {
-  flex-basis: 75%;
-}
-main .small-10 {
-  flex-basis: 83.3333333333%;
-}
-main .small-11 {
-  flex-basis: 91.6666666667%;
-}
-main .small-12 {
-  flex-basis: 100%;
-}
-main img {
+main div.storyGrid .teaser img, main div.storyGrid .lead img {
   width: 100%;
 }
-main .jumbotron {
-  background-color: #244B6A;
-  color: #D9DBF1;
-  margin: 0.5rem 0;
-}
-main .jumbotron p {
-  padding: 1rem 0;
-  align-items: center;
-  text-align: center;
-  font-size: large;
-}
-main .social {
-  display: flex;
-  font-size: 2rem;
-  padding: 1rem;
-}
-main .social .social-link {
-  padding: 1rem;
-}
-main .social a {
-  color: #30638E;
-  display: block;
-  padding: 1rem 0;
-}
-main .social a:hover {
-  color: #D2D7DA;
+main div.storyGrid .lead {
+  grid-column: 1/span 2;
 }
 
 /*----------- FOOTER --------------*/
@@ -571,54 +477,14 @@ footer {
     border: none;
   }
   /*----------- MAIN --------------*/
-  main .medium-1 {
-    flex-basis: 8.3333333333%;
+  main div.storyGrid {
+    grid-template-columns: 1fr 1fr 1fr;
   }
-  main .medium-2 {
-    flex-basis: 16.6666666667%;
+  main div.storyGrid span {
+    font-size: 1rem;
   }
-  main .medium-3 {
-    flex-basis: 25%;
-  }
-  main .medium-4 {
-    flex-basis: 33.3333333333%;
-  }
-  main .medium-5 {
-    flex-basis: 41.6666666667%;
-  }
-  main .medium-6 {
-    flex-basis: 50%;
-  }
-  main .medium-7 {
-    flex-basis: 58.3333333333%;
-  }
-  main .medium-8 {
-    flex-basis: 66.6666666667%;
-  }
-  main .medium-9 {
-    flex-basis: 75%;
-  }
-  main .medium-10 {
-    flex-basis: 83.3333333333%;
-  }
-  main .medium-11 {
-    flex-basis: 91.6666666667%;
-  }
-  main .medium-12 {
-    flex-basis: 100%;
-  }
-  main .jumbotron {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 0 2vw;
-  }
-  main .lawyer section {
-    display: block;
-    padding-bottom: 1rem;
-  }
-  main .accidentS {
-    padding: 0.5rem;
+  main div.storyGrid .lead {
+    grid-column: 1/span 3;
   }
   /*----------- FOOTER --------------*/
 } /* end of media query */
@@ -636,44 +502,12 @@ footer {
     margin: 0.5rem 0;
   }
   /*----------- MAIN --------------*/
-  main .large-1 {
-    flex-basis: 8.3333333333%;
+  main div.storyGrid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
-  main .large-2 {
-    flex-basis: 16.6666666667%;
-  }
-  main .large-3 {
-    flex-basis: 25%;
-  }
-  main .large-4 {
-    flex-basis: 33.3333333333%;
-  }
-  main .large-5 {
-    flex-basis: 41.6666666667%;
-  }
-  main .large-6 {
-    flex-basis: 50%;
-  }
-  main .large-7 {
-    flex-basis: 58.3333333333%;
-  }
-  main .large-8 {
-    flex-basis: 66.6666666667%;
-  }
-  main .large-9 {
-    flex-basis: 75%;
-  }
-  main .large-10 {
-    flex-basis: 83.3333333333%;
-  }
-  main .large-11 {
-    flex-basis: 91.6666666667%;
-  }
-  main .large-12 {
-    flex-basis: 100%;
-  }
-  main .jumbotron {
-    margin: 0 0.5rem;
+  main div.storyGrid .lead {
+    grid-column: 1/span 3;
+    grid-row: 1/span 2;
   }
   /*----------- FOOTER --------------*/
 } /* end of media query */

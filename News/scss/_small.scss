@@ -69,89 +69,25 @@ nav {
 div#mainWrapper{grid-row-start: 2;}
 
 main {
-    .flexed{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
+    div.storyGrid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+    span{
+        display: block;
+        text-align: center;
+        font-size: 0.75rem;
     }
-    .column{
-        padding: 0 $gutter;
+    .teaser, .lead{
+        padding: 0.5rem 2vw;
     }
-    .lawyer{
-        padding-top: 2rem;
-        section{
-            text-align: center;
-            height: 25px;
-            background-color: darken($mediumBlue, 30%);
-            color: #fff;
-            padding-top: 0.5rem;
-            padding-bottom: 1rem;
-        }
-        a{
-            display: block;
-            padding: .5rem 0;
-            margin:1rem;
-            border-radius: 6px;
-            text-decoration: none;
-            text-align: center;
-            background-color: #D4C473;
-            color: $darkBlue;
-        }
-    }
-    .accidents{
-        padding: 0;
-        margin: 2rem 0;
-        background-color: lighten($lightBlue, 25%);
-        p{
-        padding:0 0.5rem;
-        }
-    }
-    .faq{
-        a{
-            display: block;
-            padding: .5rem 0;
-            margin:1rem;
-            border-radius: 6px;
-            text-decoration: none;
-            text-align: center;
-            background-color: #D4C473;
-            color: $darkBlue;
-        }
-    }
-    @for $i from 1 through 12 {
-        $w: ($i / 12) * 100%;
-        .small-#{$i} {flex-basis: $w;}
-    }
-    img{
+    .teaser img, .lead img{
         width: 100%;
     }
-    .jumbotron{
-        background-color: $darkBlue;
-        color: #D9DBF1;
-        margin: 0.5rem 0;
-       p{
-        padding: 1rem 0;
-        align-items: center;
-        text-align: center;
-        font-size: large;
+    .lead{
+        grid-column: 1/span 2;
     }
 }
-    .social{
-        display: flex;
-        font-size: 2rem;
-        padding: 1rem;
-        .social-link{
-            padding: 1rem;
-        }
-        a{
-            color: $mediumBlue;
-            display: block;
-            padding: 1rem 0;
-        }
-        a:hover{
-            color: $lightBlue;
-        }
-    }
 }
 
 

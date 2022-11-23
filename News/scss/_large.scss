@@ -19,14 +19,14 @@ nav ul li a{
 
 
 /*----------- MAIN --------------*/
-main{
-    @for $i from 1 through 12 {
-        $w: ($i / 12) * 100%;
-        .large-#{$i} {flex-basis: $w;}
+main {
+    div.storyGrid{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    .lead{
+        grid-column: 1/span 3;
+        grid-row: 1/span 2;
     }
-    .jumbotron{
-        margin: 0 0.5rem;
-    }
+}
 }
 
 /*----------- FOOTER --------------*/
