@@ -1,48 +1,31 @@
 /*----------- BODY --------------*/
-div#headerWrapper{grid-row-start: 1;}
-div#navWrapper{grid-row-start: 2;}
-div#mainWrapper{grid-row-start: 3;}
-div#footerWrapper{grid-row-start: 4;}
-
-
 
 /*----------- HEADER --------------*/
-#headerWrapper{
-    border-bottom: 1px solid $lightBlue;
-
-}
-header{
-    grid-template-columns: 151px auto;
-    div#phone{
-        display: block;
-        justify-self: end;
-        a{
-            color: $darkBlue;
-            text-decoration: none;
-            font-weight: 100;
-            font-size: 1.5rem;
-        }
-        a:hover{
-            color:$mediumBlue;
-        }
-    }
-}
 
 /*----------- NAVIGATION --------------*/
-div#hamburger, div#closex {
-    display: none;
-}
-
+nav button{display: none;}
+#navList{display: flex;}
 nav{
-    height: auto;
     ul{
-        display:flex;
-        justify-content: start;
-        border: none;
+        margin-left: 2%;
+        border-left: 1px solid $darkBlue;
+        list-style-type: none;
     }
     ul li{
-        border:none;
+        border-right:1px solid $darkBlue;
     }
+    ul li a{
+        border:none;
+        font-size: 1rem;
+        padding: 0.9rem 1.2rem;
+        color: white;
+        text-decoration: none;
+        -webkit-transition: background 0.3s linear;
+        transition: background 0.3s linear;
+    }
+    ul lia:hover{
+        background-color:darken($darkRed,25%);        
+        color: #fff;;}
 }
 
 
