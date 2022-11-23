@@ -102,16 +102,8 @@ main {
         padding: 0;
         margin: 2rem 0;
         background-color: lighten($lightBlue, 25%);
-        h2,p{
+        p{
         padding:0 0.5rem;
-        }
-        a{
-            display: block;
-            padding: .5rem 0;
-            text-decoration: none;
-            text-align: center;
-            background-color: #D4C473;
-            color: $darkBlue;
         }
     }
     .faq{

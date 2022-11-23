@@ -428,16 +428,8 @@ main .accidents {
   margin: 2rem 0;
   background-color: white;
 }
-main .accidents h2, main .accidents p {
+main .accidents p {
   padding: 0 0.5rem;
-}
-main .accidents a {
-  display: block;
-  padding: 0.5rem 0;
-  text-decoration: none;
-  text-align: center;
-  background-color: #D4C473;
-  color: #244B6A;
 }
 main .faq a {
   display: block;
