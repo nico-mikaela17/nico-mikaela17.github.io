@@ -14,11 +14,32 @@ body {
 
 
 /*----------- HEADER --------------*/
+div#headerWrapper{
+    background-image: url(../images/boston6small.jpg);
+    height: 140px;
+    background-size: cover;
+    background-position: center bottom;
+
+}
 header {
-    display: grid;
-    grid-template-columns: 151px auto 44px;
-    align-items: center;
-    background-color: $mediumBlue;
+    margin: 0;
+    height: 100%;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    h1{
+        margin: 0;
+        padding: 0 1rem;
+        color: white;
+        background-color: rgba(0,0,0,0.5);
+    }
+    h3{
+        color: white;
+        background-color: rgba(0,0,0,0.5);
+        padding: 0.5rem 1rem;
+        margin: 0;
+    }
 }
 /*----------- NAVIGATION --------------*/
 #navWrapper{
