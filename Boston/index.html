@@ -46,12 +46,15 @@
     <!-- Additional required wrapper -->
     <div class="swiper-wrapper">
       <!-- Slides -->
-      <div class="swiper-slide"><img src="images/boston1.jpg"></div>
-      <div class="swiper-slide"><img src="images/boston2.jpg"></div>
-      <div class="swiper-slide"><img src="images/boston3.jpg"></div>
-      <div class="swiper-slide"><img src="images/boston4.jpg"></div>
-      <div class="swiper-slide"><img src="images/boston5.jpg"></div>
-      ...
+      <div class="swiper-slide">
+        <picture>
+            <source media="(max-width: 28.12rem)" srcset="images/boston1_small.jpg" >
+            <source media="(min-width: 28.12rem)" srcset="images/boston1.2.jpg" >
+            <img src="images/boston1.jpg" alt="slider"> 
+        </picture>
+        <p><b>Boston Skyline</b> Boston is one of the healthiest cities in the country with a high quality of life 
+            to match. Deutsche Bank says Boston is the eighth best city in the world in terms of quality of life.</p>
+     </div>
     </div>
     <!-- If we need pagination -->
     <div class="swiper-pagination"></div>  
