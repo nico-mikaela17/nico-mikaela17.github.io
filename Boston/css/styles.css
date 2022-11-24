@@ -498,7 +498,7 @@ footer {
 }
 
 /*----- Clearfix: Force an Element not to collapse -----*/
-@media only screen and (min-width: 35rem) {
+@im @media only screen and (min-width: 35rem) {
   /*----------- BODY --------------*/
   /*----------- HEADER --------------*/
   div#headerWrapper {
