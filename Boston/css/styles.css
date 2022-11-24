@@ -321,7 +321,6 @@ html {
 
 /*----------- BODY --------------*/
 body {
-  display: grid;
   font-size: 14px;
   font-family: Verdana, sans-serif;
 }
@@ -406,6 +405,16 @@ main .swiper img {
 }
 main .swiper-wrapper {
   margin-bottom: 30px;
+}
+main p {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  text-align: center;
+  transform: translateY(-100%);
+  margin: 0;
+  padding: 0.4rem 2vw;
+  position: absolute;
+  width: 100%;
 }
 
 /*----------- FOOTER --------------*/
