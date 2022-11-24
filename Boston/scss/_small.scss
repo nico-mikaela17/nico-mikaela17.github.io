@@ -1,0 +1,132 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+
+/*----------- BODY --------------*/
+body {
+    display: grid;
+    font-size: 14px;
+    font-family: Verdana, sans-serif;
+}
+
+
+/*----------- HEADER --------------*/
+header {
+    display: grid;
+    grid-template-columns: 151px auto 44px;
+    align-items: center;
+    background-color: $lightBlue;
+    div#phone{
+        display: none;
+    }
+    figure.logo{
+        float: left;
+        margin: 0 2vw;
+    }
+
+}
+/*----------- NAVIGATION --------------*/
+#navWrapper{
+    background-color: $darkRed;
+}
+nav {
+    ul{
+        display: none;
+        margin: 0;
+        padding: 0;
+    }
+    ul li.active a{ background-color:darken($darkRed,15%);}
+    ul li a{
+        display: block;
+        padding: 0.75rem 2vw;
+        font-size: 1.1rem;
+        color: white;
+        text-decoration: none;
+        border-top: 1px solid $darkBlue;
+    }
+    ul li a:hover{
+        background-color:darken($darkRed,25%);        
+        color: #fff;
+    }
+    ul.open{display: block;}
+    button{
+        position: relative;
+        height: 44px;
+        width: 44px;
+        background: none;
+        border: none;
+        .line{
+            position: absolute;
+            height: 2px;
+            width: 60%;
+            left: 20%;
+            background-color: #fff;
+            transition: all .3s ease;
+        }
+        .top{top:29%;}
+        .middle{top:48%;}
+        .bottom{top:67%;}
+    }
+    #hamburgerB.open{
+        .top{transform: rotate(45deg); top: 48%;}
+        .middle, .bottom{
+            transform: rotate(-45deg);
+            top: 48%;
+        }
+    }
+
+}
+/*----------- MAIN --------------*/
+
+main {
+    div.storyGrid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+    span{
+        display: block;
+        text-align: center;
+        font-size: 0.75rem;
+    }
+    .teaser, .lead{
+        padding: 0.5rem 2vw;
+    }
+    .teaser img, .lead img{
+        width: 100%;
+    }
+    .lead{
+        grid-column: 1/span 2;
+    }
+    }
+    div.footer{
+        background-color: $lightBlue;
+        padding: 2rem;
+        .section{
+            margin-bottom: 1rem;}
+           h4{margin: 0.5rem 0;}
+           span{
+            display: flex;
+            flex-direction: column;
+            padding: 0.1rem;
+        }
+    }
+}
+
+
+/*----------- FOOTER --------------*/
+
+footer {
+    background-color: $lightBlue;
+    color: $darkBlue;
+    padding: .5rem 2%;
+    text-align: center;
+}
+
+
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+
+
