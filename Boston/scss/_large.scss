@@ -13,5 +13,9 @@ div#headerWrapper{
 /*----------- NAVIGATION --------------*/
 
 /*----------- MAIN --------------*/
-
+main{
+    .individual-card{
+        flex-basis: 25%;
+    }
+}
 /*----------- FOOTER --------------*/

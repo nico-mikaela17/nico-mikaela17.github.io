@@ -437,11 +437,62 @@ main p {
   position: absolute;
   width: 100%;
 }
+main .cards {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: space-evenly;
+}
+main .cards div:nth-child(1) {
+  background-image: url(../images/hotelroom.jpg);
+  background-position: center;
+}
+main .cards div:nth-child(2) {
+  background-image: url(../images/walkperson.jpg);
+}
+main .cards div:nth-child(3) {
+  background-image: url(../images/citypark.jpg);
+}
+main .cards div:nth-child(4) {
+  background-image: url(../images/diningtable.jpg);
+}
+main .cards div a {
+  display: block;
+  width: 100%;
+  height: 300px;
+  text-decoration: none;
+  padding: 0 2%;
+  transition: all 0.5s ease-in;
+}
+main .cards div:nth-child(1) a {
+  background-color: #E77728;
+}
+main .cards div:nth-child(2) a {
+  background-color: #F7B1AB;
+}
+main .cards div:nth-child(3) a {
+  background-color: #55828B;
+}
+main .cards div:nth-child(4) a {
+  background-color: #B5BA72;
+}
+main .cards div a:hover {
+  background: none;
+  text-shadow: 0 0 4px black;
+}
+main .cards h4 {
+  font-size: 1.2rem;
+  padding: 1rem 0;
+  color: white;
+}
+main .individual-card {
+  flex-basis: 100%;
+}
 
 /*----------- FOOTER --------------*/
 footer {
-  background-color: #F7B1AB;
-  color: #E77728;
+  background-color: #13293D;
+  color: white;
   padding: 0.5rem 2%;
   text-align: center;
 }
@@ -482,6 +533,9 @@ footer {
     color: #fff;
   }
   /*----------- MAIN --------------*/
+  main .individual-card {
+    flex-basis: 50%;
+  }
   /*----------- FOOTER --------------*/
 } /* end of media query */
 @media only screen and (min-width: 60rem) {
@@ -497,5 +551,8 @@ footer {
   }
   /*----------- NAVIGATION --------------*/
   /*----------- MAIN --------------*/
+  main .individual-card {
+    flex-basis: 25%;
+  }
   /*----------- FOOTER --------------*/
 } /* end of media query */
