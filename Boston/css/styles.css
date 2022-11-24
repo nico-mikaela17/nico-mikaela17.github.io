@@ -331,19 +331,12 @@ header {
   display: grid;
   grid-template-columns: 151px auto 44px;
   align-items: center;
-  background-color: #D2D7DA;
-}
-header div#phone {
-  display: none;
-}
-header figure.logo {
-  float: left;
-  margin: 0 2vw;
+  background-color: #55828B;
 }
 
 /*----------- NAVIGATION --------------*/
 #navWrapper {
-  background-color: #C21E26;
+  background-color: #E77728;
 }
 
 nav ul {
@@ -352,7 +345,7 @@ nav ul {
   padding: 0;
 }
 nav ul li.active a {
-  background-color: #801419;
+  background-color: #af5414;
 }
 nav ul li a {
   display: block;
@@ -363,7 +356,7 @@ nav ul li a {
   border-top: 1px solid #13293D;
 }
 nav ul li a:hover {
-  background-color: #540d10;
+  background-color: #ec4537;
   color: #fff;
 }
 nav ul.open {
@@ -403,45 +396,22 @@ nav #hamburgerB.open .middle, nav #hamburgerB.open .bottom {
 }
 
 /*----------- MAIN --------------*/
-main div.storyGrid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto;
-}
-main div.storyGrid span {
-  display: block;
-  text-align: center;
-  font-size: 0.75rem;
-}
-main div.storyGrid .teaser, main div.storyGrid .lead {
-  padding: 0.5rem 2vw;
-}
-main div.storyGrid .teaser img, main div.storyGrid .lead img {
+main .swiper {
   width: 100%;
+  height: auto;
 }
-main div.storyGrid .lead {
-  grid-column: 1/span 2;
+main .swiper img {
+  width: 100%;
+  display: block;
 }
-main div.footer {
-  background-color: #D2D7DA;
-  padding: 2rem;
-}
-main div.footer .section {
-  margin-bottom: 1rem;
-}
-main div.footer h4 {
-  margin: 0.5rem 0;
-}
-main div.footer span {
-  display: flex;
-  flex-direction: column;
-  padding: 0.1rem;
+main .swiper-wrapper {
+  margin-bottom: 30px;
 }
 
 /*----------- FOOTER --------------*/
 footer {
-  background-color: #D2D7DA;
-  color: #13293D;
+  background-color: #F7B1AB;
+  color: #E77728;
   padding: 0.5rem 2%;
   text-align: center;
 }
@@ -459,11 +429,11 @@ footer {
   }
   nav ul {
     margin-left: 2%;
-    border-left: 1px solid #13293D;
+    border-left: 1px solid #E77728;
     list-style-type: none;
   }
   nav ul li {
-    border-right: 1px solid #13293D;
+    border-right: 1px solid #F7B1AB;
   }
   nav ul li a {
     border: none;
@@ -474,33 +444,14 @@ footer {
     transition: background 0.3s linear;
   }
   nav ul lia:hover {
-    background-color: #540d10;
+    background-color: #ec4537;
     color: #fff;
   }
   /*----------- MAIN --------------*/
-  main div.storyGrid {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-  main div.storyGrid span {
-    font-size: 1rem;
-  }
-  main div.storyGrid .lead {
-    grid-column: 1/span 3;
-  }
-  main div.footer {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
-  }
-  main div.footer span {
-    display: block;
-    text-align: left;
-    font-size: 0.75rem;
-  }
   /*----------- FOOTER --------------*/
 } /* end of media query */
 @media only screen and (min-width: 60rem) {
-  header, main, footer {
+  main {
     max-width: 64rem;
     margin: auto;
   }
@@ -508,15 +459,5 @@ footer {
   /*----------- HEADER --------------*/
   /*----------- NAVIGATION --------------*/
   /*----------- MAIN --------------*/
-  main div.storyGrid {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-  }
-  main div.storyGrid .lead {
-    grid-column: 1/span 3;
-    grid-row: 1/span 2;
-  }
-  main div.footer {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-  }
   /*----------- FOOTER --------------*/
 } /* end of media query */

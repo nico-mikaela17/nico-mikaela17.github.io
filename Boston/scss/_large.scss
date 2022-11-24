@@ -1,32 +1,14 @@
-header, main, footer {
+main{
         max-width: 64rem;
         margin:auto;
-        
 }
 
 /*----------- BODY --------------*/
-
-
 
 /*----------- HEADER --------------*/
 
 /*----------- NAVIGATION --------------*/
 
-
-
 /*----------- MAIN --------------*/
-main {
-    div.storyGrid{
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-    .lead{
-        grid-column: 1/span 3;
-        grid-row: 1/span 2;
-    }
-}
-div.footer{
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-
-}
-}
 
 /*----------- FOOTER --------------*/

@@ -8,11 +8,11 @@ nav button{display: none;}
 nav{
     ul{
         margin-left: 2%;
-        border-left: 1px solid $darkBlue;
+        border-left: 1px solid $orange;
         list-style-type: none;
     }
     ul li{
-        border-right:1px solid $darkBlue;
+        border-right:1px solid $pink;
     }
     ul li a{
         border:none;
@@ -24,32 +24,11 @@ nav{
         transition: background 0.3s linear;
     }
     ul lia:hover{
-        background-color:darken($darkRed,25%);        
+        background-color:darken($pink,25%);        
         color: #fff;;}
 }
 
-
 /*----------- MAIN --------------*/
-main {
-    div.storyGrid{
-        grid-template-columns: 1fr 1fr 1fr;
-    span{
-        font-size: 1rem;
-    }
-    .lead{
-        grid-column: 1/span 3;
-    }
-}
-div.footer{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
-span{
-    display: block;
-    text-align: left;
-    font-size: 0.75rem;
-}
-}
-}
+
 /*----------- FOOTER --------------*/
     

@@ -10,6 +10,7 @@ body {
     display: grid;
     font-size: 14px;
     font-family: Verdana, sans-serif;
+
 }
 
 
@@ -18,19 +19,11 @@ header {
     display: grid;
     grid-template-columns: 151px auto 44px;
     align-items: center;
-    background-color: $lightBlue;
-    div#phone{
-        display: none;
-    }
-    figure.logo{
-        float: left;
-        margin: 0 2vw;
-    }
-
+    background-color: $mediumBlue;
 }
 /*----------- NAVIGATION --------------*/
 #navWrapper{
-    background-color: $darkRed;
+    background-color: $orange;
 }
 nav {
     ul{
@@ -38,7 +31,8 @@ nav {
         margin: 0;
         padding: 0;
     }
-    ul li.active a{ background-color:darken($darkRed,15%);}
+    ul li.active a{ background-color:darken($orange, 15%);}
+
     ul li a{
         display: block;
         padding: 0.75rem 2vw;
@@ -47,8 +41,9 @@ nav {
         text-decoration: none;
         border-top: 1px solid $darkBlue;
     }
+
     ul li a:hover{
-        background-color:darken($darkRed,25%);        
+        background-color:darken($pink,25%);        
         color: #fff;
     }
     ul.open{display: block;}
@@ -82,36 +77,16 @@ nav {
 /*----------- MAIN --------------*/
 
 main {
-    div.storyGrid{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto;
-    span{
-        display: block;
-        text-align: center;
-        font-size: 0.75rem;
-    }
-    .teaser, .lead{
-        padding: 0.5rem 2vw;
-    }
-    .teaser img, .lead img{
+    .swiper{
         width: 100%;
+        height: auto;
     }
-    .lead{
-        grid-column: 1/span 2;
+    .swiper img{
+        width: 100%;
+        display: block;
     }
-    }
-    div.footer{
-        background-color: $lightBlue;
-        padding: 2rem;
-        .section{
-            margin-bottom: 1rem;}
-           h4{margin: 0.5rem 0;}
-           span{
-            display: flex;
-            flex-direction: column;
-            padding: 0.1rem;
-        }
+    .swiper-wrapper{
+        margin-bottom: 30px;
     }
 }
 
@@ -119,8 +94,8 @@ main {
 /*----------- FOOTER --------------*/
 
 footer {
-    background-color: $lightBlue;
-    color: $darkBlue;
+    background-color: $pink;
+    color: $orange;
     padding: .5rem 2%;
     text-align: center;
 }
@@ -128,5 +103,3 @@ footer {
 
 
 /*----- Clearfix: Force an Element not to collapse -----*/
-
-

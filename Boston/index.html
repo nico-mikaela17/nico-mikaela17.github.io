@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Boston</title>
     <link href="css/styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
 
 </head>
 <body>
@@ -26,10 +27,12 @@
         <span class="line bottom"></span>
     </button>
     <ul id="navList">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Opinion</a></li>
-        <li class="active"><a href="#">Politics</a></li>
-        <li><a href="#">Business</a></li>
+        <li class="active"><a href="#">Visit</a></li>
+        <li><a href="#">Departments</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Pay Bills</a></li>
+        <li><a href="#">Meetings</a></li>
+        <li><a href="#">Help</a></li>
     </ul>
 </nav>
 </div>
@@ -38,7 +41,20 @@
 <!-- CONTENT HERE -->
 <div id="mainWrapper">
     <main>
-           
+         <!-- Slider main container -->
+<div class="swiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide"><img src="images/boston1.jpg"></div>
+      <div class="swiper-slide"><img src="images/boston2.jpg"></div>
+      <div class="swiper-slide"><img src="images/boston3.jpg"></div>
+      <div class="swiper-slide"><img src="images/boston4.jpg"></div>
+      <div class="swiper-slide"><img src="images/boston5.jpg"></div>
+      ...
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>  
     </main>
 </div>
     
@@ -48,8 +64,8 @@
         &copy; 2022 &bull; Nicole Linnarz &bull; 123-555-6789
     </footer>
 </div> 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="js/scripts.js"> </script>
-    <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.8.3/dist/lazyload.min.js"></script>
     <script>
         var aLazyLoad = new LazyLoad({
             elements_selector: ".lazy"
