@@ -1,0 +1,21 @@
+main{
+        max-width: 64rem;
+        margin:auto;
+}
+
+/*----------- BODY --------------*/
+
+/*----------- HEADER --------------*/
+div#headerWrapper{
+    background-image: url(../images/boston6large.jpg);
+    height: 140px;
+}
+/*----------- NAVIGATION --------------*/
+
+/*----------- MAIN --------------*/
+main{
+    .individual-card{
+        flex-basis: 25%;
+    }
+}
+/*----------- FOOTER --------------*/
