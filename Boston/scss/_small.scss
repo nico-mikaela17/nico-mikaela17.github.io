@@ -42,58 +42,7 @@ header {
     }
 }
 /*----------- NAVIGATION --------------*/
-#navWrapper{
-    background-color: $orange;
-}
-nav {
-    ul{
-        display: none;
-        margin: 0;
-        padding: 0;
-    }
-    ul li.active a{ background-color:darken($orange, 15%);}
 
-    ul li a{
-        display: block;
-        padding: 0.75rem 2vw;
-        font-size: 1.1rem;
-        color: white;
-        text-decoration: none;
-        border-top: 1px solid $darkBlue;
-    }
-
-    ul li a:hover{
-        background-color:darken($pink,25%);        
-        color: #fff;
-    }
-    ul.open{display: block;}
-    button{
-        position: relative;
-        height: 44px;
-        width: 44px;
-        background: none;
-        border: none;
-        .line{
-            position: absolute;
-            height: 2px;
-            width: 60%;
-            left: 20%;
-            background-color: #fff;
-            transition: all .3s ease;
-        }
-        .top{top:29%;}
-        .middle{top:48%;}
-        .bottom{top:67%;}
-    }
-    #hamburgerB.open{
-        .top{transform: rotate(45deg); top: 48%;}
-        .middle, .bottom{
-            transform: rotate(-45deg);
-            top: 48%;
-        }
-    }
-
-}
 /*----------- MAIN --------------*/
 
 main {

@@ -7,30 +7,7 @@ div#headerWrapper{
 }
 
 /*----------- NAVIGATION --------------*/
-nav button{display: none;}
-#navList{display: flex;}
-nav{
-    ul{
-        margin-left: 2%;
-        border-left: 1px solid $orange;
-        list-style-type: none;
-    }
-    ul li{
-        border-right:1px solid $pink;
-    }
-    ul li a{
-        border:none;
-        font-size: 1rem;
-        padding: 0.9rem 1.2rem;
-        color: white;
-        text-decoration: none;
-        -webkit-transition: background 0.3s linear;
-        transition: background 0.3s linear;
-    }
-    ul lia:hover{
-        background-color:darken($pink,25%);        
-        color: #fff;;}
-}
+
 
 /*----------- MAIN --------------*/
 main{

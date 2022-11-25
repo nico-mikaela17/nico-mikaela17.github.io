@@ -2,8 +2,8 @@
 
 
 // must be 1px less that the medium css breakpoint!!!
-@media only screen and (max-width: 34.9375rem) {
-	nav {background-color: $menuColor;}
+@media only screen and (max-width: 28.0625rem) {
+	nav {background-color: $khaki;}
 
 /* Navigation Button  -------------------------------------------------------- */    
 
@@ -19,16 +19,16 @@ nav button {
 }
 
 /* Navigation Bar -------------------------------------------------------- */
-	#primaryNav {
+	#navList {
         height: 0;
         overflow: hidden;
 		margin: 0;
 		padding: 0;
 		z-index: 998;
-        font-weight: $lightWeight;
+        font-weight:200;
 	}
-    #primaryNav li.active a{background-color: rgba(0,0,0,0.25);}
-	#primaryNav li a {
+    #navList li.active a{background-color: rgba(0,0,0,0.25);}
+	#navList li a {
 		display: block;
 		width: 100%;
 		padding: .75rem 2vw;
@@ -38,35 +38,35 @@ nav button {
 		text-decoration: none;
 		border-top: 1px solid rgba(0,0,0,.2);
 	}
-	#primaryNav li a:hover {
+	#navList li a:hover {
 		background-color: rgba(0,0,0,.5);
 	}
 
 	/* Toggle the navigation bar to expand down  */
-	#primaryNav.open {height: auto;}
+	#navList.open {height: auto;}
 
 	/* Submenus – optional .parent class indicates dropdowns */
-	#primaryNav > li:hover > a {background: rgba(0,0,0,.5);}
-	#primaryNav li.parent > a:after {
-        font-size: .75rem;
-		content: "\25BC";
+	#navList > li:hover > a {background: rgba(0,0,0,.5);}
+	#navList li.parent > a:after {
+        font-size: 1rem;
+		content: "\22EE";
 		color: rgba(255,255,255,.5);
 		float: right;
 	}
-	#primaryNav li.parent > a:hover {
+	#navList li.parent > a:hover {
 		background: rgba(0,0,0,.5);
 	}
     /*hide the sub menu items by default*/
-	#primaryNav li ul {
+	#navList li ul {
 		display: none;
 		background: rgba(0,0,0,.1);
 		padding: 0;
 	}
-	#primaryNav li ul a {
+	#navList li ul a {
 		border-top: solid 1px rgba(0,0,0,0.2);
 		font-size: 14px;
 		padding: 10px 5%;
-		font-weight: $lightWeight;
+		font-weight: 200;
 	}
-	#primaryNav li:hover ul {display: block;}
+	#navList li:hover ul {display: block;}
 } /* End Mobile Styles */
