@@ -19,6 +19,7 @@ div#headerWrapper{
     height: 140px;
     background-size: cover;
     background-position: center bottom;
+    background-repeat: no-repeat;
 
 }
 header {
@@ -56,6 +57,9 @@ main {
     }
     .swiper-wrapper{
         margin-bottom: 30px;
+    }
+    .swiper-pagination {
+        position: relative;
     }
     p{
         background-color: rgba(0,0,0,0.5);
