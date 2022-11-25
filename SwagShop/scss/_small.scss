@@ -104,16 +104,16 @@ main {
         transition: all 0.5s ease-in;
     }
     div:nth-child(1) a{
-       background-color: $orange; 
+       background-color: $lilac; 
     }
     div:nth-child(2) a{
-        background-color: $pink; 
+        background-color: $lilac; 
      }
      div:nth-child(3) a{
-        background-color: $mediumBlue; 
+        background-color: $lilac; 
      }
      div:nth-child(4) a{
-        background-color: $khaki; 
+        background-color: $lilac; 
      }
     div a:hover{
         background: none;
@@ -134,8 +134,8 @@ main {
 /*----------- FOOTER --------------*/
 
 footer {
-    background-color: $darkBlue;
-    color: lighten($pink,30%);
+    background-color: $lilac;
+    color: lighten($blue-bell,30%);
     padding: .5rem 2%;
     text-align: center;
 }

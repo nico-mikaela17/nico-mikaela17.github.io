@@ -413,16 +413,16 @@ main .cards div a {
   transition: all 0.5s ease-in;
 }
 main .cards div:nth-child(1) a {
-  background-color: #E77728;
+  background-color: #b6a6ca;
 }
 main .cards div:nth-child(2) a {
-  background-color: #F7B1AB;
+  background-color: #b6a6ca;
 }
 main .cards div:nth-child(3) a {
-  background-color: #55828B;
+  background-color: #b6a6ca;
 }
 main .cards div:nth-child(4) a {
-  background-color: #B5BA72;
+  background-color: #b6a6ca;
 }
 main .cards div a:hover {
   background: none;
@@ -439,8 +439,8 @@ main .individual-card {
 
 /*----------- FOOTER --------------*/
 footer {
-  background-color: #13293D;
-  color: white;
+  background-color: #b6a6ca;
+  color: #f7f6f9;
   padding: 0.5rem 2%;
   text-align: center;
 }
@@ -449,7 +449,7 @@ footer {
 /*Adjust the media query max-width value on line 5 to match your breakpoint between the small and medium screens OR between the medium and large screens*/
 @media only screen and (max-width: 34.97rem) {
   nav {
-    background-color: #B5BA72;
+    background-color: #b6a6ca;
   }
   /* Navigation Button  -------------------------------------------------------- */
   nav button {
@@ -528,7 +528,7 @@ footer {
   }
   /*----------- NAVIGATION --------------*/
   nav {
-    background-color: #B5BA72;
+    background-color: #b6a6ca;
   }
   nav button {
     display: none;
@@ -562,7 +562,7 @@ footer {
   nav ul li ul {
     display: flex;
     flex-direction: column;
-    background-color: #acb261;
+    background-color: #a996c0;
     border: none;
     width: 14rem;
     position: absolute;
@@ -571,7 +571,7 @@ footer {
   }
   nav ul li ul li {
     border-right: none;
-    border-top: solud 1px rgba(0, 0, 0, 0.2);
+    border-top: solid 1px rgba(0, 0, 0, 0.2);
   }
   nav ul li:hover ul {
     left: auto;
