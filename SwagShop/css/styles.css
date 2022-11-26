@@ -554,7 +554,28 @@ footer {
   }
   /*----------- BODY --------------*/
   /*----------- HEADER --------------*/
+  #hamburgerB {
+    display: none;
+  }
   /*----------- NAVIGATION --------------*/
+  nav {
+    position: static;
+    transform: translateX(0);
+    width: auto;
+  }
+  nav div {
+    display: none;
+  }
+  nav ul {
+    display: flex;
+    margin: 0;
+    border-left: 1px solid rgba(255, 255, 255, 0.348);
+  }
+  nav ul li a {
+    border: none;
+    border-right: 1px solid rgba(255, 255, 255, 0.348);
+    padding: 0.6rem 1.5rem;
+  }
   /*----------- MAIN --------------*/
   main form label.sbs {
     padding: 0.4rem 0;
