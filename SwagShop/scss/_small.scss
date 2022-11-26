@@ -11,19 +11,77 @@ body {
     font-family: Verdana, sans-serif;
 }
 
+#pageWrapper{
+    position: relative;
+    overflow-x: hidden;
+}
+
+.moveOver>.content{
+    transform: translateX(-180px);
+}
+
+.content{
+    transition: transform 500ms ease;
+}
+
 header {
-    margin: 0;
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 100px auto 48px;
+    align-items: center;
+    padding: 0.5rem 2vw;
     background-color: rgb(27, 8, 44);
    h1{
-        margin: 0;
-        padding: 3rem 0 0 0.5rem;
+        padding-left:0.5rem;
         color: white;
+    }
+    button{
+        width: 48px;
+        height: 48px;
+        margin: 0;
+        align-self: start;
+        background: none;
+        font-size: 1.5rem;
+        text-align: right;
+        color: $lavender-web;
+        border: none;
     }
 }
 /*----------- NAVIGATION --------------*/
-
+nav{
+    background: darken($blue-bell,35%);
+    width: 180px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    transform: translateX(100%);
+    div{
+        display: block;
+        text-align: center;
+        padding: 1.5rem;
+        font-size: 1.1rem;
+        background-color: $lilac;
+        color: darken($lilac,40%);
+    }
+    ul li{
+        list-style-type: none;
+    }
+    ul li a{
+        display: block;
+        padding: 0.9rem 0.5rem;
+        text-align: right;
+        border-bottom: 1px $lilac solid;
+        text-decoration: none;
+        color: white;
+    }
+    ul li a:hover{
+        background-color: darken($lilac,50%);
+        color: lighten($lilac,30%);
+    }
+    li.active a{
+        background-color: darken($languid-lavender,70%);
+    }
+}
 /*----------- MAIN --------------*/
 main{
     padding: 0 2%;

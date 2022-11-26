@@ -4,35 +4,7 @@
 
 
 /*----------- NAVIGATION --------------*/
-header{
-    background-color: $lilac;
-    button{
-        display: none;
-    }
-    ul{
-        display: flex;
-        border-right: 1px solid rgba(#000000, 0.1);
-        margin: 0;
-    }
-    ul li{
-        border-right: 1px solid rgba(#000000, 0.1);
-        list-style-type: none;
-    }
-    ul li a{
-        display: block;
-        font-size: 1rem;
-        padding: 0.9rem 1.2rem;
-        color: black;
-        text-decoration: none;
-        transition: background 0.3 linear;
-    }
-    ul li a:hover{
-        background-color: rgba(#000000, 0.5);
-    }
-    li.active{
-        background-color: rgba(#000000, 0.25);
-    }
-}
+
 
 /*----------- MAIN --------------*/
 main{
