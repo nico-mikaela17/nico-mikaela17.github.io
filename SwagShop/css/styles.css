@@ -340,6 +340,61 @@ header h1 {
 
 /*----------- NAVIGATION --------------*/
 /*----------- MAIN --------------*/
+main {
+  padding: 0 2%;
+  min-height: 20rem;
+}
+main form fieldset {
+  margin: 2rem 0;
+  border: 1px solid #e1dee9;
+  border-radius: 10px;
+  padding: 0.5rem 2%;
+}
+main form legend {
+  color: rgb(27, 8, 44);
+  margin: 0 1rem;
+  padding: 0 0.5rem;
+}
+main form label.top, main form div {
+  display: block;
+  padding-top: 1rem;
+  color: rgb(27, 8, 44);
+  font-size: 0.8rem;
+}
+main form label.top input, main form label.select {
+  -webkit-appearance: none;
+  display: block;
+  font-size: 1rem;
+  border: solid 1px #b6a6ca;
+  border-radius: 4px;
+  padding: 0.75rem;
+  color: rgb(27, 8, 44);
+  width: 100%;
+  max-width: 20rem;
+  background-color: #e1dee9;
+}
+main form label.sbs {
+  display: block;
+  padding: 0.75rem;
+  color: rgb(27, 8, 44);
+}
+main form input.submitBtn {
+  border: none;
+  background-color: #503d67;
+  color: white;
+  border-radius: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  margin: 0 0 2rem 2%;
+  width: 96%;
+  max-width: 20rem;
+}
+main form label.top input:required {
+  border-left: #a09abc solid 6px;
+}
+main form label.top input:required:valid {
+  border-left: lightgreen solid 6px;
+}
+
 /*----------- FOOTER --------------*/
 footer {
   background-color: rgb(27, 8, 44);
@@ -470,8 +525,8 @@ footer {
   /*----------- HEADER --------------*/
   /*----------- NAVIGATION --------------*/
   /*----------- MAIN --------------*/
-  main .individual-card {
-    flex-basis: 25%;
+  main form label.sbs {
+    padding: 0.4rem 0;
   }
   /*----------- FOOTER --------------*/
 } /* end of media query */

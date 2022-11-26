@@ -41,44 +41,44 @@
         <form method="get" action="thanks.html">
             <fieldset>
                 <legend>Customer Information</legend>
-                <label>First Name *<input type="text" name="fname" required></label>
-                <label>Last Name *<input type="text" name="lname" required></label>
-                <label>Phone<input type="tel" name="phone" placeholder="123-456-7890"></label>
-                <label>Email *<input type="email" name="email" placeholder="someone@email.com" required></label>
+                <label class="top">First Name *<input type="text" name="fname" required></label>
+                <label class="top">Last Name *<input type="text" name="lname" required></label>
+                <label class="top">Phone<input type="tel" name="phone" placeholder="123-456-7890"></label>
+                <label class="top">Email *<input type="email" name="email" placeholder="someone@email.com" required></label>
             </fieldset>
             <fieldset>
                 <legend>Hat Information</legend>
-                <label>Date Needed *<input type="date" name="date needed"></label>
-                <label>Business Name<input type="text" name="name"></label>
-                <label>Business URL<input type="url" name="url" placeholder="http://"></label>
-                <label>Color 
+                <label class="top">Date Needed *<input type="date" name="date needed"></label>
+                <label class="top">Business Name<input type="text" name="name"></label>
+                <label class="top">Business URL<input type="url" name="url" placeholder="http://"></label>
+                <label class="top">Color 
                     <select name="colors">
-                        <option value="">Please Select</option>
-                        <option value="red">Red</option>
+                        <option value="">Please Select &#9662;</option>
+                        <option value="black">Black</option>
                         <option value="blue">Blue</option>
                         <option value="green">Green</option>
                         <option value="orange">Orange</option>
-                        <option value="yellow">Yellow</option>
-                        <option value="purple">Purple</option>
                         <option value="pink">Pink</option>
+                        <option value="purple">Purple</option>
+                        <option value="red">Red</option>
                         <option value="white">White</option>
-                        <option value="black">Black</option>
+                        <option value="yellow">Yellow</option>
                     </select>
                 </label>
-                <label>Quantity *<input type="number" name="number" required></label>
+                <label class="top">Quantity *<input type="number" name="number" required></label>
                 <div>Material</div>
-                <label><input type="radio" name="material" value="cotton">Cotton </label>
-                <label><input type="radio" name="material" value="polyester">Polyester </label>
-                <label><input type="radio" name="material" value="nylon">Nylon </label>
-                <label><input type="radio" name="material" value="linen">Linen </label>
+                <label class="sbs"><input type="radio" name="material" value="cotton">Cotton </label>
+                <label class="sbs"><input type="radio" name="material" value="linen">Linen </label>
+                <label class="sbs"><input type="radio" name="material" value="nylon">Nylon </label>
+                <label class="sbs"><input type="radio" name="material" value="polyester">Polyester </label>
             </fieldset>
             <fieldset>
                 <legend>Payment Information</legend>
-                <label>Name on Card *<input type="text" name="name" required></label>
-                <label>Card Number *<input type="text" name="card number" placeholder="XXXX-XXXX-XXXX-1234" required></label>
-                <label>Expiration Date *<input type="date" name="expiration" required></label>
+                <label class="top">Name on Card *<input type="text" name="name" required></label>
+                <label class="top">Card Number *<input type="text" name="card number" placeholder="XXXX-XXXX-XXXX-1234" required></label>
+                <label class="top">Expiration Date *<input type="date" name="expiration" required></label>
             </fieldset>
-            <input type="submit" value="Order Hat">
+            <input class="submitBtn" type="submit" value="Order Hat">
         </form>
     </main>
 </div>
