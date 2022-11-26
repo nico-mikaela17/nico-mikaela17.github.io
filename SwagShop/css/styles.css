@@ -326,122 +326,25 @@ body {
   font-family: Verdana, sans-serif;
 }
 
-/*----------- HEADER --------------*/
-div#headerWrapper {
-  background-image: url(../images/boston6small.jpg);
-  height: 140px;
-  background-size: cover;
-  background-position: center bottom;
-}
-
 header {
   margin: 0;
-  height: 100%;
-  width: auto;
   display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
+  flex-direction: row;
+  background-color: rgb(27, 8, 44);
 }
 header h1 {
   margin: 0;
-  padding: 0 1rem;
+  padding: 3rem 0 0 0.5rem;
   color: white;
-  background-color: rgba(0, 0, 0, 0.5);
-}
-header h3 {
-  color: white;
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: 0.5rem 1rem;
-  margin: 0;
 }
 
 /*----------- NAVIGATION --------------*/
 /*----------- MAIN --------------*/
-main .swiper {
-  width: 100%;
-  height: auto;
-}
-main .swiper img {
-  width: 100%;
-  display: block;
-}
-main .swiper-wrapper {
-  margin-bottom: 30px;
-}
-main .swiper-pagination {
-  position: relative;
-}
-main p {
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white;
-  text-align: center;
-  transform: translateY(-100%);
-  margin: 0;
-  padding: 0.4rem 2vw;
-  position: absolute;
-  width: 100%;
-}
-main .cards {
-  display: flex;
-  flex-wrap: wrap;
-  text-align: center;
-  justify-content: space-evenly;
-}
-main .cards div:nth-child(1) {
-  background-image: url(../images/hotelroom.jpg);
-  background-position: center;
-  background-size: cover;
-}
-main .cards div:nth-child(2) {
-  background-image: url(../images/walkperson.jpg);
-  background-size: cover;
-}
-main .cards div:nth-child(3) {
-  background-image: url(../images/citypark.jpg);
-  background-size: cover;
-}
-main .cards div:nth-child(4) {
-  background-image: url(../images/diningtable.jpg);
-  background-size: cover;
-}
-main .cards div a {
-  display: block;
-  width: 100%;
-  height: 300px;
-  text-decoration: none;
-  padding: 0 2%;
-  transition: all 0.5s ease-in;
-}
-main .cards div:nth-child(1) a {
-  background-color: #b6a6ca;
-}
-main .cards div:nth-child(2) a {
-  background-color: #b6a6ca;
-}
-main .cards div:nth-child(3) a {
-  background-color: #b6a6ca;
-}
-main .cards div:nth-child(4) a {
-  background-color: #b6a6ca;
-}
-main .cards div a:hover {
-  background: none;
-  text-shadow: 0 0 4px black;
-}
-main .cards h4 {
-  font-size: 1.2rem;
-  padding: 1rem 0;
-  color: white;
-}
-main .individual-card {
-  flex-basis: 100%;
-}
-
 /*----------- FOOTER --------------*/
 footer {
-  background-color: #b6a6ca;
+  background-color: rgb(27, 8, 44);
   color: #f7f6f9;
-  padding: 0.5rem 2%;
+  padding: 0.8rem 0;
   text-align: center;
 }
 
@@ -497,7 +400,6 @@ footer {
   }
   #navList li.parent > a:after {
     font-size: 1rem;
-    content: "⋮";
     color: rgba(255, 255, 255, 0.5);
     float: right;
   }
@@ -523,9 +425,6 @@ footer {
 @media only screen and (min-width: 35rem) {
   /*----------- BODY --------------*/
   /*----------- HEADER --------------*/
-  div#headerWrapper {
-    background-image: url(../images/boston6medium.jpg);
-  }
   /*----------- NAVIGATION --------------*/
   nav {
     background-color: #b6a6ca;
@@ -553,30 +452,6 @@ footer {
   nav ul li a:hover {
     background-color: rgba(0, 0, 0, 0.5);
   }
-  nav li.parent > a:after {
-    content: "▼";
-    font-size: 0.65rem;
-    color: black;
-    float: left;
-  }
-  nav ul li ul {
-    display: flex;
-    flex-direction: column;
-    background-color: #a996c0;
-    border: none;
-    width: 14rem;
-    position: absolute;
-    left: -999rem;
-    z-index: 99;
-  }
-  nav ul li ul li {
-    border-right: none;
-    border-top: solid 1px rgba(0, 0, 0, 0.2);
-  }
-  nav ul li:hover ul {
-    left: auto;
-    margin-left: 0;
-  }
   nav li.active {
     background-color: rgba(0, 0, 0, 0.25);
   }
@@ -593,10 +468,6 @@ footer {
   }
   /*----------- BODY --------------*/
   /*----------- HEADER --------------*/
-  div#headerWrapper {
-    background-image: url(../images/boston6large.jpg);
-    height: 140px;
-  }
   /*----------- NAVIGATION --------------*/
   /*----------- MAIN --------------*/
   main .individual-card {
