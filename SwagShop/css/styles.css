@@ -382,8 +382,10 @@ nav div {
 }
 nav ul li {
   list-style-type: none;
+  padding: 0;
 }
 nav ul li a {
+  padding: 0;
   display: block;
   padding: 0.9rem 0.5rem;
   text-align: right;
@@ -392,6 +394,7 @@ nav ul li a {
   color: white;
 }
 nav ul li a:hover {
+  padding: 0;
   background-color: #372a47;
   color: white;
 }
@@ -489,6 +492,7 @@ footer {
   }
   /* Navigation Bar -------------------------------------------------------- */
   #navList {
+    height: 0;
     overflow: hidden;
     margin: 0;
     padding: 0;
@@ -548,9 +552,6 @@ footer {
   /*----------- HEADER --------------*/
   /*----------- NAVIGATION --------------*/
   /*----------- MAIN --------------*/
-  main .individual-card {
-    flex-basis: 50%;
-  }
   /*----------- FOOTER --------------*/
 } /* end of media query */
 @media only screen and (min-width: 60rem) {
@@ -563,6 +564,9 @@ footer {
   #hamburgerB {
     display: none;
   }
+  .moveOver > .content {
+    transform: translateX(0px);
+  }
   /*----------- NAVIGATION --------------*/
   nav {
     position: static;
@@ -573,6 +577,7 @@ footer {
     display: none;
   }
   nav ul {
+    padding: 0;
     display: flex;
     margin: 0;
     border-left: 1px solid rgba(255, 255, 255, 0.348);
