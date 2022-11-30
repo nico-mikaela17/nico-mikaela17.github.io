@@ -17,15 +17,22 @@ body {
 /*----------- HEADER --------------*/
 div#headerWrapper{grid-row-start: 1;background-color:lighten($melon,20%);
 }
-div#hamburger a, div#closex a{
+div#hamburger a{
     display: block;
-    padding: 0.8rem 2vw;
+    padding: 1rem;
     font-size: 1.5rem;
     color: black;
     text-decoration: none;
-    text-align: right;
+    text-align: left;
 }
-div#closex a {margin-right: 10vw;}
+div#closex a{
+    display: block;
+    padding: 1rem;
+    font-size: 1.5rem;
+    color: black;
+    text-decoration: none;
+    text-align: left;
+}
 header {
     width: 100%;
     img{
@@ -66,89 +73,19 @@ nav {
 div#mainWrapper{grid-row-start: 2;}
 
 main {
-    h2{
+    h2, h4{
         padding: 0.9rem 2vw;
-        margin: 0;
+        font-size: larger;
     }
-    h4{
+    p{
+        margin: 1rem 0;
         padding: 0.9rem 2vw;
- 
-    }
-    .flexed{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-    }
-    .column{
-        padding: 0 $gutter;
-    }
-    .lawyer{
-        padding-top: 2rem;
-        section{
-            text-align: center;
-            height: 25px;
-            background-color: darken($melon, 30%);
-            color: #fff;
-            padding-top: 0.5rem;
-            padding-bottom: 1rem;
-        }
-        a{
-            display: block;
-            padding: .5rem 0;
-            margin:1rem;
-            border-radius: 6px;
-            text-decoration: none;
-            text-align: center;
-            background-color: #D4C473;
-            color: $melon;
-        }
-    }
-    .accidents{
-        padding: 0;
-        margin: 2rem 0;
-        background-color: lighten($melon, 25%);
-        h2,p{
-        padding:0 0.5rem;
-        }
-        a{
-            display: block;
-            padding: .5rem 0;
-            text-decoration: none;
-            text-align: center;
-            background-color: #D4C473;
-            color: $melon;
-        }
-    }
-    .faq{
-        a{
-            display: block;
-            padding: .5rem 0;
-            margin:1rem;
-            border-radius: 6px;
-            text-decoration: none;
-            text-align: center;
-            background-color: #D4C473;
-            color: $melon;
-        }
-    }
-    @for $i from 1 through 12 {
-        $w: ($i / 12) * 100%;
-        .small-#{$i} {flex-basis: $w;}
+        font-size: 1rem;
+        color: lighten(black,10%);
     }
     img{
         width: 100%;
     }
-    .jumbotron{
-        background-color: $melon;
-        color: #D9DBF1;
-        margin: 0.5rem 0;
-       p{
-        padding: 1rem 0;
-        align-items: center;
-        text-align: center;
-        font-size: large;
-    }
-}
 }
 
 
