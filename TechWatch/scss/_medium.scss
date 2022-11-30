@@ -8,25 +8,21 @@ div#footerWrapper{grid-row-start: 4;}
 
 /*----------- HEADER --------------*/
 #headerWrapper{
-    border-bottom: 1px solid $lightBlue;
+    border-bottom: 1px solid $melon;
 
 }
 header{
-    grid-template-columns: 151px auto;
-    div#phone{
-        display: block;
-        justify-self: end;
         a{
-            color: $darkBlue;
+            color: $melon;
             text-decoration: none;
             font-weight: 100;
             font-size: 1.5rem;
         }
         a:hover{
-            color:$mediumBlue;
+            color:$melon;
         }
     }
-}
+
 
 /*----------- NAVIGATION --------------*/
 div#hamburger, div#closex {
@@ -43,6 +39,10 @@ nav{
     ul li{
         border:none;
     }
+    ul li a{
+        padding:0.8rem 1rem;
+        border-radius: 5px;
+        margin:0.2rem 0.08rem;}
 }
 
 
