@@ -320,29 +320,20 @@ html {
   margin: 0;
 }
 
+div#pageWrapper {
+  display: grid;
+  grid-template-areas: "hamburger" "header" "content" "footer" "navigation";
+}
+
 /*----------- BODY --------------*/
 body {
-  display: grid;
   font-size: 14px;
   font-family: Verdana, sans-serif;
 }
 
 /*----------- HEADER --------------*/
-div#headerWrapper {
-  grid-row-start: 1;
-  background-color: #f9f0ed;
-}
-
 div#hamburger a {
-  display: block;
-  padding: 1rem;
-  font-size: 1.5rem;
-  color: black;
-  text-decoration: none;
-  text-align: left;
-}
-
-div#closex a {
+  grid-area: hamburger;
   display: block;
   padding: 1rem;
   font-size: 1.5rem;
@@ -352,6 +343,7 @@ div#closex a {
 }
 
 header {
+  grid-area: header;
   width: 100%;
 }
 header img {
@@ -360,13 +352,17 @@ header img {
 }
 
 /*----------- NAVIGATION --------------*/
-div#navWrapper {
-  grid-row-start: 4;
-  background-color: #88a2aa;
-}
-
 nav {
+  grid-area: navigation;
   height: 100vh;
+}
+nav div#closex a {
+  display: block;
+  padding: 1rem;
+  font-size: 1.5rem;
+  color: black;
+  text-decoration: none;
+  text-align: left;
 }
 nav ul {
   border-bottom: 1px solid #011638;
@@ -394,10 +390,9 @@ nav #navList {
 }
 
 /*----------- MAIN --------------*/
-div#mainWrapper {
-  grid-row-start: 2;
+main {
+  grid-area: content;
 }
-
 main h2, main h4 {
   padding: 0.9rem 2vw;
   font-size: larger;
@@ -413,36 +408,17 @@ main img {
 }
 
 /*----------- FOOTER --------------*/
-div#footerWrapper {
-  grid-row-start: 3;
-}
-
 footer {
+  grid-area: footer;
   background-color: #e0afa0;
   color: #e0afa0;
   padding: 0.5rem 2%;
   text-align: center;
 }
 
-/*----- Clearfix: Force an Element not to collapse -----*/
 @media only screen and (min-width: 35rem) {
   /*----------- BODY --------------*/
-  div#headerWrapper {
-    grid-row-start: 1;
-  }
-  div#navWrapper {
-    grid-row-start: 2;
-  }
-  div#mainWrapper {
-    grid-row-start: 3;
-  }
-  div#footerWrapper {
-    grid-row-start: 4;
-  }
   /*----------- HEADER --------------*/
-  #headerWrapper {
-    border-bottom: 1px solid #e0afa0;
-  }
   header a {
     color: #e0afa0;
     text-decoration: none;
@@ -473,55 +449,6 @@ footer {
     margin: 0.2rem 0.08rem;
   }
   /*----------- MAIN --------------*/
-  main .medium-1 {
-    flex-basis: 8.3333333333%;
-  }
-  main .medium-2 {
-    flex-basis: 16.6666666667%;
-  }
-  main .medium-3 {
-    flex-basis: 25%;
-  }
-  main .medium-4 {
-    flex-basis: 33.3333333333%;
-  }
-  main .medium-5 {
-    flex-basis: 41.6666666667%;
-  }
-  main .medium-6 {
-    flex-basis: 50%;
-  }
-  main .medium-7 {
-    flex-basis: 58.3333333333%;
-  }
-  main .medium-8 {
-    flex-basis: 66.6666666667%;
-  }
-  main .medium-9 {
-    flex-basis: 75%;
-  }
-  main .medium-10 {
-    flex-basis: 83.3333333333%;
-  }
-  main .medium-11 {
-    flex-basis: 91.6666666667%;
-  }
-  main .medium-12 {
-    flex-basis: 100%;
-  }
-  main .jumbotron {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 0 2vw;
-  }
-  main .lawyer section {
-    display: block;
-    padding-bottom: 1rem;
-  }
-  main .accidentS {
-    padding: 0.5rem;
-  }
   /*----------- FOOTER --------------*/
 } /* end of media query */
 @media only screen and (min-width: 60rem) {

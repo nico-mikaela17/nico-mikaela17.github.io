@@ -5,19 +5,27 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;     margin: 0;
 }
 
+div#pageWrapper{
+    display: grid;
+    grid-template-areas: 
+    "hamburger"
+    "header"
+    "content"
+    "footer"
+    "navigation";
+}
 
 /*----------- BODY --------------*/
 body {
-    display: grid;
     font-size: 14px;
     font-family: Verdana, sans-serif;
 }
 
 
 /*----------- HEADER --------------*/
-div#headerWrapper{grid-row-start: 1;background-color:lighten($melon,20%);
-}
+
 div#hamburger a{
+    grid-area: hamburger;
     display: block;
     padding: 1rem;
     font-size: 1.5rem;
@@ -25,15 +33,9 @@ div#hamburger a{
     text-decoration: none;
     text-align: left;
 }
-div#closex a{
-    display: block;
-    padding: 1rem;
-    font-size: 1.5rem;
-    color: black;
-    text-decoration: none;
-    text-align: left;
-}
+
 header {
+    grid-area: header;
     width: 100%;
     img{
         float: left;
@@ -41,10 +43,17 @@ header {
     }
 }
 /*----------- NAVIGATION --------------*/
-div#navWrapper{grid-row-start: 4; background-color: $pewter-blue;}
 
 nav {
+    grid-area: navigation;
     height: 100vh;
+    div#closex a{
+        display: block;
+        padding: 1rem;
+        font-size: 1.5rem;
+        color: black;
+        text-decoration: none;
+        text-align: left;}
     ul{
         border-bottom: 1px solid $oxford-blue;
     }
@@ -70,9 +79,8 @@ nav {
     }
 }
 /*----------- MAIN --------------*/
-div#mainWrapper{grid-row-start: 2;}
-
 main {
+    grid-area: content;
     h2, h4{
         padding: 0.9rem 2vw;
         font-size: larger;
@@ -90,9 +98,9 @@ main {
 
 
 /*----------- FOOTER --------------*/
-div#footerWrapper{grid-row-start: 3;}
 
 footer {
+    grid-area: footer;
     background-color: $melon;
     color: $melon;
     padding: .5rem 2%;
@@ -101,6 +109,5 @@ footer {
 
 
 
-/*----- Clearfix: Force an Element not to collapse -----*/
 
 

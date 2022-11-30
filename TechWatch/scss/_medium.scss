@@ -1,16 +1,9 @@
 /*----------- BODY --------------*/
-div#headerWrapper{grid-row-start: 1;}
-div#navWrapper{grid-row-start: 2;}
-div#mainWrapper{grid-row-start: 3;}
-div#footerWrapper{grid-row-start: 4;}
 
 
 
 /*----------- HEADER --------------*/
-#headerWrapper{
-    border-bottom: 1px solid $melon;
 
-}
 header{
         a{
             color: $melon;
@@ -47,27 +40,6 @@ nav{
 
 
 /*----------- MAIN --------------*/
-main{
-    @for $i from 1 through 12 {
-        $w: ($i / 12) * 100%;
-        .medium-#{$i} {flex-basis: $w;}
-    }
-    .jumbotron{
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        padding:0 2vw;
-    }
-    .lawyer{
-        section{
-            display: block;
-            padding-bottom: 1rem;
-        }
-    }
-    .accidentS{
-        padding: 0.5rem;
-    }
-}
 
 /*----------- FOOTER --------------*/
     
