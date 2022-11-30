@@ -1,0 +1,32 @@
+header, main, footer {
+        max-width: 64rem;
+        margin:auto;
+        
+}
+
+/*----------- BODY --------------*/
+
+
+
+/*----------- HEADER --------------*/
+
+/*----------- NAVIGATION --------------*/
+nav ul li a{
+    padding: 0.2rem 1rem;
+    border-radius: 10px;
+    margin:0.5rem 0;
+}
+
+
+/*----------- MAIN --------------*/
+main{
+    @for $i from 1 through 12 {
+        $w: ($i / 12) * 100%;
+        .large-#{$i} {flex-basis: $w;}
+    }
+    .jumbotron{
+        margin: 0 0.5rem;
+    }
+}
+
+/*----------- FOOTER --------------*/
