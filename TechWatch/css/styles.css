@@ -320,7 +320,7 @@ html {
   margin: 0;
 }
 
-div#pageWrapper {
+div.pageWrapper {
   display: grid;
   grid-template-areas: "hamburger" "header" "content" "footer" "navigation";
 }
