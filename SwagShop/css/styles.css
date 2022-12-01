@@ -357,7 +357,7 @@ header button {
   align-self: start;
   background: none;
   font-size: 1.5rem;
-  text-align: right;
+  text-align: center;
   color: #e1dee9;
   border: none;
 }
@@ -489,6 +489,7 @@ footer {
   }
   /* Navigation Bar -------------------------------------------------------- */
   #navList {
+    height: 0;
     overflow: hidden;
     margin: 0;
     padding: 0;
