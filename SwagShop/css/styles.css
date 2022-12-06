@@ -489,7 +489,6 @@ footer {
   }
   /* Navigation Bar -------------------------------------------------------- */
   #navList {
-    height: 0;
     overflow: hidden;
     margin: 0;
     padding: 0;
