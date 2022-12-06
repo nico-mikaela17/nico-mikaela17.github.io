@@ -1,5 +1,11 @@
 /*----------- BODY --------------*/
-
+div.pageWrapper{
+    grid-template-areas: 
+    "header header"
+    "navigation content"
+    "footer footer";
+    grid-template-columns: 125px auto;
+}
 
 
 /*----------- HEADER --------------*/
@@ -26,6 +32,7 @@ nav{
     height: auto;
     ul{
         display:flex;
+        flex-direction: column;
         justify-content: end;
         border: none;
     }
@@ -33,13 +40,47 @@ nav{
         border:none;
     }
     ul li a{
-        padding:0.8rem 1rem;
+        padding:0.6rem 1rem;
         border-radius: 5px;
         margin:0.2rem 0.08rem;}
 }
 
 
 /*----------- MAIN --------------*/
-
+main{
+    div.item{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 70px 1fr;
+   
+          aside{grid-area: title}
+          span{grid-area: product}
+          section{grid-area: overview}
+   
+          grid-template-areas: 
+          "title title"
+          "product overview";
+   
+   
+          span{margin-right: 1rem;}
+       }
+       
+       div.item2{
+           display: grid;
+           grid-template-columns: 1fr 1fr;
+           grid-template-rows: 70px 1fr;
+      
+             .title{grid-area: title}
+             span{grid-area: product}
+             section{grid-area: overview}
+      
+             grid-template-areas: 
+             "title title"
+             "overview product";
+      
+      
+             span{margin-right: 1rem;}
+          }
+}
 /*----------- FOOTER --------------*/
     

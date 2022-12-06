@@ -55,24 +55,24 @@ nav {
         text-decoration: none;
         text-align: left;}
     ul{
-        border-bottom: 1px solid $oxford-blue;
+        border-bottom: 1px solid $melon;
     }
     ul li{
-        border-top: 1px solid $oxford-blue;
+        border-top: 1px solid $melon;
     }
     ul li a{
         display: block;
-        color: $oxford-blue;
+        color: $burgundy;
         padding: 0.9rem 2vw;
         text-decoration: none;
         text-align: left;
     }
     ul li a:hover{
-        background-color: lighten($oxford-blue,80%);
+        background-color: $melon;
     }
     ul li.active a{
-        background-color: $oxford-blue;
-        color: lighten($oxford-blue,80%);
+        background-color: $burgundy;
+        color: lighten($melon,80%);
     }
     #navList{list-style-type: none;
         padding: 0;
@@ -81,12 +81,17 @@ nav {
 /*----------- MAIN --------------*/
 main {
     grid-area: content;
-    h2, h4{
+    h2{
+        padding: 0.9rem 2vw;
+        font-size: 24px;
+        margin-top: 0.5rem;
+    }
+    h4{
         padding: 0.9rem 2vw;
         font-size: larger;
+        margin-top: 1rem;
     }
     p{
-        margin: 1rem 0;
         padding: 0.9rem 2vw;
         font-size: 1rem;
         color: lighten(black,10%);
@@ -102,7 +107,7 @@ main {
 footer {
     grid-area: footer;
     background-color: $melon;
-    color: $melon;
+    color: $burgundy;
     padding: .5rem 2%;
     text-align: center;
 }
