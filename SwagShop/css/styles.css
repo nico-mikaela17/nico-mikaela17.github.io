@@ -489,6 +489,7 @@ footer {
   }
   /* Navigation Bar -------------------------------------------------------- */
   #navList {
+    height: 0;
     overflow: hidden;
     margin: 0;
     padding: 0;
@@ -547,6 +548,9 @@ footer {
   /*----------- BODY --------------*/
   /*----------- HEADER --------------*/
   /*----------- NAVIGATION --------------*/
+  nav ul {
+    padding: 0;
+  }
   /*----------- MAIN --------------*/
   /*----------- FOOTER --------------*/
 } /* end of media query */
