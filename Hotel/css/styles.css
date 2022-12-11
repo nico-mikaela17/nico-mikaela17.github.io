@@ -350,19 +350,36 @@ nav {
   bottom: 0;
   width: 100%;
   z-index: 999;
-  background-color: #f4a261;
+  background-color: #264653;
+}
+nav ul {
+  display: flex;
+}
+nav ul li {
+  flex-basis: 33.3%;
+  list-style-type: none;
+  text-align: center;
+}
+nav ul li a {
+  display: block;
+  width: 100%;
 }
 
 /*----------- MAIN --------------*/
-main p {
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white;
-  text-align: center;
-  transform: translateY(-100%);
-  margin: 0;
-  padding: 0.4rem 2vw;
+main #inventoryWrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+main figure {
+  position: relative;
+}
+main figcaption {
   position: absolute;
+  bottom: 0;
   width: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: white;
+  padding: 0.3rem 2vw;
 }
 
 /*----------- FOOTER --------------*/
@@ -377,7 +394,7 @@ footer {
 /*Adjust the media query max-width value on line 5 to match your breakpoint between the small and medium screens OR between the medium and large screens*/
 @media only screen and (max-width: 34.97rem) {
   nav {
-    background-color: #2a9d8f;
+    background-color: #264653;
   }
   /* Navigation Button  -------------------------------------------------------- */
   nav button {

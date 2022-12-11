@@ -33,22 +33,37 @@ nav{
     bottom: 0;
     width: 100%;
     z-index: 999;
-    background-color: $sandy-brown;
+    background-color: $charcoal;
+    ul{
+        display: flex;
+        li{
+            flex-basis: 33.3%;
+            list-style-type: none;
+            text-align: center;
+            a{
+                display: block;
+                width: 100%;
+            }
+        }
+    }
 }
 /*----------- MAIN --------------*/
 main {
-
-    p{
-        background-color: rgba(0,0,0,0.5);
-        color: white;
-        text-align: center;
-        transform: translateY(-100%);
-        margin: 0;
-        padding: 0.4rem 2vw;
-        position: absolute;
-        width: 100%;
+    #inventoryWrapper{
+        display: grid;
+       grid-template-columns: 1fr; 
     }
-   
+   figure{
+    position: relative;
+   }
+   figcaption{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0,0,0,0.4);
+    color: white;
+    padding: 0.3rem $gutter;
+   }
 }
 
 
