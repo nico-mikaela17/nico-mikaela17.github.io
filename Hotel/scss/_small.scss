@@ -10,15 +10,10 @@ body {
     font-size: 14px;
     font-family: Verdana, sans-serif;
 }
-
 /*----------- HEADER --------------*/
 header {
     margin: 0;
     height: 100%;
-    width: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
     h1{
         margin: 0;
         padding: 0 1rem;
@@ -33,9 +28,14 @@ header {
     }
 }
 /*----------- NAVIGATION --------------*/
-
+nav{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 999;
+    background-color: $sandy-brown;
+}
 /*----------- MAIN --------------*/
-
 main {
 
     p{
@@ -55,8 +55,8 @@ main {
 /*----------- FOOTER --------------*/
 
 footer {
-    background-color: $darkBlue;
-    color: lighten($pink,30%);
+    background-color: $sandy-brown;
+    color: lighten($persian-green,30%);
     padding: .5rem 2%;
     text-align: center;
 }
