@@ -12,17 +12,16 @@ body {
 }
 /*----------- HEADER --------------*/
 header {
-    margin: 0;
-    height: 100%;
+    width: 100vw;
     h1{
         margin: 0;
-        padding: 0 1rem;
+        padding:  1rem;
         color: white;
-        background-color: rgba(0,0,0,0.5);
+        background-color: $sandy-brown;
     }
     h3{
         color: white;
-        background-color: rgba(0,0,0,0.5);
+        background-color: $sandy-brown;
         padding: 0.5rem 1rem;
         margin: 0;
     }
@@ -34,16 +33,26 @@ nav{
     width: 100%;
     z-index: 999;
     background-color: $charcoal;
+    #navList{
+        padding: 0;
+    }
     ul{
+        
         display: flex;
         li{
             flex-basis: 33.3%;
             list-style-type: none;
             text-align: center;
             a{
+                text-decoration: none;
+                color: white;
                 display: block;
                 width: 100%;
+                i{display: block;}
             }
+            below span i{
+                float: top;
+                font-size: 1.5rem;}
         }
     }
 }
@@ -51,7 +60,8 @@ nav{
 main {
     #inventoryWrapper{
         display: grid;
-       grid-template-columns: 1fr; 
+        grid-template-columns: 1fr; 
+        padding: 0;
     }
    figure{
     position: relative;
@@ -60,9 +70,25 @@ main {
     position: absolute;
     bottom: 0;
     width: 100%;
-    background-color: rgba(0,0,0,0.4);
+    background-color: rgba(129, 75, 12, 0.4);
     color: white;
     padding: 0.3rem $gutter;
+   }
+   div{
+    padding-left: 2.5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    below span i{
+        float: left;
+        font-size: 1.5rem;
+        color: $charcoal;
+    }
+    below span p{
+        padding-left: 1.6rem;
+    }
+    img{
+        width: 100%;
+    }
    }
 }
 
