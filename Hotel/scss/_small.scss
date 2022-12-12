@@ -62,13 +62,19 @@ nav{
 }
 /*----------- MAIN --------------*/
 main {
-    #inventoryWrapper{
+    #myCards{
         display: grid;
         grid-template-columns: 1fr; 
         padding: 0;
+        margin-bottom: 4.5rem;
     }
    figure{
     position: relative;
+    margin: 0;
+    width: 100%;
+    img{
+        width: 100%;
+    }
    }
    figcaption{
     position: absolute;
@@ -79,34 +85,28 @@ main {
     padding: 0.3rem $gutter;
    }
    div{
-    margin-top: 2rem;
+    margin-top: 0.5rem;
     padding: 0 2.5rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    below span i{
+    i{
         float: left;
         font-size: 1.5rem;
         color: $charcoal;
     }
-    below span p{
-        padding-left: 1.6rem;
+    p{
+        margin: 0;
+        padding: 0.2rem 0.5rem;
     }
-    img{
-        width: 100%;
+    .card{
+        background-color: lighten($charcoal,70%);
+        margin: 1rem;
+        padding: 1rem;
     }
    }
 }
 
 
 /*----------- FOOTER --------------*/
-
-footer {
-    background-color: $sandy-brown;
-    color: lighten($persian-green,30%);
-    padding: .5rem 2%;
-    text-align: center;
-}
-
-
 
 /*----- Clearfix: Force an Element not to collapse -----*/

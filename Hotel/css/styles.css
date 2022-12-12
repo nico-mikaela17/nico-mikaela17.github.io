@@ -381,13 +381,19 @@ nav ul li below span i {
 }
 
 /*----------- MAIN --------------*/
-main #inventoryWrapper {
+main #myCards {
   display: grid;
   grid-template-columns: 1fr;
   padding: 0;
+  margin-bottom: 4.5rem;
 }
 main figure {
   position: relative;
+  margin: 0;
+  width: 100%;
+}
+main figure img {
+  width: 100%;
 }
 main figcaption {
   position: absolute;
@@ -398,38 +404,34 @@ main figcaption {
   padding: 0.3rem 2vw;
 }
 main div {
-  margin-top: 2rem;
+  margin-top: 0.5rem;
   padding: 0 2.5rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
-main div below span i {
+main div i {
   float: left;
   font-size: 1.5rem;
   color: #264653;
 }
-main div below span p {
-  padding-left: 1.6rem;
+main div p {
+  margin: 0;
+  padding: 0.2rem 0.5rem;
 }
-main div img {
-  width: 100%;
+main div .card {
+  background-color: #e9f2f5;
+  margin: 1rem;
+  padding: 1rem;
 }
 
 /*----------- FOOTER --------------*/
-footer {
-  background-color: #f4a261;
-  color: #82ded3;
-  padding: 0.5rem 2%;
-  text-align: center;
-}
-
 /*----- Clearfix: Force an Element not to collapse -----*/
 @media only screen and (min-width: 35rem) {
   /*----------- BODY --------------*/
   /*----------- HEADER --------------*/
   /*----------- NAVIGATION --------------*/
   /*----------- MAIN --------------*/
-  main #inventoryWrapper {
+  main #myCards {
     grid-template-columns: 1fr 1fr;
   }
   /*----------- FOOTER --------------*/
