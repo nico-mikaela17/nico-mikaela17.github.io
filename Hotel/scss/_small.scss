@@ -17,7 +17,7 @@ header {
         margin: 0;
         padding:  1rem;
         color: white;
-        background-color: $sandy-brown;
+        background-color: darken($sandy-brown,5%);
     }
     h3{
         color: white;
@@ -35,11 +35,15 @@ nav{
     background-color: $charcoal;
     #navList{
         padding: 0;
+        margin: 0;
     }
     ul{
-        
         display: flex;
+        li.active{
+            background-color: darken($charcoal,10%);
+        }
         li{
+            padding: 1rem;
             flex-basis: 33.3%;
             list-style-type: none;
             text-align: center;
@@ -48,7 +52,7 @@ nav{
                 color: white;
                 display: block;
                 width: 100%;
-                i{display: block;}
+                i{display: block;}    
             }
             below span i{
                 float: top;
@@ -75,7 +79,8 @@ main {
     padding: 0.3rem $gutter;
    }
    div{
-    padding-left: 2.5rem;
+    margin-top: 2rem;
+    padding: 0 2.5rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
     below span i{
