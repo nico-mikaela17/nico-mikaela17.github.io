@@ -1,4 +1,4 @@
-const apiURL = "../hoteldata.json";
+const apiURL = "./hoteldata.json";
 
 fetch (apiURL)
 .then ((response) => response.json())
