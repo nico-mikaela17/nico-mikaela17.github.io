@@ -21,7 +21,7 @@ fetch (apiURL)
         myFigureTag.appendChild(myCaptionTag);
     
         let theIconleftTag = document.createElement("i");
-        theIconleftTag.name = "icon ion-md-car";
+        theIconleftTag.className = "icon ion-md-car";
     
         let theAddress1Tag = document.createElement("p");
         theAddress1Tag.textContent = myList[i].address[0];
@@ -32,7 +32,7 @@ fetch (apiURL)
         console.log(myList[i].address[1]);
     
         let theIconRightTag = document.createElement("i");
-        theIconRightTag.name = "icon ion-md-call";
+        theIconRightTag.className = "icon ion-md-call";
     
         let thePhoneTag = document.createElement("p");
         thePhoneTag.textContent = myList[i].phone;
