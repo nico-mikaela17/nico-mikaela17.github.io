@@ -387,38 +387,38 @@ main #myCards {
   padding: 0;
   margin-bottom: 4.5rem;
 }
-main figure {
+main #myCards figure {
   position: relative;
   margin: 0;
   width: 100%;
 }
-main figure img {
+main #myCards figure img {
   width: 100%;
 }
-main figcaption {
+main #myCards figcaption {
   position: absolute;
   bottom: 0;
   width: 100%;
-  background-color: rgba(129, 75, 12, 0.4);
+  background-color: rgba(15, 28, 60, 0.5);
   color: white;
   padding: 0.3rem 2vw;
 }
-main div {
+main #myCards div {
   margin-top: 0.5rem;
   padding: 0 2.5rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
-main div i {
+main #myCards div span i {
   float: left;
   font-size: 1.5rem;
   color: #264653;
 }
-main div p {
+main #myCards div span p {
   margin: 0;
   padding: 0.2rem 0.5rem;
 }
-main div .card {
+main #myCards .card {
   background-color: #e9f2f5;
   margin: 1rem;
   padding: 1rem;
