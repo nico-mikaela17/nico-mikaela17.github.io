@@ -12,7 +12,7 @@ body {
 }
 /*----------- HEADER --------------*/
 header {
-    width: 100vw;
+    text-align: center;
     h1{
         margin: 0;
         padding:  1rem;
@@ -30,7 +30,7 @@ header {
 /*----------- NAVIGATION --------------*/
 /*----------- MAIN --------------*/
 main {
-    sectio#weatherforecast{
+    section#weatherforecast{
         display: grid;
         grid-template-columns: 1fr;
         background-color: red;

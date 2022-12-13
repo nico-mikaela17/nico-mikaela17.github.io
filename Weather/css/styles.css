@@ -327,7 +327,7 @@ body {
 
 /*----------- HEADER --------------*/
 header {
-  width: 100vw;
+  text-align: center;
 }
 header h1 {
   margin: 0;
@@ -344,7 +344,7 @@ header h3 {
 
 /*----------- NAVIGATION --------------*/
 /*----------- MAIN --------------*/
-main sectio#weatherforecast {
+main section#weatherforecast {
   display: grid;
   grid-template-columns: 1fr;
   background-color: red;
@@ -355,7 +355,7 @@ main sectio#weatherforecast {
   /*----------- HEADER --------------*/
   /*----------- NAVIGATION --------------*/
   /*----------- MAIN --------------*/
-  main sectio#weatherforecast {
+  main section#weatherforecast {
     grid-template-columns: 1fr 1fr 1fr;
   }
   /*----------- FOOTER --------------*/
@@ -369,7 +369,7 @@ main sectio#weatherforecast {
   /*----------- HEADER --------------*/
   /*----------- NAVIGATION --------------*/
   /*----------- MAIN --------------*/
-  main sectio#weatherforecast {
+  main section#weatherforecast {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   }
   /*----------- FOOTER --------------*/
