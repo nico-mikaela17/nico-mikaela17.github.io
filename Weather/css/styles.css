@@ -308,7 +308,7 @@ template {
   display: none;
 }
 
-/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+/* SCSS HEX */ /* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
 html {
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
@@ -333,106 +333,30 @@ header h1 {
   margin: 0;
   padding: 1rem;
   color: white;
-  background-color: #f29449;
+  background-color: #abc4ff;
 }
 header h3 {
   color: white;
-  background-color: #f4a261;
+  background-color: #abc4ff;
   padding: 0.5rem 1rem;
   margin: 0;
 }
 
 /*----------- NAVIGATION --------------*/
-nav {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  z-index: 999;
-  background-color: #264653;
-}
-nav #navList {
-  padding: 0;
-  margin: 0;
-}
-nav ul {
-  display: flex;
-}
-nav ul li.active {
-  background-color: #162830;
-}
-nav ul li {
-  padding: 1rem;
-  flex-basis: 33.3%;
-  list-style-type: none;
-  text-align: center;
-}
-nav ul li a {
-  text-decoration: none;
-  color: white;
-  display: block;
-  width: 100%;
-}
-nav ul li a i {
-  display: block;
-}
-nav ul li below span i {
-  float: top;
-  font-size: 1.5rem;
-}
-
 /*----------- MAIN --------------*/
-main #myCards {
+main sectio#weatherforecast {
   display: grid;
   grid-template-columns: 1fr;
-  padding: 0;
-  margin-bottom: 4.5rem;
-}
-main #myCards figure {
-  position: relative;
-  margin: 0;
-  width: 100%;
-}
-main #myCards figure img {
-  width: 100%;
-}
-main #myCards figcaption {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  background-color: rgba(15, 28, 60, 0.5);
-  color: white;
-  padding: 0.3rem 2vw;
-}
-main #myCards div {
-  margin-top: 0.5rem;
-  padding: 0 2.5rem;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-main #myCards div span i {
-  float: left;
-  font-size: 1.5rem;
-  color: #264653;
-}
-main #myCards div span p {
-  margin: 0;
-  padding: 0.2rem 0.5rem;
-}
-main #myCards .card {
-  background-color: #e9f2f5;
-  margin: 1rem;
-  padding: 1rem;
+  background-color: red;
 }
 
-/*----------- FOOTER --------------*/
-/*----- Clearfix: Force an Element not to collapse -----*/
 @media only screen and (min-width: 35rem) {
   /*----------- BODY --------------*/
   /*----------- HEADER --------------*/
   /*----------- NAVIGATION --------------*/
   /*----------- MAIN --------------*/
-  main #myCards {
-    grid-template-columns: 1fr 1fr;
+  main sectio#weatherforecast {
+    grid-template-columns: 1fr 1fr 1fr;
   }
   /*----------- FOOTER --------------*/
 } /* end of media query */
@@ -445,5 +369,8 @@ main #myCards .card {
   /*----------- HEADER --------------*/
   /*----------- NAVIGATION --------------*/
   /*----------- MAIN --------------*/
+  main sectio#weatherforecast {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
   /*----------- FOOTER --------------*/
 } /* end of media query */

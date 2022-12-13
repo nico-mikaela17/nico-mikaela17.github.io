@@ -9,5 +9,10 @@ main{
 /*----------- NAVIGATION --------------*/
 
 /*----------- MAIN --------------*/
-
+main {
+        sectio#weatherforecast{
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        }
+    }
+    
 /*----------- FOOTER --------------*/

@@ -17,99 +17,22 @@ header {
         margin: 0;
         padding:  1rem;
         color: white;
-        background-color: darken($sandy-brown,5%);
+        background-color: $baby-blue-eyes;
     }
     h3{
         color: white;
-        background-color: $sandy-brown;
+        background-color: $baby-blue-eyes;
         padding: 0.5rem 1rem;
         margin: 0;
     }
 }
+
 /*----------- NAVIGATION --------------*/
-nav{
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    z-index: 999;
-    background-color: $charcoal;
-    #navList{
-        padding: 0;
-        margin: 0;
-    }
-    ul{
-        display: flex;
-        li.active{
-            background-color: darken($charcoal,10%);
-        }
-        li{
-            padding: 1rem;
-            flex-basis: 33.3%;
-            list-style-type: none;
-            text-align: center;
-            a{
-                text-decoration: none;
-                color: white;
-                display: block;
-                width: 100%;
-                i{display: block;}    
-            }
-            below span i{
-                float: top;
-                font-size: 1.5rem;}
-        }
-    }
-}
 /*----------- MAIN --------------*/
 main {
-    #myCards{
+    sectio#weatherforecast{
         display: grid;
-        grid-template-columns: 1fr; 
-        padding: 0;
-        margin-bottom: 4.5rem;
-    
-        figure{
-            position: relative;
-            margin: 0;
-            width: 100%;
-            img{
-                width: 100%;
-            }
-        }
-        figcaption{
-            position: absolute;
-            bottom: 0;
-            width: 100%;
-            background-color: rgba(15, 28, 60, 0.5);
-            color: white;
-            padding: 0.3rem $gutter;
-        }
-        div{
-            margin-top: 0.5rem;
-            padding: 0 2.5rem;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            span{
-                i{
-                float: left;
-                font-size: 1.5rem;
-                color: $charcoal;
-                }
-                p{
-                    margin: 0;
-                    padding: 0.2rem 0.5rem;
-                }
-                }
-                }
-            .card{
-                background-color: lighten($charcoal,70%);
-                margin: 1rem;
-                padding: 1rem;
-            }
+        grid-template-columns: 1fr;
+        background-color: red;
+    }
 }
-}
-
-
-/*----------- FOOTER --------------*/
-
-/*----- Clearfix: Force an Element not to collapse -----*/
