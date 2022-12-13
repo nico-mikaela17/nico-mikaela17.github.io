@@ -321,6 +321,7 @@ html {
 
 /*----------- BODY --------------*/
 body {
+  background-color: #edf2fb;
   font-size: 14px;
   font-family: Verdana, sans-serif;
 }
@@ -335,19 +336,26 @@ header h1 {
   color: white;
   background-color: #abc4ff;
 }
-header h3 {
+header h2 {
   color: white;
-  background-color: #abc4ff;
+  background-color: #78a0ff;
   padding: 0.5rem 1rem;
   margin: 0;
 }
 
 /*----------- NAVIGATION --------------*/
 /*----------- MAIN --------------*/
-main section#weatherforecast {
+main #weatherforecast {
+  margin-top: 3rem;
   display: grid;
   grid-template-columns: 1fr;
-  background-color: red;
+}
+main #weatherforecast div {
+  margin: 1rem;
+  background-color: #d7e3fc;
+  text-align: center;
+  padding: 1rem;
+  font-size: large;
 }
 
 @media only screen and (min-width: 35rem) {
@@ -355,7 +363,7 @@ main section#weatherforecast {
   /*----------- HEADER --------------*/
   /*----------- NAVIGATION --------------*/
   /*----------- MAIN --------------*/
-  main section#weatherforecast {
+  main #weatherforecast {
     grid-template-columns: 1fr 1fr 1fr;
   }
   /*----------- FOOTER --------------*/
@@ -369,7 +377,7 @@ main section#weatherforecast {
   /*----------- HEADER --------------*/
   /*----------- NAVIGATION --------------*/
   /*----------- MAIN --------------*/
-  main section#weatherforecast {
+  main #weatherforecast {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   }
   /*----------- FOOTER --------------*/
