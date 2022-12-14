@@ -1,0 +1,48 @@
+/*----------- BODY --------------*/
+div#headerWrapper{grid-row-start: 1;}
+div#navWrapper{grid-row-start: 2;}
+div#mainWrapper{grid-row-start: 3;}
+div#footerWrapper{grid-row-start: 4;}
+
+
+
+/*----------- HEADER --------------*/
+#headerWrapper{
+    border-bottom: 1px solid $lightBlue;
+
+}
+header{
+    grid-template-columns: 151px auto;
+}
+
+/*----------- NAVIGATION --------------*/
+div#hamburger, div#closex {
+    display: none;
+}
+
+nav{
+    height: auto;
+    ul{
+        display:flex;
+        justify-content: end;
+        border: none;
+    }
+    ul li{
+        border:none;
+    }
+}
+
+
+/*----------- MAIN --------------*/
+main{
+    @for $i from 1 through 12 {
+        $w: ($i / 12) * 100%;
+        .medium-#{$i} {flex-basis: $w;}
+    }
+    .accidentS{
+        padding: 0.5rem;
+    }
+}
+
+/*----------- FOOTER --------------*/
+    

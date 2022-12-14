@@ -1,0 +1,165 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+
+/*----------- BODY --------------*/
+body {
+    display: grid;
+    font-size: 14px;
+    font-family: Verdana, sans-serif;
+}
+
+
+/*----------- HEADER --------------*/
+div#headerWrapper{grid-row-start: 1;}
+div#hamburger a, div#closex a{
+    display: block;
+    padding: 0.8rem 2vw;
+    font-size: 1.5rem;
+    color: $darkBlue;
+    text-decoration: none;
+    text-align: right;
+}
+div#closex a {margin-right: 10vw;}
+header {
+    display: grid;
+    grid-template-columns: 151px auto 44px;
+    align-items: center;
+    background-color: white;
+    figure.logo{
+        float: left;
+        margin: 0 2vw;
+    }
+}
+/*----------- NAVIGATION --------------*/
+div#navWrapper{grid-row-start: 4;}
+
+nav {
+    height: 100vh;
+    ul{
+        border-bottom: 1px solid $lightBlue;
+    }
+    ul li{
+        border-top: 1px solid $lightBlue;
+    }
+    ul li a{
+        display: block;
+        color: $darkBlue;
+        padding: 0.9rem 2vw;
+        text-decoration: none;
+        text-align: right;
+    }
+    ul li a:hover{
+        color: $mediumBlue;
+    }
+    ul li.active a{
+        background-color: lighten($darkBlue, 60%);
+    }
+    #navList{list-style-type: none;
+        padding: 0;
+    }
+}
+/*----------- MAIN --------------*/
+div#mainWrapper{grid-row-start: 2;}
+
+main {
+    .info{
+        margin: 2rem 0;
+        padding: 1rem;
+        background-color: black;
+        h3, h2{
+            color: rgb(250, 246, 15);
+            text-transform: uppercase;
+        }
+        p{
+            color: white;
+            font-size: 12px;
+        }
+        ul li{
+            color: white;
+        }
+        .formulaList{
+            list-style: none;
+        }
+    }
+    h1{
+        text-transform: uppercase;
+        font-weight: 200;
+        border-bottom: solid 1px lighten($mediumBlue, 45%);
+        color: $mediumBlue;
+    }
+    .flexed{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+
+    }
+    .column{
+        padding: 0 $gutter;
+    }
+    .accidents{
+        padding: 0;
+        margin: 1rem 0;
+
+        h2{
+            padding:0 0.5rem;
+            color: $mediumBlue;
+        }
+        p{
+        padding:0 0.5rem;
+        color: gray;
+        }
+
+    }
+    .faq{
+        border-top: solid 1px lighten($mediumBlue, 45%);
+
+        a{
+            display: block;
+            padding: .5rem 0;
+            margin:1rem;
+            border-radius: 6px;
+            text-decoration: none;
+            text-align: center;
+            background-color: #D4C473;
+            color: $darkBlue;
+        }
+    }
+    @for $i from 1 through 12 {
+        $w: ($i / 12) * 100%;
+        .small-#{$i} {flex-basis: $w;}
+    }
+    img{
+        width: 100%;
+    }
+    button{
+        height: 50px;
+        width: 100;
+        font-size: x-large;
+        text-transform: uppercase;
+        text-align: center;
+        background-color: $mediumBlue;
+        color: white;
+        border-radius: 20px;
+    }
+}
+
+
+/*----------- FOOTER --------------*/
+div#footerWrapper{grid-row-start: 3;}
+
+footer {
+    background-color: $mediumBlue;
+    color: white;
+    padding: .5rem 2%;
+    text-align: center;
+}
+
+
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+
+
