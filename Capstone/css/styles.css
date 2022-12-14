@@ -384,20 +384,20 @@ main .cards {
   justify-content: space-evenly;
 }
 main .cards div:nth-child(1) {
-  background-image: url(../images/hotelroom.jpg);
+  background-image: url(../images/sedan.jpg);
   background-position: center;
   background-size: cover;
 }
 main .cards div:nth-child(2) {
-  background-image: url(../images/walkperson.jpg);
+  background-image: url(../images/suv.jpg);
   background-size: cover;
 }
 main .cards div:nth-child(3) {
-  background-image: url(../images/citypark.jpg);
+  background-image: url(../images/van.jpg);
   background-size: cover;
 }
 main .cards div:nth-child(4) {
-  background-image: url(../images/diningtable.jpg);
+  background-image: url(../images/truck.jpg);
   background-size: cover;
 }
 main .cards div a {

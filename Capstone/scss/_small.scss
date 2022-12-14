@@ -56,7 +56,7 @@ main {
         position: relative;
     }
     p{
-        background-color: rgba(0,0,0,0.5);
+        background-color: rgba(0, 0, 0, 0.5);
         color: white;
         text-align: center;
         transform: translateY(-100%);
@@ -71,22 +71,22 @@ main {
         text-align: center;
         justify-content: space-evenly;
     div:nth-child(1){
-        background-image: url(../images/hotelroom.jpg);
+        background-image: url(../images/sedan.jpg);
         background-position: center;
         background-size: cover;
     }
     div:nth-child(2){
-        background-image: url(../images/walkperson.jpg);
+        background-image: url(../images/suv.jpg);
         background-size: cover;
 
     } 
     div:nth-child(3){
-        background-image: url(../images/citypark.jpg);
+        background-image: url(../images/van.jpg);
         background-size: cover;
 
     } 
     div:nth-child(4){
-        background-image: url(../images/diningtable.jpg);
+        background-image: url(../images/truck.jpg);
         background-size: cover;
 
     }
