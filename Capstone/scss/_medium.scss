@@ -1,0 +1,68 @@
+/*----------- BODY --------------*/
+
+/*----------- HEADER --------------*/
+
+/*----------- NAVIGATION --------------*/
+nav{
+    background-color: $amethyst;
+    button{
+        display: none;
+    }
+    ul{
+        display: flex;
+        border-right: 1px solid $persian-indigo;
+        margin: 0;
+    }
+    ul li{
+        border-right: 1px solid $persian-indigo;
+        list-style-type: none;
+    }
+    ul li a{
+        display: block;
+        font-size: 1rem;
+        padding: 0.9rem 1.2rem;
+        color: white;
+        text-decoration: none;
+        transition: background 0.3 linear;
+    }
+    ul li a:hover{
+        background-color: $purple;
+    }
+    li.parent > a:after{
+        content: "\25BC";
+        font-size: 0.65rem;
+        color: white;
+        float: left;
+    }
+    ul li ul{
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        background-color: $french-violet;
+        border: none;
+        width: 14rem;
+        position: absolute;
+        left: -999rem;
+        z-index: 99;
+    }
+    ul li ul li{
+        border-right: none;
+        border-top: solid 1px $persian-indigo;
+    }
+    ul li:hover ul{
+        left: auto;
+        margin-left: 0;
+    }
+    li.active{
+        background-color: $persian-indigo;
+    }
+}
+
+/*----------- MAIN --------------*/
+main{
+    .individual-card{
+        flex-basis: 50%;
+    }
+}
+/*----------- FOOTER --------------*/
+    

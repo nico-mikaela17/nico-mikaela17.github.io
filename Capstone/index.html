@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capstone - LINGsCARS</title>
+    <link href="css/styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Dosis&family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+</head>
+<body>
+<!-- HEADER HERE -->
+<div id="headerWrapper">
+	<header>
+        <img src="images/logo.png" alt="logo" srcset="images/logo1.png 1x, images/logo2.png 2x, images/logo3.png 3x">
+        <div class="slogan">      
+        <h1>LINGsCARS.com</h1>
+        <h3>The UK's craziest car leasing website!</h3>
+        </div> 
+    </header>
+</div>
+    
+    
+<!-- NAVIGATION HERE -->
+<div id="navWrapper">
+<nav>
+    <button id="hamburgerB">&#9776;</button>
+    <ul id="navList">
+        <li class="parent"><a href="#">Vehicles</a>
+        <ul>
+            <li><a href="#">Sedans</a></li>
+            <li><a href="#">SUVs</a></li>
+            <li><a href="#">Vans</a></li>
+            <li><a href="#">Trucks</a></li>
+        </ul>
+        </li>
+        <li><a href="#">Make a Reservation</a></li>
+        <li><a href="#">Reviews</a></li>
+    </ul>
+</nav>
+</div>
+    
+    
+<!-- CONTENT HERE -->
+<div id="mainWrapper">
+    <main>
+         <!-- Slider main container -->
+<div class="swiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide">
+        <picture>
+            <source srcset="images/boston1_small.jpg"  media="(max-width: 28.12rem)">
+            <source srcset="images/boston1.2.jpg" media="(min-width: 28.12rem)">
+            <img src="images/boston1.jpg" alt="slider"> 
+        </picture>
+        <p><b>Boston Skyline</b> - Enjoy a summer day walking by the port. </p> </div>
+
+        <div class="swiper-slide">
+        <picture>
+            <source srcset="images/boston2_small.jpg"  media="(max-width: 28.12rem)">
+            <source srcset="images/boston2.2.jpg" media="(min-width: 28.12rem)">
+            <img src="images/boston2.jpg" alt="slider"> 
+        </picture>
+    <p><b>Boston Nightlife</b> - There's many things to do at night, come and discover.</p> </div>
+
+    <div class="swiper-slide">
+ <picture>
+    <source srcset="images/boston3_small.jpg"  media="(max-width: 28.12rem)">
+    <source srcset="images/boston3.2.jpg" media="(min-width: 28.12rem)">
+    <img src="images/boston3.jpg" alt="slider"> 
+</picture>
+<p><b>Boston Port</b> - Beautiful place for a picninc.</p></div>
+
+<div class="swiper-slide">
+<picture>
+    <source srcset="images/boston4_small.jpg"  media="(max-width: 28.12rem)">
+    <source srcset="images/boston4.2.jpg" media="(min-width: 28.12rem)">
+    <img src="images/boston4.jpg" alt="slider"> 
+</picture>
+<p><b>Boston Sports</b> - home to many great teams.</p></div>
+<div class="swiper-slide">
+<picture>
+    <source srcset="images/boston5_small.jpg"  media="(max-width: 28.12rem)">
+    <source srcset="images/boston5.2.jpg" media="(min-width: 28.12rem)">
+    <img src="images/boston5.jpg" alt="slider"> 
+</picture>
+<p><b>Boston's History</b> - Get to know Boston to the fullest.</p>
+    </div>
+    </div>
+</div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+    <div class="cards">
+        <div class="individual-card">
+            <a href="#">
+                <img src="images/lodging.png" alt="">
+                <h4>PLACES TO STAY</h4>
+            </a>
+        </div>
+        <div class="individual-card">
+            <a href="#">
+                <img src="images/walk.png" alt="">
+                <h4>WALK THE RED LINE</h4>
+            </a>
+        </div>
+        <div class="individual-card">
+            <a href="#">
+                <img src="images/city.png" alt="">
+                <h4>PASS TO THE CITY</h4>
+            </a>
+        </div>
+        <div class="individual-card">
+            <a href="#">
+                <img src="images/dinning.png" alt="">
+                <h4>FINE DINING</h4>
+            </a>
+        </div>
+     
+    </main>
+</div>
+    
+<!-- FOOTER HERE -->
+<div id="footerWrapper">
+    <footer>
+        &copy; 2022 &bull; Nicole Linnarz &bull; 123-555-6789
+    </footer>
+</div> 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/scripts.js"> </script>
+</body>
+</html>
