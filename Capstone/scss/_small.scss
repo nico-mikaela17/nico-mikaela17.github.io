@@ -193,8 +193,47 @@ form label.top input:required{
 }
 form label.top input:required:valid{
     border-left: lightgreen solid 6px;
-
 }
+.reviews{
+    max-width: 64rem;
+    img{
+        width: 100%;
+    }
+}
+div.item{
+    margin: 1rem 0.5rem;
+    display: grid;
+    grid-template-columns: 200px 1fr ;
+
+      aside{grid-area: title}
+      span{grid-area: person}
+      section{grid-area: overview}
+
+      grid-template-areas: 
+      "title title "
+      "person overview ";
+
+
+      span{margin-right: 1rem;}
+   }
+   
+   div.item2{
+    margin: 1rem 0.5rem;
+       display: grid;
+       grid-template-columns: 1fr 200px;
+  
+         .title{grid-area: title}
+         span{grid-area: person}
+         section{grid-area: overview}
+  
+         grid-template-areas: 
+         "title title"
+         "overview person";
+  
+  
+         span{margin-right: 1rem;}
+      
+    }
 }
 
 

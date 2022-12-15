@@ -504,6 +504,48 @@ main form label.top input:required {
 main form label.top input:required:valid {
   border-left: lightgreen solid 6px;
 }
+main .reviews {
+  max-width: 64rem;
+}
+main .reviews img {
+  width: 100%;
+}
+main div.item {
+  margin: 1rem 0.5rem;
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  grid-template-areas: "title title " "person overview ";
+}
+main div.item aside {
+  grid-area: title;
+}
+main div.item span {
+  grid-area: person;
+}
+main div.item section {
+  grid-area: overview;
+}
+main div.item span {
+  margin-right: 1rem;
+}
+main div.item2 {
+  margin: 1rem 0.5rem;
+  display: grid;
+  grid-template-columns: 1fr 200px;
+  grid-template-areas: "title title" "overview person";
+}
+main div.item2 .title {
+  grid-area: title;
+}
+main div.item2 span {
+  grid-area: person;
+}
+main div.item2 section {
+  grid-area: overview;
+}
+main div.item2 span {
+  margin-right: 1rem;
+}
 
 /*----------- FOOTER --------------*/
 footer {
@@ -646,48 +688,21 @@ footer {
   nav li.active {
     background-color: #3c096c;
   }
-  nav .reviews img {
-    width: 100%;
-  }
-  nav .reviews div.item {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 70px 1fr;
-    grid-template-areas: "title title" "product overview";
-  }
-  nav .reviews div.item aside {
-    grid-area: title;
-  }
-  nav .reviews div.item span {
-    grid-area: product;
-  }
-  nav .reviews div.item section {
-    grid-area: overview;
-  }
-  nav .reviews div.item span {
-    margin-right: 1rem;
-  }
-  nav .reviews div.item2 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 70px 1fr;
-    grid-template-areas: "title title" "overview product";
-  }
-  nav .reviews div.item2 .title {
-    grid-area: title;
-  }
-  nav .reviews div.item2 span {
-    grid-area: product;
-  }
-  nav .reviews div.item2 section {
-    grid-area: overview;
-  }
-  nav .reviews div.item2 span {
-    margin-right: 1rem;
-  }
   /*----------- MAIN --------------*/
   main .individual-card {
     flex-basis: 50%;
+  }
+  main .reviews {
+    max-width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  main .reviews img {
+    max-height: 85%;
+    width: auto;
+  }
+  main .reviews p {
+    font: size 16px;
   }
   /*----------- FOOTER --------------*/
 } /* end of media query */

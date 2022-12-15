@@ -56,44 +56,6 @@ nav{
     li.active{
         background-color: $persian-indigo;
     }
-    .reviews{
-        img{
-            width:100%;
-        }
-    div.item{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 70px 1fr;
-   
-          aside{grid-area: title}
-          span{grid-area: product}
-          section{grid-area: overview}
-   
-          grid-template-areas: 
-          "title title"
-          "product overview";
-   
-   
-          span{margin-right: 1rem;}
-       }
-       
-       div.item2{
-           display: grid;
-           grid-template-columns: 1fr 1fr;
-           grid-template-rows: 70px 1fr;
-      
-             .title{grid-area: title}
-             span{grid-area: product}
-             section{grid-area: overview}
-      
-             grid-template-areas: 
-             "title title"
-             "overview product";
-      
-      
-             span{margin-right: 1rem;}
-          }
-        }
 }
 
 /*----------- MAIN --------------*/
@@ -101,6 +63,19 @@ main{
     .individual-card{
         flex-basis: 50%;
     }
+   .reviews{
+    max-width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    img{
+        max-height: 85%;
+        width: auto;
+    }
+    p{
+        font: size 16px; ;
+    }
+   }
 }
+
 /*----------- FOOTER --------------*/
     
