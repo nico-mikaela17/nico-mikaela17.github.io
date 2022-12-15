@@ -41,6 +41,9 @@ header {
 /*----------- MAIN --------------*/
 
 main {
+    h1,h2{
+        margin-left: $gutter;
+    }
     .swiper{
         width: 100%;
         height: auto;
@@ -55,7 +58,7 @@ main {
     .swiper-pagination {
         position: relative;
     }
-    p{
+    .swiper-slide p{
         background-color: rgba(0, 0, 0, 0.5);
         color: white;
         text-align: center;
@@ -127,6 +130,7 @@ main {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
+        justify-content: space-evenly;
         figure{
         img{
             width: 100%;

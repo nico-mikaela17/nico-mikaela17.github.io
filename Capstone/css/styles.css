@@ -353,6 +353,9 @@ header .slogan h3 {
 
 /*----------- NAVIGATION --------------*/
 /*----------- MAIN --------------*/
+main h1, main h2 {
+  margin-left: 2vw;
+}
 main .swiper {
   width: 100%;
   height: auto;
@@ -367,7 +370,7 @@ main .swiper-wrapper {
 main .swiper-pagination {
   position: relative;
 }
-main p {
+main .swiper-slide p {
   background-color: rgba(0, 0, 0, 0.5);
   color: white;
   text-align: center;
@@ -439,6 +442,7 @@ main .gallery {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 main .gallery figure img {
   width: 100%;
@@ -637,6 +641,45 @@ footer {
   }
   nav li.active {
     background-color: #3c096c;
+  }
+  nav .reviews img {
+    width: 100%;
+  }
+  nav .reviews div.item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 70px 1fr;
+    grid-template-areas: "title title" "product overview";
+  }
+  nav .reviews div.item aside {
+    grid-area: title;
+  }
+  nav .reviews div.item span {
+    grid-area: product;
+  }
+  nav .reviews div.item section {
+    grid-area: overview;
+  }
+  nav .reviews div.item span {
+    margin-right: 1rem;
+  }
+  nav .reviews div.item2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 70px 1fr;
+    grid-template-areas: "title title" "overview product";
+  }
+  nav .reviews div.item2 .title {
+    grid-area: title;
+  }
+  nav .reviews div.item2 span {
+    grid-area: product;
+  }
+  nav .reviews div.item2 section {
+    grid-area: overview;
+  }
+  nav .reviews div.item2 span {
+    margin-right: 1rem;
   }
   /*----------- MAIN --------------*/
   main .individual-card {
