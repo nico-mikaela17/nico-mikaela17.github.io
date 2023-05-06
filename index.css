@@ -16,12 +16,15 @@
 			margin: 10px;
 			text-align: center;
 			padding: 20px;
+      position: relative;
+      
 		}
 		.card img {
-			width: 100%;
-			height: auto;
+			width: auto;
+			height: 200px;
 			margin-bottom: 20px;
 		}
+
 		.card h2 {
 			font-size: 1.5rem;
 			margin-bottom: 10px;
@@ -31,15 +34,23 @@
 			margin-bottom: 20px;
       text-align: left;
 		}
-		.card a {
-			display: inline-block;
-			background-color: #4CAF50;
-			color: #fff;
-			padding: 8px 16px;
-			text-decoration: none;
-			border-radius: 4px;
-			transition: background-color 0.3s;
-		}
+    .card a {
+      display: block;
+      background-color: #4CAF50;
+      color: #fff;
+      padding: 8px 16px;
+      text-decoration: none;
+      border-radius: 4px;
+      transition: background-color 0.3s;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      text-align: center; /* center the button horizontally */
+    }
+
 		.card a:hover {
 			background-color: #3e8e41;
 		}
+
+
